@@ -1,16 +1,22 @@
-const labelSizes = ["text-[20px]", "text-[24px]", "text-[28px]"];
+const scale = [
+  { token: "text-logo", font: "font-logo", sample: "GABRIEL HONO" },
+  { token: "text-display", font: "font-sans", sample: "Hi! I'm Gabriel, I live and work in Paris" },
+  { token: "text-title", font: "font-hand", sample: "ABOUT ME · WEB DEVELOPMENT" },
+  { token: "text-lead", font: "font-sans", sample: "A site where you can find all Parisian public pools." },
+  { token: "text-label", font: "font-hand", sample: "NAME*: E-MAIL*: PRONOUNS:" },
+  { token: "text-body", font: "font-sans", sample: "I grew up in Chile. Moved to France when I was 27." },
+  { token: "text-small", font: "font-sans", sample: "Linkedin · Github" },
+];
 
 export default function HomePage() {
   return (
-    <main data-theme="home" className="bg-theme text-foreground p-8 space-y-6">
-      <p className="font-logo text-[48px] leading-tight">GABRIEL HONO</p>
-      <p className="font-hand text-[40px]">ABOUT ME · LET&apos;S TALK!</p>
-      {labelSizes.map((size) => (
-        <p key={size} className={`font-hand ${size}`}>
-          NAME*: E-MAIL*: PRONOUNS: ({size})
-        </p>
+    <main data-theme="home" className="bg-theme text-foreground p-8 space-y-8">
+      {scale.map(({ token, font, sample }) => (
+        <div key={token}>
+          <p className="text-small opacity-60">{token}</p>
+          <p className={`${font} ${token}`}>{sample}</p>
+        </div>
       ))}
-      <p className="text-[24px]">Hi! I&apos;m Gabriel, I live and work in Paris.</p>
     </main>
   );
 }
