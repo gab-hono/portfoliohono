@@ -1,28 +1,16 @@
-import { useTranslations } from "next-intl";
-
-const themes = ["home", "dev", "art", "sound"] as const;
+const labelSizes = ["text-[20px]", "text-[24px]", "text-[28px]"];
 
 export default function HomePage() {
-  const t = useTranslations("HomePage");
-
   return (
-    <main>
-      <h1 className="p-8">{t("title")}</h1>
-      {themes.map((theme) => (
-        <section
-          key={theme}
-          data-theme={theme}
-          className="bg-theme text-foreground p-8"
-        >
-          <p>Theme: {theme}</p>
-          <button className="mt-4 rounded-full border border-line px-4 py-1">
-            Contact
-          </button>
-          {theme === "home" && (
-            <p className="mt-2 text-error">Error: email is required</p>
-          )}
-        </section>
+    <main data-theme="home" className="bg-theme text-foreground p-8 space-y-6">
+      <p className="font-logo text-[48px] leading-tight">GABRIEL HONO</p>
+      <p className="font-hand text-[40px]">ABOUT ME · LET&apos;S TALK!</p>
+      {labelSizes.map((size) => (
+        <p key={size} className={`font-hand ${size}`}>
+          NAME*: E-MAIL*: PRONOUNS: ({size})
+        </p>
       ))}
+      <p className="text-[24px]">Hi! I&apos;m Gabriel, I live and work in Paris.</p>
     </main>
   );
 }

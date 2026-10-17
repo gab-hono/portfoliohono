@@ -48,6 +48,11 @@
   --color-foreground: var(--foreground);
   --color-line: var(--line);
   --color-error: var(--error-red);
+
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-fira-code);
+  --font-logo: var(--font-rock-salt);
+  --font-hand: var(--font-shadows);
 }
 
 /* Fondo de tema: color + gradiente (si el tema lo tiene). */
