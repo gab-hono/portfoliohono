@@ -1,5 +1,6 @@
 import { HashLink } from "@/components/ui/HashLink";
 import { pillClasses } from "@/components/ui/PillLink";
+import { Logo } from "@/components/ui/Logo";
 
 const themes = ["home", "dev", "art", "sound"] as const;
 
@@ -10,14 +11,14 @@ export default function HomePage() {
         <section
           key={theme}
           data-theme={theme}
-          className="bg-theme text-foreground p-8 min-h-[50vh] space-y-4"
+          className="bg-theme text-foreground p-4 sm:p-8 min-h-[50vh]"
         >
-          <p className="text-small">{theme}</p>
-
-          <HashLink hash="contact" className={pillClasses}>
-            Contact
-          </HashLink>
-
+          <div className="flex items-start justify-between gap-4">
+            <Logo />
+            <HashLink hash="contact" className={pillClasses}>
+              Contact
+            </HashLink>
+          </div>
         </section>
       ))}
       <section
