@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
+/* 1. Paleta: valores en bruto. Solo se usan en este archivo. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #fff9e3;
+  --blue: #1800ad;
+  --blue-soft: #6b5fd6;
+  --red-dark: #731919;
+  --red: #d42828;
+  --white: #ffffff;
+  --black: #000000;
+  --error-red: #b3261e;
 }
 
+/* 2. Temas: qué color cumple cada función en cada página. */
+:root,
+[data-theme="home"] {
+  --background: var(--cream);
+  --foreground: var(--blue);
+  --line: var(--blue-soft);
+  --background-image: none;
+}
+
+[data-theme="dev"] {
+  --background: var(--blue);
+  --foreground: var(--cream);
+  --line: var(--cream);
+  --background-image: none;
+}
+
+[data-theme="art"] {
+  --background: var(--red-dark);
+  --foreground: var(--cream);
+  --line: var(--cream);
+  --background-image: linear-gradient(to bottom, var(--red-dark), var(--red));
+}
+
+[data-theme="sound"] {
+  --background: var(--white);
+  --foreground: var(--black);
+  --line: var(--black);
+  --background-image: none;
+}
+
+/* 3. Conexión con Tailwind: crea bg-background, text-foreground, border-line, text-error. */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-line: var(--line);
+  --color-error: var(--error-red);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Fondo de tema: color + gradiente (si el tema lo tiene). */
+@utility bg-theme {
+  background-color: var(--background);
+  background-image: var(--background-image);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Focus visible con teclado, del color del texto de cada tema. */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
