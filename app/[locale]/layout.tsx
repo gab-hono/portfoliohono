@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
-import { Space_Grotesk, Fira_Code, Rock_Salt, Shadows_Into_Light } from "next/font/google";
+import { Space_Grotesk, Fira_Code, Shadows_Into_Light } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -14,13 +14,6 @@ const spaceGrotesk = Space_Grotesk({
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-fira-code",
-  display: "swap",
-});
-
-const rockSalt = Rock_Salt({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-rock-salt",
   display: "swap",
 });
 
@@ -53,7 +46,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${spaceGrotesk.variable} ${firaCode.variable} ${rockSalt.variable} ${shadows.variable}`}    >
+    >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
