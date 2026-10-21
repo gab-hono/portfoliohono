@@ -1,6 +1,7 @@
 import { HashLink } from "@/components/ui/HashLink";
 import { pillClasses } from "@/components/ui/PillLink";
 import { Logo } from "@/components/ui/Logo";
+import ExternalLink from "@/components/ui/ExternalLink";
 
 const themes = ["home", "dev", "art", "sound"] as const;
 
@@ -29,6 +30,7 @@ export default function HomePage() {
       >
         <h2 className="font-hand text-title">LET&apos;S TALK!</h2>
       </section>
+      <ExternalLink href="https://github.com/gab-hono">GitHub</ExternalLink>
     </main>
   );
 }
