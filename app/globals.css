@@ -79,10 +79,20 @@
   --logo-height: clamp(3.5rem, 1.92rem + 6.76vw, 8rem);
 }
 
-/* Fondo de tema: color + gradiente (si el tema lo tiene). */
+/* Fondo de tema: color sólido + gradiente fijo a la pantalla (si el tema lo tiene). */
 @utility bg-theme {
   background-color: var(--background);
-  background-image: var(--background-image);
+  isolation: isolate;
+  clip-path: inset(0);
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: var(--header-height) 0 0 0;
+    z-index: -1;
+    background-image: var(--background-image);
+    pointer-events: none;
+  }
 }
 
 body {
@@ -126,3 +136,18 @@ body {
   }
 }
 
+/* Altura del header fijo: logo + padding vertical (p-4 en móvil, p-8 desde sm). */
+:root {
+  --header-height: calc(var(--logo-height) + 2rem);
+}
+
+@media (width >= 40rem) {
+  :root {
+    --header-height: calc(var(--logo-height) + 4rem);
+  }
+}
+
+/* Los saltos a un ancla (#contact) no quedan tapados por el header. */
+html {
+  scroll-padding-top: var(--header-height);
+}

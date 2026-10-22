@@ -29,7 +29,7 @@ export default function HomePage() {
         <section
           key={theme}
           data-theme={theme}
-          className="bg-theme text-foreground min-h-[50vh]"
+          className="bg-theme text-foreground min-h-[150vh]"
         >
           <Header />
         </section>
