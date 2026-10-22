@@ -11,7 +11,8 @@
   },
   "Header": {
     "logoLabel": "Gabriel Hono, page d’accueil",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language": "Langue"
   },
   "Home": {
     "intro": "Salut\u00A0! Je suis Gabriel, je vis et travaille à Paris, et voici mes disciplines\u00A0:",

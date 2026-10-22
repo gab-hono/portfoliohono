@@ -11,7 +11,8 @@
   },
   "Header": {
     "logoLabel": "Gabriel Hono, home",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language": "Language"
   },
   "Home": {
     "intro": "Hi! I’m Gabriel, I live and work in Paris, and these are my main disciplines:",
