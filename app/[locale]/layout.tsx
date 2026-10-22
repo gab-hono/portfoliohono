@@ -3,11 +3,12 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
-import { Space_Grotesk, Fira_Code, Shadows_Into_Light } from "next/font/google";
+import { Archivo, Fira_Code, Covered_By_Your_Grace } from "next/font/google";
 
-const spaceGrotesk = Space_Grotesk({
+const archivo = Archivo({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  axes: ["wdth"],
+  variable: "--font-archivo",
   display: "swap",
 });
 
@@ -17,10 +18,10 @@ const firaCode = Fira_Code({
   display: "swap",
 });
 
-const shadows = Shadows_Into_Light({
+const coveredByYourGrace = Covered_By_Your_Grace({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-shadows",
+  variable: "--font-covered",
   display: "swap",
 });
 
@@ -46,6 +47,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
+      className={`${archivo.variable} ${firaCode.variable} ${coveredByYourGrace.variable}`}
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
