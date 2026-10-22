@@ -2,8 +2,39 @@
   "HomePage": {
     "title": "Hello (EN)"
   },
-  
   "ExternalLink": {
   "newTab": "(opens in a new tab)"
+  },
+  "Metadata": {
+  "title": "Gabriel Hono · Portfolio",
+  "description": "Web developer, theater artist and sound technician. Discover Gabriel Hono’s work."
+  },
+  "Header": {
+    "logoLabel": "Gabriel Hono, home",
+    "contact": "Contact"
+  },
+  "Home": {
+    "intro": "Hi! I’m Gabriel, I live and work in Paris, and these are my main disciplines:",
+    "mainProjects": "Main projects:",
+    "disciplines": {
+      "dev": {
+        "label": "web development",
+        "srLabel": "Web development",
+        "hover": "Full-stack web developer: TypeScript, React, Next.js, Express."
+      },
+      "theater": {
+        "label": "theater / performance",
+        "srLabel": "Theater and performance",
+        "hover": "Actor, director and producer. Theater and the arts are my way of understanding human experience."
+      },
+      "sound": {
+        "label": "sound",
+        "srLabel": "Sound",
+        "hover": "Sound technician for film, concerts and art installations."
+      }
+    }
+  },
+  "Footer": {
+    "copyright": "© {year} Gabriel Hono"
   }
 }

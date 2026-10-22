@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import OvalSvg, { type Discipline } from "./OvalSvg";
+import type { Discipline } from "@/data/disciplines";
+import OvalSvg from "./OvalSvg";
 
 type OvalProps = {
   discipline: Discipline;
