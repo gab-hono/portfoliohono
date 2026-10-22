@@ -12,34 +12,40 @@
   --error-red: #b3261e;
 }
 
-/* 2. Temas: qué color cumple cada función en cada página. */
+/* 2. Temas: qué color cumple cada función en cada página.
+   Cada tema de disciplina tiene 2 selectores: su propia página,
+   y la home cuando una de sus disciplinas está en hover o focus (switcher).
+   --gradient-opacity: 1 = se ve el gradiente rojo (solo THEATER). */
 :root,
 [data-theme="home"] {
   --background: var(--cream);
   --foreground: var(--blue);
   --line: var(--blue-soft);
-  --background-image: none;
+  --gradient-opacity: 0;
 }
 
-[data-theme="dev"] {
+[data-theme="dev"],
+[data-theme="home"]:has([data-discipline="dev"]:is(:hover, :focus-visible)) {
   --background: var(--blue);
   --foreground: var(--cream);
   --line: var(--cream);
-  --background-image: none;
+  --gradient-opacity: 0;
 }
 
-[data-theme="theater"] {
+[data-theme="theater"],
+[data-theme="home"]:has([data-discipline="theater"]:is(:hover, :focus-visible)) {
   --background: var(--red-dark);
   --foreground: var(--cream);
   --line: var(--cream);
-  --background-image: linear-gradient(to bottom, var(--red-dark), var(--red));
+  --gradient-opacity: 1;
 }
 
-[data-theme="sound"] {
+[data-theme="sound"],
+[data-theme="home"]:has([data-discipline="sound"]:is(:hover, :focus-visible)) {
   --background: var(--white);
   --foreground: var(--black);
   --line: var(--black);
-  --background-image: none;
+  --gradient-opacity: 0;
 }
 
 /* 3. Conexión con Tailwind: crea bg-background, text-foreground, border-line, text-error. */
@@ -77,7 +83,9 @@
   --logo-height: clamp(3.5rem, 1.92rem + 6.76vw, 8rem);
 }
 
-/* Fondo de tema: color sólido + gradiente fijo a la pantalla (si el tema lo tiene). */
+/* Fondo de tema: color sólido + gradiente fijo a la pantalla.
+   El gradiente siempre existe; --gradient-opacity decide si se ve,
+   así puede aparecer y desaparecer con un fundido. */
 @utility bg-theme {
   background-color: var(--background);
   isolation: isolate;
@@ -88,8 +96,19 @@
     position: fixed;
     inset: var(--header-height) 0 0 0;
     z-index: -1;
-    background-image: var(--background-image);
+    background-image: linear-gradient(to bottom, var(--red-dark), var(--red));
+    opacity: var(--gradient-opacity);
     pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      background-color 0.4s ease,
+      color 0.4s ease;
+
+    &::before {
+      transition: opacity 0.4s ease;
+    }
   }
 }
 
@@ -110,6 +129,40 @@ body {
   html {
     scroll-behavior: smooth;
   }
+}
+
+/* Switcher de la home.
+   En hover o focus de una disciplina: la frase y las otras disciplinas se desvanecen,
+   y aparece el texto de la disciplina activa en el lugar de la frase.
+   Solo cambia la opacidad: nada se mueve, así el hover no se pierde. */
+[data-theme="home"]:has([data-discipline]:is(:hover, :focus-visible)) {
+  [data-hero-intro],
+  [data-discipline]:not(:hover, :focus-visible) {
+    opacity: 0;
+  }
+}
+
+/* Textos del hover: invisibles por defecto. visibility además de opacity:
+   así un lector de pantalla no los lee al recorrer la página
+   (aria-describedby los sigue leyendo desde cada link). */
+[data-hover-text] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-hover-text] {
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s;
+  }
+}
+
+[data-theme="home"]:has([data-discipline="dev"]:is(:hover, :focus-visible)) [data-hover-text="dev"],
+[data-theme="home"]:has([data-discipline="theater"]:is(:hover, :focus-visible)) [data-hover-text="theater"],
+[data-theme="home"]:has([data-discipline="sound"]:is(:hover, :focus-visible)) [data-hover-text="sound"] {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Óvalo: dibujo por máscara circular (ver Oval.tsx). */
