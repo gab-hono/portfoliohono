@@ -28,7 +28,7 @@
   --background-image: none;
 }
 
-[data-theme="art"] {
+[data-theme="theater"] {
   --background: var(--red-dark);
   --foreground: var(--cream);
   --line: var(--cream);

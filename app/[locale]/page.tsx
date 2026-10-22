@@ -5,7 +5,7 @@ import ExternalLink from "@/components/ui/ExternalLink";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Oval from "@/components/ui/Oval";
 
-const themes = ["home", "dev", "art", "sound"] as const;
+const themes = ["home", "dev", "theater", "sound"] as const;
 
 export default function HomePage() {
   return (
@@ -43,7 +43,7 @@ export default function HomePage() {
     </Oval>
   </a>
   <a href="#" className="group">
-    <Oval discipline="art" className="px-8 py-6">
+    <Oval discipline="theater" className="px-8 py-6">
       <span className="font-hand text-title uppercase">theater artist</span>
     </Oval>
   </a>
