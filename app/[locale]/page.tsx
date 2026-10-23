@@ -1,5 +1,7 @@
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
+import ContactSection from "@/components/home/ContactSection";
 
 export default function HomePage() {
   return (
@@ -7,7 +9,10 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        {/* Etapas 4 y 5: Featured projects y About van entre Hero y Contact. */}
+        <ContactSection />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -3,11 +3,11 @@
     "title": "Bonjour (FR)"
   },
   "ExternalLink": {
-  "newTab": "(s'ouvre dans un nouvel onglet)"
+    "newTab": "(s’ouvre dans un nouvel onglet)"
   },
   "Metadata": {
-  "title": "Gabriel Hono · Portfolio",
-  "description": "Développeur web, artiste de théâtre et technicien son. Découvrez le travail et l’univers de Gabriel Hono."
+    "title": "Gabriel Hono · Portfolio",
+    "description": "Développeur web, artiste de théâtre et technicien son. Découvrez le travail et l’univers de Gabriel Hono."
   },
   "Header": {
     "logoLabel": "Gabriel Hono, page d’accueil",
@@ -33,10 +33,13 @@
         "srLabel": "Son",
         "hover": "Technicien son pour le cinéma, les concerts et les installations artistiques."
       }
+    },
+    "contact": {
+      "title": "parlons-en\u00A0!",
+      "text": "Vous avez un projet où je pourrais vous être utile\u00A0? Remplissez le formulaire et parlons-en :)"
     }
   },
   "Footer": {
     "copyright": "© {year} Gabriel Hono"
   }
 }
-

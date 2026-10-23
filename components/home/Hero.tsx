@@ -9,8 +9,9 @@ export default function Hero() {
   const t = useTranslations("Home");
 
   return (
-    <section className="grid min-h-[calc(100dvh_-_var(--header-height))] grid-rows-[1fr_auto] gap-12 px-4 pb-12 sm:px-8 sm:pb-16">
-      {/* Frase y textos del hover en la misma celda: uno reemplaza al otro. */}
+    <section className="grid min-h-[calc(100dvh_-_var(--header-height))] grid-rows-[1fr_auto] gap-8 px-4 pb-8 sm:gap-12 sm:px-8 sm:pb-16">
+      {/* Frase y textos del hover en la misma celda: uno reemplaza al otro.
+          En pantallas táctiles los textos del hover no existen en el layout (ver globals.css). */}
       <div className="grid items-center">
         <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-4xl text-display ${fade}`}>
           {t("intro")}
@@ -31,7 +32,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <ul className="flex flex-col items-center gap-10 sm:flex-row sm:flex-wrap sm:justify-around">
+      <ul className="flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:justify-around sm:gap-10">
         {disciplines.map(({ slug, href }) => (
           <li key={slug}>
             <Link
@@ -40,7 +41,7 @@ export default function Hero() {
               aria-describedby={`hover-${slug}`}
               className={`group inline-block ${fade}`}
             >
-              <Oval discipline={slug} className="px-10 py-6 text-center">
+              <Oval discipline={slug} className="px-10 py-4 text-center sm:py-6">
                 <span aria-hidden="true" className="font-hand text-title uppercase">
                   {t(`disciplines.${slug}.label`)}
                 </span>

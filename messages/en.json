@@ -3,11 +3,11 @@
     "title": "Hello (EN)"
   },
   "ExternalLink": {
-  "newTab": "(opens in a new tab)"
+    "newTab": "(opens in a new tab)"
   },
   "Metadata": {
-  "title": "Gabriel Hono · Portfolio",
-  "description": "Web developer, theater artist and sound technician. Discover Gabriel Hono’s work."
+    "title": "Gabriel Hono · Portfolio",
+    "description": "Web developer, theater artist and sound technician. Discover Gabriel Hono’s work."
   },
   "Header": {
     "logoLabel": "Gabriel Hono, home",
@@ -33,6 +33,10 @@
         "srLabel": "Sound",
         "hover": "Sound technician for film, concerts and art installations."
       }
+    },
+    "contact": {
+      "title": "let’s talk!",
+      "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)"
     }
   },
   "Footer": {

@@ -150,6 +150,16 @@ body {
   visibility: hidden;
 }
 
+/* Pantallas táctiles (sin hover): un tap navega directo, los textos del hover
+   nunca se ven. display: none los saca del layout; con visibility: hidden
+   seguirían ocupando su alto y empujarían las disciplinas hacia abajo.
+   aria-describedby los sigue leyendo: una descripción puede venir de un elemento oculto. */
+@media (hover: none) {
+  [data-hover-text] {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   [data-hover-text] {
     transition:
