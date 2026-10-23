@@ -11,9 +11,11 @@ export default function Hero() {
   return (
     <section className="grid min-h-[calc(100dvh_-_var(--header-height))] grid-rows-[1fr_auto] gap-8 px-4 pb-8 sm:gap-12 sm:px-8 sm:pb-16">
       {/* Frase y textos del hover en la misma celda: uno reemplaza al otro.
-          En pantallas táctiles los textos del hover no existen en el layout (ver globals.css). */}
+          En pantallas táctiles los textos del hover no existen en el layout (ver globals.css).
+          La frase es más ancha que los textos del hover: 2 líneas en desktop, como la maqueta;
+          los textos del hover, más chicos, se leen mejor en líneas más cortas. */}
       <div className="grid items-center">
-        <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-4xl text-display ${fade}`}>
+        <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-6xl text-display ${fade}`}>
           {t("intro")}
         </h1>
 
