@@ -37,6 +37,8 @@ export async function generateMetadata({
   params,
 }: Omit<Props, "children">): Promise<Metadata> {
   const { locale } = await params;
+  // Type guard: después de este if, TypeScript sabe que locale es "en" | "fr".
+  if (!hasLocale(routing.locales, locale)) notFound();
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -51,9 +53,8 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  // Un idioma que no existe (/xx) da 404 en vez de renderizar con lang="xx".
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   return (
     <html
