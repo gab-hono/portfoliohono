@@ -9,7 +9,9 @@
   "Header": {
     "logoLabel": "Gabriel Hono, home",
     "contact": "Contact",
-    "language": "Language"
+    "language": "Language",
+    "disciplinesMenu": "Disciplines",
+    "switchDiscipline": "{current}, switch discipline"
   },
   "Home": {
     "intro": "Hi! I’m Gabriel, I live and work in Paris, and these are my main disciplines:",
@@ -40,6 +42,96 @@
     "contact": {
       "title": "let’s talk!",
       "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)"
+    }
+  },
+  "DevPage": {
+    "metadata": {
+      "title": "Web development · Gabriel Hono",
+      "description": "Gabriel Hono’s web development work: full-stack projects in TypeScript, React and Next.js."
+    },
+    "sectionsNav": "On this page",
+    "stack": {
+      "title": "my stack",
+      "categories": {
+        "development": "Development",
+        "tools": "Tools and methods",
+        "deployment": "Deployment"
+      }
+    },
+    "journey": {
+      "title": "my journey",
+      "text": "I came to code in a funny way. In France I kept meeting people who worked in tech, and I never understood what they did. They explained, I nodded, and I had no idea what they meant when they said “HTML”. When I decided to retrain, I realized how fascinating code is, and how close it is to the creative work I love: you build something, test it, rework it until it holds, just like in rehearsal. It’s creation, technique and a constant intellectual challenge, and I’m someone who loves learning something new every day.",
+      "portraitAlt": "Black-and-white photo of Gabriel smiling, head resting on one hand, next to a laptop."
+    },
+    "projects": {
+      "title": "my projects",
+      "site": "Visit the site",
+      "repo": "Visit the repository",
+      "learnMore": "Learn more",
+      "role": "Role",
+      "stack": "Stack",
+      "close": "Close"
+    }
+  },
+  "Projects": {
+    "labels": {
+      "prototype": "Prototype"
+    },
+    "mapiscine": {
+      "title": "MaPiscine",
+      "description": "A web app that brings together the information on Paris’s 42 municipal swimming pools. Interactive map and list, with filters for wheelchair access, a Queer Friendly label, payment methods and live opening status. With an account, users can save favorites and leave reviews.",
+      "role": "Solo project: design and development, from user research to deployment",
+      "learnMore": {
+        "s1": {
+          "title": "Why.",
+          "body": "Information on Paris pools is scattered across dozens of pages and hard to compare. As a queer person, I also wanted to know in advance how welcoming a pool would be."
+        },
+        "s2": {
+          "title": "Process.",
+          "body": "I ran it solo from start to finish: personas, wireframes in Excalidraw, Figma mockups, a relational data model, then development, 23 unit tests and continuous deployment."
+        },
+        "s3": {
+          "title": "A technical challenge.",
+          "body": "Next.js runs the proxy in the Edge Runtime, where Prisma can’t work. I moved session checks to an internal API route running on Node: the proxy calls it, then passes the user’s ID and role to the route handlers."
+        },
+        "s4": {
+          "title": "Next steps.",
+          "body": "The admin backend is built and tested; its interface is next, along with holiday opening hours. I’d like to partner with the pools and Paris queer associations, so the data and the Queer Friendly label are kept up to date by those who know them best."
+        }
+      },
+      "alt": {
+        "logo": "MaPiscine logo with the tagline “Les piscines de Paris, pour tous.tes” above two hand-painted blue waves.",
+        "pool-detail": "Mobile view of a pool page: Piscine Château Landon, with its address and the Open, Wheelchair accessible and Queer Friendly labels.",
+        "map": "Mobile map view: Paris pools shown as pins, with search, filters and a list/map toggle.",
+        "style-guide": "Style guide: blue primary palette, secondary colors, Montserrat type scale and the app’s icons."
+      }
+    },
+    "cityson": {
+      "title": "CitySon",
+      "description": "A sound map of Paris: each pin holds an audio piece tied to a precise place, meant to be heard on site. Designed for site-specific sound art and performance, it could also work as a social network for located sounds. Prototype: the map and the pieces are live; posting is in progress.",
+      "role": "Solo project: concept, design and development",
+      "learnMore": {
+        "s1": {
+          "title": "Where it comes from.",
+          "body": "Between 2020 and 2022 in Chile, I created <cite>Caminamos mirando al cielo</cite>, a site-specific sound walk: listeners had to reach a precise spot, and then the audio guided them. The hardest part was explaining to people how to take part. CitySon is the tool I wish I’d had."
+        },
+        "s2": {
+          "title": "What it does.",
+          "body": "Anyone, artists first, can pin a sound to a place on the map. To hear it as intended, you go there: listening becomes situated."
+        },
+        "s3": {
+          "title": "How it’s built.",
+          "body": "A React front end and an Express REST API over PostgreSQL, deployed separately. A prototype built in two weeks: today you can explore the map and open each piece."
+        },
+        "s4": {
+          "title": "Next steps.",
+          "body": "Posting sounds, authentication and favorites, then a React Native version: it’s an app meant to be used while walking through the city."
+        }
+      },
+      "alt": {
+        "logo": "CitySon logo in yellow on black, with a map pin after the name.",
+        "selected-pin": "CitySon on desktop: a map of Paris with a selected pin, Caminamos mirando al cielo, and its audio player."
+      }
     }
   },
   "Footer": {

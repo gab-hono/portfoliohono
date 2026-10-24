@@ -9,7 +9,9 @@
   "Header": {
     "logoLabel": "Gabriel Hono, page d’accueil",
     "contact": "Contact",
-    "language": "Langue"
+    "language": "Langue",
+    "disciplinesMenu": "Disciplines",
+    "switchDiscipline": "{current}, changer de discipline"
   },
   "Home": {
     "intro": "Salut\u00A0! Je suis Gabriel, je vis et travaille à Paris, et voici mes disciplines\u00A0:",
@@ -40,6 +42,96 @@
     "contact": {
       "title": "parlons-en\u00A0!",
       "text": "Vous avez un projet où je pourrais vous être utile\u00A0? Remplissez le formulaire et parlons-en :)"
+    }
+  },
+  "DevPage": {
+    "metadata": {
+      "title": "Développement web · Gabriel Hono",
+      "description": "Le développement web de Gabriel Hono\u00A0: projets full stack en TypeScript, React et Next.js."
+    },
+    "sectionsNav": "Sur cette page",
+    "stack": {
+      "title": "ma stack",
+      "categories": {
+        "development": "Développement",
+        "tools": "Outils et méthodes",
+        "deployment": "Déploiement"
+      }
+    },
+    "journey": {
+      "title": "mon parcours",
+      "text": "Je suis arrivé au code de façon assez curieuse. En France, je rencontrais sans cesse des personnes qui travaillaient dans la tech, sans jamais comprendre ce qu’elles faisaient. Elles m’expliquaient, je hochais la tête, et je n’avais aucune idée de ce qu’elles voulaient dire quand elles parlaient de «\u00A0HTML\u00A0». Quand j’ai décidé de me reconvertir, j’ai découvert à quel point le code est fascinant, et combien il est proche du travail créatif que j’aime\u00A0: on construit quelque chose, on le teste, on le retravaille jusqu’à ce que ça tienne, comme en répétition. C’est de la création, de la technique et un défi intellectuel constant, et je suis quelqu’un qui adore apprendre quelque chose de nouveau chaque jour.",
+      "portraitAlt": "Photo de Gabriel souriant, la tête appuyée sur une main, à côté d’un ordinateur portable."
+    },
+    "projects": {
+      "title": "mes projets",
+      "site": "Voir le site",
+      "repo": "Voir le dépôt",
+      "learnMore": "En savoir plus",
+      "role": "Rôle",
+      "stack": "Stack",
+      "close": "Fermer"
+    }
+  },
+  "Projects": {
+    "labels": {
+      "prototype": "Prototype"
+    },
+    "mapiscine": {
+      "title": "MaPiscine",
+      "description": "Une application web qui rassemble les informations des 42 piscines municipales de Paris. Carte interactive et liste, avec des filtres d’accessibilité PMR, un label Queer Friendly, les moyens de paiement et le statut d’ouverture en temps réel. Avec un compte, on peut enregistrer ses favoris et laisser des avis.",
+      "role": "Projet en solo\u00A0: conception et développement, de la recherche utilisateur au déploiement",
+      "learnMore": {
+        "s1": {
+          "title": "Pourquoi.",
+          "body": "Les informations sur les piscines parisiennes sont dispersées sur des dizaines de pages et difficiles à comparer. En tant que personne queer, je voulais aussi savoir à l’avance si une piscine serait accueillante."
+        },
+        "s2": {
+          "title": "Démarche.",
+          "body": "Projet mené seul de bout en bout\u00A0: personas, wireframes sur Excalidraw, maquettes Figma, modèle de données relationnel, puis développement, 23 tests unitaires et déploiement continu."
+        },
+        "s3": {
+          "title": "Un défi technique.",
+          "body": "Next.js exécute le proxy dans l’Edge Runtime, où Prisma ne fonctionne pas. J’ai déplacé la vérification de session vers une route API interne exécutée sous Node\u00A0: le proxy l’appelle, puis transmet l’identifiant et le rôle de l’utilisateur·ice aux route handlers."
+        },
+        "s4": {
+          "title": "Et après.",
+          "body": "Le backend Admin est développé et testé\u00A0; son interface est la prochaine étape, avec les horaires de vacances. J’aimerais travailler avec les piscines et des associations queer parisiennes, pour que les données et le label Queer Friendly soient tenus à jour par celles et ceux qui les connaissent le mieux."
+        }
+      },
+      "alt": {
+        "logo": "Logo de MaPiscine avec le slogan «\u00A0Les piscines de Paris, pour tous.tes\u00A0» au-dessus de deux vagues bleues peintes à la main.",
+        "pool-detail": "Vue mobile de la fiche d’une piscine\u00A0: Piscine Château Landon, avec son adresse et les labels Ouverte, Accessible PMR et Queer Friendly.",
+        "map": "Vue carte sur mobile\u00A0: les piscines de Paris en pins, avec recherche, filtres et bascule liste / carte.",
+        "style-guide": "Guide de style\u00A0: palette principale bleue, couleurs secondaires, échelle typographique Montserrat et icônes de l’application."
+      }
+    },
+    "cityson": {
+      "title": "CitySon",
+      "description": "Une carte sonore de Paris\u00A0: chaque pin contient une pièce audio liée à un lieu précis, pensée pour être écoutée sur place. Conçue pour la création sonore et la performance in situ, elle pourrait aussi fonctionner comme un réseau social de sons géolocalisés. Prototype\u00A0: la carte et les pièces sont en ligne\u00A0; la publication est en cours de développement.",
+      "role": "Projet en solo\u00A0: concept, design et développement",
+      "learnMore": {
+        "s1": {
+          "title": "D’où ça vient.",
+          "body": "Entre 2020 et 2022, au Chili, j’ai créé <cite>Caminamos mirando al cielo</cite>, une déambulation sonore in situ\u00A0: le public devait rejoindre un lieu précis, puis l’audio le guidait. Le plus difficile était d’expliquer comment y participer. CitySon, c’est l’outil que j’aurais aimé avoir."
+        },
+        "s2": {
+          "title": "Ce que ça fait.",
+          "body": "Chacun·e, à commencer par les artistes, peut épingler un son à un lieu sur la carte. Pour l’écouter comme prévu, il faut s’y rendre\u00A0: l’écoute devient située."
+        },
+        "s3": {
+          "title": "Comment c’est construit.",
+          "body": "Un front en React et une API REST en Express sur PostgreSQL, déployés séparément. Un prototype réalisé en deux semaines\u00A0: aujourd’hui, on peut explorer la carte et ouvrir chaque pièce."
+        },
+        "s4": {
+          "title": "Et après.",
+          "body": "La publication de sons, l’authentification et les favoris, puis une version React Native\u00A0: c’est une application faite pour être utilisée en marchant dans la ville."
+        }
+      },
+      "alt": {
+        "logo": "Logo de CitySon en jaune sur fond noir, avec un pin de carte après le nom.",
+        "selected-pin": "CitySon sur ordinateur\u00A0: une carte de Paris avec un pin sélectionné, Caminamos mirando al cielo, et son lecteur audio."
+      }
     }
   },
   "Footer": {

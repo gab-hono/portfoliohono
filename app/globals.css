@@ -80,7 +80,10 @@
   --text-small: 0.875rem;
   --text-small--line-height: 1.4;
 
-  --logo-height: clamp(3.5rem, 1.92rem + 6.76vw, 8rem);
+  /* Fluido con el ancho, pero nunca más del 15 % de la altura de la pantalla
+     (teléfono en horizontal). svh y no dvh: dvh cambia cuando la barra del
+     navegador aparece o desaparece, y el logo cambiaría de tamaño al hacer scroll. */
+  --logo-height: min(clamp(3.5rem, 1.92rem + 6.76vw, 8rem), 15svh);
 }
 
 /* Fondo de tema: color sólido + gradiente fijo a la pantalla.
@@ -211,7 +214,45 @@ body {
   }
 }
 
+/* Páginas de disciplina: por debajo de lg (64rem) el óvalo del header baja a
+   una segunda fila (ver Header.tsx). Alto de esa fila: texto del óvalo con
+   interlineado 1.2 + py-3 (1.5rem) + gap-4 entre filas (1rem).
+   :root:has() gana sobre :root solo (más específico). */
+:root {
+  --discipline-row: calc(var(--text-title) * 1.2 + 2.5rem);
+}
+
+@media (width < 40rem) {
+  :root:has([data-has-discipline]) {
+    --header-height: calc(var(--logo-height) + 2rem + var(--discipline-row));
+  }
+}
+
+@media (40rem <= width < 64rem) {
+  :root:has([data-has-discipline]) {
+    --header-height: calc(var(--logo-height) + 4rem + var(--discipline-row));
+  }
+}
+
+/* Posición del menú de disciplinas desde lg (la usa DisciplineMenu.tsx con
+   lg:top-…): el óvalo está arriba, junto al logo (el header es más alto por
+   el logo), así que el menú va a padding superior (2rem) + alto del óvalo
+   (texto x 1.2 + py-3) + 0.5rem de separación.
+   Móvil y tablet: el cálculo va directo en las clases del menú. */
+:root {
+  --discipline-menu-top: calc(2rem + var(--text-title) * 1.2 + 1.5rem + 0.5rem);
+}
+
 /* Los saltos a un ancla (#contact) no quedan tapados por el header. */
 html {
   scroll-padding-top: var(--header-height);
+}
+
+/* Pantallas bajas (teléfono en horizontal): el header no es fijo (ver Header.tsx),
+   así que no tapa nada al saltar a un ancla. --header-height se mantiene: el menú
+   de disciplinas lo sigue usando cuando el header está a la vista. */
+@media (height < 30rem) {
+  html {
+    scroll-padding-top: 0;
+  }
 }
