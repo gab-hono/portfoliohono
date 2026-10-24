@@ -8,6 +8,7 @@ import Footer from "@/components/layout/Footer";
 import DisciplineIntro from "@/components/layout/DisciplineIntro";
 import StackSection from "@/components/dev/StackSection";
 import JourneySection from "@/components/dev/JourneySection";
+import ProjectsSection from "@/components/dev/ProjectsSection";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -29,7 +30,7 @@ export default function DevPage() {
         <DisciplineIntro discipline="dev" />
         <StackSection />
         <JourneySection />
-        {/* Pasos 5 y 6: proyectos y pop-up */}
+        <ProjectsSection />
       </main>
       <Footer />
     </div>
