@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
+import AboutSection from "@/components/home/AboutSection";
 import ContactSection from "@/components/home/ContactSection";
 
 export default function HomePage() {
@@ -9,7 +10,8 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        {/* Etapas 4 y 5: Featured projects y About van entre Hero y Contact. */}
+        {/* Etapa 5: Featured projects va entre Hero y About. */}
+        <AboutSection />
         <ContactSection />
       </main>
       <Footer />

@@ -31,6 +31,12 @@
         "hover": "Sound technician for film, concerts and art installations."
       }
     },
+    "about": {
+      "title": "about me",
+      "p1": "I grew up in <strong>Chile</strong> and moved to <strong>France</strong> at 27, without any big reason: I just wanted to start a new life.",
+      "p2": "I don’t believe in fixed identities, which may explain my <strong>multidisciplinary path</strong>. I’m <strong>transmasc</strong> and I love it. I studied <strong>theater</strong>; steady gigs were rare, but I never stopped creating.",
+      "p3": "In France I became a <strong>sound technician</strong> for concerts, film and exhibitions. Then I trained as a <strong>full-stack developer</strong> at Ada Tech School. And here I am, making a life out of all of them :)"
+    },
     "contact": {
       "title": "let’s talk!",
       "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)"
