@@ -1,9 +1,12 @@
 import { useTranslations } from "next-intl";
+import SectionTitle from "@/components/ui/SectionTitle";
 import { stack } from "@/data/stack";
 
 /*
  * Stack de la página DEV: una lista por categoría.
  * Móvil: tecnologías en línea bajo cada título. Desde lg: 3 columnas.
+ * Título visible en móvil; desde lg solo para lectores de pantalla
+ * (lo reemplaza el menú lateral).
  * (Se probó una constelación estática el 24 oct: en desktop la lectura era
  * difícil, así que se volvió a la lista.)
  */
@@ -12,10 +15,9 @@ export default function StackSection() {
 
   return (
     <section id="stack" aria-labelledby="stack-title" className="px-4 py-12 sm:px-8 lg:py-16">
-      {/* Título solo para lectores de pantalla: el visible es el del menú lateral (paso 7). */}
-      <h2 id="stack-title" className="sr-only">
+      <SectionTitle id="stack-title" className="mb-8 uppercase lg:sr-only">
         {t("title")}
-      </h2>
+      </SectionTitle>
 
       <div className="grid max-w-5xl gap-8 lg:grid-cols-3 lg:gap-12">
         {stack.map(({ id, items }) => (

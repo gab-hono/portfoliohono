@@ -12,6 +12,7 @@ import { devProjects } from "@/data/projects";
  * Imagen de borde a borde, en su proporción real (sin recorte).
  * Cada proyecto es un <article> nombrado por su <h3> (aria-labelledby).
  * "Learn more" abre un pop-up (Dialog) con las imágenes y las 4 secciones.
+ * Título visible en móvil; desde lg solo para lectores de pantalla.
  */
 
 const SECTIONS = ["s1", "s2", "s3", "s4"] as const;
@@ -25,10 +26,12 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" aria-labelledby="projects-title" className="py-12 lg:py-16">
-      {/* Título solo para lectores de pantalla: el visible es el del menú lateral (paso 7). */}
-      <h2 id="projects-title" className="sr-only">
-        {tPage("title")}
-      </h2>
+      {/* La sección no tiene padding lateral (imágenes de borde a borde): el título lo lleva aparte. */}
+      <div className="mb-8 px-4 sm:px-8 lg:sr-only">
+        <SectionTitle id="projects-title" className="uppercase">
+          {tPage("title")}
+        </SectionTitle>
+      </div>
 
       {devProjects.map((project, index) => {
         const { id, images, stack, links } = project;

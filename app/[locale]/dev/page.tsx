@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import DisciplineIntro from "@/components/layout/DisciplineIntro";
+import SectionNav from "@/components/dev/SectionNav";
 import StackSection from "@/components/dev/StackSection";
 import JourneySection from "@/components/dev/JourneySection";
 import ProjectsSection from "@/components/dev/ProjectsSection";
@@ -22,14 +23,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: t("title"), description: t("description") };
 }
 
+/*
+ * Desde lg: menú lateral (SectionNav) a la izquierda de la frase, el stack
+ * y el journey, como en la maqueta. Los proyectos van debajo, a todo el
+ * ancho (imágenes de borde a borde).
+ */
 export default function DevPage() {
   return (
     <div data-theme="dev" className="bg-theme text-foreground min-h-dvh">
       <Header discipline="dev" />
       <main className="font-mono">
-        <DisciplineIntro discipline="dev" />
-        <StackSection />
-        <JourneySection />
+        <div className="lg:grid lg:grid-cols-[14rem_minmax(0,1fr)]">
+          <SectionNav />
+          <div>
+            <DisciplineIntro discipline="dev" />
+            <StackSection />
+            <JourneySection />
+          </div>
+        </div>
         <ProjectsSection />
       </main>
       <Footer />
