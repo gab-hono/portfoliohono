@@ -73,6 +73,25 @@
       "close": "Close"
     }
   },
+  "TheaterPage": {
+    "metadata": {
+      "title": "Theater and performance · Gabriel Hono",
+      "description": "Gabriel Hono’s theater and performance work in Chile: directing, acting, producing and a site-specific sound walk."
+    },
+    "sectionsNav": "On this page",
+    "journey": {
+      "title": "my journey",
+      "p1": "I studied theater at Universidad Mayor in Santiago, from 2013 to 2016. I was trained as an actor, but I never really felt like one, so I started exploring directing. After drama school I directed <cite>Animales binarios</cite> and <cite>Pero, ¿y mi madre?</cite>, and was assistant director on <cite>Todo bajo control</cite>.",
+      "p2": "From 2020 to 2022, I did a master’s in theater studies and practices at the Universidad Católica de Chile, researching the ethical relationship between artist and audience. What I look for on stage is truth: no pretending, only what is really happening in the present. That took me from plays to performance, starting from the most intimate place so it can resonate with each spectator’s own story.",
+      "p3": "I also learned to run projects: I produced the <cite>Juan Radrigán</cite> inter-school playwriting festival from 2015 to 2018, and for <cite>Caminamos mirando al cielo</cite>, a sound walk made during the pandemic, I wrote my first application to Fondart, Chile’s national arts fund, and won it. And I taught, as a teaching assistant in directing at Universidad Mayor and in applied theater at the UC. When I moved to France, I stepped away from the stage, but not from creating."
+    },
+    "projects": {
+      "title": "my projects",
+      "learnMore": "Learn more",
+      "credits": "Credits",
+      "close": "Close"
+    }
+  },
   "Projects": {
     "labels": {
       "prototype": "Prototype"
@@ -131,6 +150,89 @@
       "alt": {
         "logo": "CitySon logo in yellow on black, with a map pin after the name.",
         "selected-pin": "CitySon on desktop: a map of Paris with a selected pin, Caminamos mirando al cielo, and its audio player."
+      }
+    },
+    "caminamos": {
+      "title": "Caminamos mirando al cielo",
+      "translatedTitle": "We walk looking at the sky",
+      "role": "Creator, co-writer and director; producer",
+      "place": "Costanera Center, Santiago. Master’s final project (UC). Process exhibition at Teatro del Puente. Funded by Fondart.",
+      "hover": "A one-hour sound walk through a Santiago mall, about memory and mental health.",
+      "popup": "Listeners signed up, stood outside the Costanera Center and pressed play on their own phone. For an hour, a voice guided them through the mall’s five floors, asking them to walk, touch, clap, take photos. The building is known for the people who have died there by suicide: the piece invites you to walk it as a place of memory, and shares mental-health information and where to find help. Loosely inspired by Greek myths (Odysseus, Narcissus, Pandora, Hestia).",
+      "credits": "Creation and direction: Gabriel Hono · Dramaturgy: Nicolás Lange and Gabriel Hono · Voices: Gabriel Hono, Javiera Mendoza, Consuelo Carreño, Beatriz Arredondo · Sound composition and editing: Juanjo Acuña · Photos: Manuela Bocaz",
+      "alt": {
+        "poster": "Poster for Caminamos mirando al cielo: a figure floats backwards above the water at dusk, reaching for a star.",
+        "escalator": "A listener with headphones rides an escalator down through the Costanera Center mall.",
+        "street": "A listener at the start of the walk, outside the Costanera Center."
+      }
+    },
+    "animales-binarios": {
+      "title": "Animales binarios",
+      "translatedTitle": "",
+      "role": "Director",
+      "place": "Santiago de Chile",
+      "hover": "Three characters dissect the childhood that still lives in their queer bodies.",
+      "popup": "Three intertwined monologues by playwright Carla Fuentes Abu-Abbarah: three queer characters with a shared past revisit their childhood, its abuse and its loneliness, looking for a way out. I directed the piece and led the project as a whole, from building the team to finding the funding. It ran for 32 performances between October 2017 and mid-2018.",
+      "credits": "Text: Carla Fuentes Abu-Abbarah · Production: Beatriz Arredondo · Mask: Pedro Gramegna · Cast: Daniela Fuentealba, Carmen Demarta, Macarena Barros · Photos: Felipe Armstrong",
+      "alt": {
+        "mask": "Silhouette of a performer in a large fur animal mask, pulling back a pink curtain.",
+        "bed": "A performer in a fur animal mask lies on pink fabric, holding a red shoe, with glasses nearby.",
+        "curtain": "A face half hidden between pink curtains, in warm light."
+      }
+    },
+    "todo-bajo-control": {
+      "title": "Todo bajo control",
+      "translatedTitle": "Everything under control",
+      "role": "Assistant director",
+      "place": "Santiago de Chile, in several theaters over three years of touring",
+      "hover": "Christmas Eve, a strike, and five supermarket cashiers trying to save their holidays.",
+      "popup": "Five cashiers at a supermarket in an upscale Santiago neighborhood face Christmas Eve and a workers’ strike at the same time. How far would you go to save Christmas? Do you work to live, or live to work? Written by Javiera Mendoza and directed by Juan Gálvez, the play won the drama school’s internal creation fund, then toured Santiago theaters until 2019. I was assistant director.",
+      "credits": "Text and production: Javiera Mendoza · Direction: Juan Gálvez · Assistant direction: Gabriel Hono · Design: Catalina Devia, assisted by Catalina Álvarez · Cast: Fernanda Águila, Juan Gálvez, Katherine Maureira, Javiera Mendoza, María José Mundt, Beatriz Sánchez",
+      "alt": {
+        "legs": "A row of legs in beige skirts and heels on a blue stage floor, one foot out of its shoe.",
+        "cigarette": "A cashier in a blue apron smokes in the foreground while three colleagues dance behind.",
+        "manager": "A man in a white shirt and blue tie sits holding a yellow ball, surrounded by three laughing cashiers."
+      }
+    },
+    "pero-y-mi-madre": {
+      "title": "Pero, ¿y mi madre?",
+      "translatedTitle": "But what about my mother?",
+      "role": "Director",
+      "place": "La Máquina del Arte, Santiago de Chile",
+      "hover": "A couple travels through a dream without leaving their bedroom.",
+      "popup": "A comedy by Carmen Amador, who started writing under Juan Radrigán’s mentorship, about identity as something built through our relationships. Sol and Fede set out on a journey of self-discovery without leaving their room: in a dream, they are visited by the ghosts of their parents, and even by their own older selves. The bedroom, where we are most honestly ourselves, slowly turns into a dream (or a nightmare) that the audience witnesses.",
+      "credits": "Text: Carmen Amador · Direction: Gabriel Hono · Assistant: Nicolás Pérez · Production: Beatriz Arredondo · Cast: Manuel Almonacid, Beatriz Arredondo, Diego Sánchez, Carmen Peñailillo",
+      "alt": {
+        "deer": "A performer in a furry deer costume sits startled on a bed, with clothes racks behind."
+      }
+    },
+    "festival-juan-radrigan": {
+      "title": "Festival de Dramaturgia Interescuelas Juan Radrigán",
+      "translatedTitle": "Juan Radrigán Inter-School Playwriting Festival",
+      "role": "Production team",
+      "place": "Universidad Mayor drama school, Santiago de Chile",
+      "hover": "A student playwriting festival that grew from 10 to 70 submissions.",
+      "popup": "An inter-school playwriting festival for drama students, named after Chilean playwright Juan Radrigán. I joined its production team for the second edition. As a new team, we brought in experienced theater professionals, raised the prizes, looked for more funding and built collaborations between drama schools. Submissions grew from 10 texts in the first edition to 70 in my last one, and the drama school’s support grew every year, funding staged readings, guest artists and the award ceremony. The festival is now in its twelfth year, still on the course we set.",
+      "credits": "",
+      "alt": {
+        "logo": "Festival logo: a pair of glasses under the name “Festival de Dramaturgia Interescuelas Juan Radrigán”.",
+        "toast": "Four members of the third-edition team toast with red wine under red and white bunting.",
+        "team": "The fourth-edition team poses together, holding a tote bag with the festival logo."
+      }
+    },
+    "on-stage": {
+      "title": "On stage",
+      "translatedTitle": "",
+      "role": "Actor",
+      "place": "Santiago de Chile",
+      "hover": "Before directing: four productions on stage.",
+      "popup": "<strong>The Little Girl</strong> in <cite>Six Characters in Search of an Author</cite> (Pirandello), a contemporary adaptation by the collective La Ratonera (2015) · <strong>Glagolyev</strong> in <cite>Platonov</cite> (Chekhov), directed by Francisca Márquez (2016) · <strong>Chorus</strong> in <cite>Locutorio</cite> (Jorge Díaz), directed by Cristián Plana, with Alejandro Sieveking and Millaray Lobos, a GAM production (2017) · <strong>Ensemble</strong> in <cite>Signorina Giulia</cite>, a Chilean-Italian production directed by Cristián Plana (2017)",
+      "credits": "Photo of <cite>Locutorio</cite>: GAM",
+      "alt": {
+        "six-characters": "Six Characters in Search of an Author, with Gabriel as The Little Girl: under blue light, one performer pushes another’s head toward a yellow inflatable pool on a table.",
+        "platonov": "Gabriel as Glagolyev in Platonov, parading across the stage to show off the costume: white hair, large glasses, burgundy outfit, a sheet held overhead.",
+        "locutorio": "Locutorio: two performers inside a lit glass box on a dark stage, their reflections multiplied in the glass.",
+        "signorina-giulia": "Signorina Giulia: an ensemble in blond wigs and folk costumes surrounds a performer bending backwards."
       }
     }
   },

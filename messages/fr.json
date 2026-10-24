@@ -61,7 +61,7 @@
     "journey": {
       "title": "mon parcours",
       "text": "Je suis arrivé au code de façon assez curieuse. En France, je rencontrais sans cesse des personnes qui travaillaient dans la tech, sans jamais comprendre ce qu’elles faisaient. Elles m’expliquaient, je hochais la tête, et je n’avais aucune idée de ce qu’elles voulaient dire quand elles parlaient de «\u00A0HTML\u00A0». Quand j’ai décidé de me reconvertir, j’ai découvert à quel point le code est fascinant, et combien il est proche du travail créatif que j’aime\u00A0: on construit quelque chose, on le teste, on le retravaille jusqu’à ce que ça tienne, comme en répétition. C’est de la création, de la technique et un défi intellectuel constant, et je suis quelqu’un qui adore apprendre quelque chose de nouveau chaque jour.",
-      "portraitAlt": "Photo de Gabriel souriant, la tête appuyée sur une main, à côté d’un ordinateur portable."
+      "portraitAlt": "Photo en noir et blanc de Gabriel souriant, la tête appuyée sur une main, à côté d’un ordinateur portable."
     },
     "projects": {
       "title": "mes projets",
@@ -70,6 +70,25 @@
       "learnMore": "En savoir plus",
       "role": "Rôle",
       "stack": "Stack",
+      "close": "Fermer"
+    }
+  },
+  "TheaterPage": {
+    "metadata": {
+      "title": "Théâtre et performance · Gabriel Hono",
+      "description": "Le travail de Gabriel Hono en théâtre et performance au Chili\u00A0: mise en scène, jeu, production et une déambulation sonore in situ."
+    },
+    "sectionsNav": "Sur cette page",
+    "journey": {
+      "title": "mon parcours",
+      "p1": "J’ai étudié le théâtre à l’Universidad Mayor de Santiago, de 2013 à 2016. J’ai été formé comme acteur, mais je ne me suis jamais vraiment senti acteur\u00A0: j’ai donc commencé à explorer la mise en scène. Après l’école, j’ai mis en scène <cite>Animales binarios</cite> et <cite>Pero, ¿y mi madre?</cite>, et j’ai été assistant à la mise en scène sur <cite>Todo bajo control</cite>.",
+      "p2": "De 2020 à 2022, j’ai suivi un master en études et pratiques théâtrales à l’Universidad Católica de Chile, sur la relation éthique entre l’artiste et le public. Ce que je cherche sur scène, c’est la vérité\u00A0: ne pas faire semblant, seulement ce qui se passe vraiment au présent. C’est ce qui m’a mené du théâtre vers la performance, en partant de l’intime pour que cela résonne avec l’histoire de chaque spectateur·ice.",
+      "p3": "J’ai aussi appris à mener des projets\u00A0: j’ai produit le festival interécoles de dramaturgie <cite>Juan Radrigán</cite> de 2015 à 2018 et, pour <cite>Caminamos mirando al cielo</cite>, une déambulation sonore créée pendant la pandémie, j’ai rédigé ma première demande au Fondart, le fonds national chilien pour les arts, et obtenu le financement. J’ai aussi enseigné, comme assistant en mise en scène à l’Universidad Mayor et en théâtre appliqué à l’UC. En arrivant en France, je me suis éloigné de la scène, mais pas de la création."
+    },
+    "projects": {
+      "title": "mes projets",
+      "learnMore": "En savoir plus",
+      "credits": "Crédits",
       "close": "Fermer"
     }
   },
@@ -131,6 +150,89 @@
       "alt": {
         "logo": "Logo de CitySon en jaune sur fond noir, avec un pin de carte après le nom.",
         "selected-pin": "CitySon sur ordinateur\u00A0: une carte de Paris avec un pin sélectionné, Caminamos mirando al cielo, et son lecteur audio."
+      }
+    },
+    "caminamos": {
+      "title": "Caminamos mirando al cielo",
+      "translatedTitle": "On marche en regardant le ciel",
+      "role": "Création, co-écriture et mise en scène\u00A0; production",
+      "place": "Costanera Center, Santiago. Projet de fin de master (UC). Exposition du processus au Teatro del Puente. Financé par le Fondart.",
+      "hover": "Une déambulation sonore d’une heure dans un centre commercial de Santiago, sur la mémoire et la santé mentale.",
+      "popup": "Le public s’inscrivait, se plaçait devant le Costanera Center et lançait l’audio sur son propre téléphone. Pendant une heure, une voix le guidait à travers les cinq étages du centre commercial, en l’invitant à marcher, toucher, applaudir, prendre des photos. Le bâtiment est connu pour les personnes qui s’y sont donné la mort\u00A0: la pièce invite à le parcourir comme un lieu de mémoire, et partage des informations sur la santé mentale et les ressources d’aide. Librement inspirée de mythes grecs (Ulysse, Narcisse, Pandore, Hestia).",
+      "credits": "Création et mise en scène\u00A0: Gabriel Hono · Dramaturgie\u00A0: Nicolás Lange et Gabriel Hono · Voix\u00A0: Gabriel Hono, Javiera Mendoza, Consuelo Carreño, Beatriz Arredondo · Composition et montage sonore\u00A0: Juanjo Acuña · Photos\u00A0: Manuela Bocaz",
+      "alt": {
+        "poster": "Affiche de Caminamos mirando al cielo\u00A0: une silhouette flotte à la renverse au-dessus de l’eau au crépuscule, la main tendue vers une étoile.",
+        "escalator": "Une personne, casque sur les oreilles, descend un escalator du centre commercial Costanera Center.",
+        "street": "Une personne au début du parcours, devant le Costanera Center."
+      }
+    },
+    "animales-binarios": {
+      "title": "Animales binarios",
+      "translatedTitle": "",
+      "role": "Mise en scène",
+      "place": "Santiago du Chili",
+      "hover": "Trois personnages dissèquent l’enfance qui vit encore dans leurs corps queer.",
+      "popup": "Trois monologues entrelacés de la dramaturge Carla Fuentes Abu-Abbarah\u00A0: trois personnages queer au passé commun reviennent sur leur enfance, ses abus et sa solitude, en cherchant une issue. J’ai mis en scène la pièce et porté l’ensemble du projet, de la constitution de l’équipe à la recherche de financements. Elle a été jouée 32 fois entre octobre 2017 et mi-2018.",
+      "credits": "Texte\u00A0: Carla Fuentes Abu-Abbarah · Production\u00A0: Beatriz Arredondo · Masque\u00A0: Pedro Gramegna · Distribution\u00A0: Daniela Fuentealba, Carmen Demarta, Macarena Barros · Photos\u00A0: Felipe Armstrong",
+      "alt": {
+        "mask": "Silhouette d’une personne portant un grand masque animal en fourrure, qui écarte un rideau rose.",
+        "bed": "Une personne au masque animal en fourrure, allongée sur un tissu rose, tient une chaussure rouge, des lunettes posées à côté.",
+        "curtain": "Un visage à moitié caché entre des rideaux roses, dans une lumière chaude."
+      }
+    },
+    "todo-bajo-control": {
+      "title": "Todo bajo control",
+      "translatedTitle": "Tout est sous contrôle",
+      "role": "Assistant à la mise en scène",
+      "place": "Santiago du Chili, dans plusieurs théâtres, sur trois ans de tournée",
+      "hover": "Un réveillon de Noël, une grève, et cinq caissières qui tentent de sauver leurs fêtes.",
+      "popup": "Cinq caissières d’un supermarché d’un quartier aisé de Santiago affrontent en même temps le réveillon de Noël et une grève. Jusqu’où iriez-vous pour sauver Noël\u00A0? Travailler pour vivre, ou vivre pour travailler\u00A0? Écrite par Javiera Mendoza et mise en scène par Juan Gálvez, la pièce a remporté le fonds de création interne de l’école de théâtre, puis a tourné dans les théâtres de Santiago jusqu’en 2019. J’étais assistant à la mise en scène.",
+      "credits": "Texte et production\u00A0: Javiera Mendoza · Mise en scène\u00A0: Juan Gálvez · Assistanat à la mise en scène\u00A0: Gabriel Hono · Conception visuelle\u00A0: Catalina Devia, assistée de Catalina Álvarez · Distribution\u00A0: Fernanda Águila, Juan Gálvez, Katherine Maureira, Javiera Mendoza, María José Mundt, Beatriz Sánchez",
+      "alt": {
+        "legs": "Une rangée de jambes en jupes beiges et escarpins sur un sol de scène bleu, un pied sorti de sa chaussure.",
+        "cigarette": "Une caissière en tablier bleu fume au premier plan pendant que trois collègues dansent derrière.",
+        "manager": "Un homme en chemise blanche et cravate bleue, assis, tient une balle jaune, entouré de trois caissières qui rient."
+      }
+    },
+    "pero-y-mi-madre": {
+      "title": "Pero, ¿y mi madre?",
+      "translatedTitle": "Mais, et ma mère\u00A0?",
+      "role": "Mise en scène",
+      "place": "La Máquina del Arte, Santiago du Chili",
+      "hover": "Un couple voyage à travers un rêve sans quitter sa chambre.",
+      "popup": "Une comédie de Carmen Amador, qui a commencé à écrire auprès de Juan Radrigán, sur l’identité comme une construction faite de nos relations. Sol et Fede partent en quête d’eux-mêmes sans quitter leur chambre\u00A0: en rêve, ils reçoivent la visite des fantômes de leurs parents, et même de leurs propres versions plus âgées. La chambre, là où l’on est le plus sincèrement soi-même, se transforme peu à peu en un rêve (ou un cauchemar) dont le public est témoin.",
+      "credits": "Texte\u00A0: Carmen Amador · Mise en scène\u00A0: Gabriel Hono · Assistanat\u00A0: Nicolás Pérez · Production\u00A0: Beatriz Arredondo · Distribution\u00A0: Manuel Almonacid, Beatriz Arredondo, Diego Sánchez, Carmen Peñailillo",
+      "alt": {
+        "deer": "Une personne en costume de cerf en fourrure, assise sur un lit, l’air surpris, devant des portants de vêtements."
+      }
+    },
+    "festival-juan-radrigan": {
+      "title": "Festival de Dramaturgia Interescuelas Juan Radrigán",
+      "translatedTitle": "Festival interécoles de dramaturgie Juan Radrigán",
+      "role": "Équipe de production",
+      "place": "École de théâtre de l’Universidad Mayor, Santiago du Chili",
+      "hover": "Un festival de dramaturgie étudiante passé de 10 à 70 textes reçus.",
+      "popup": "Un festival interécoles de dramaturgie pour les étudiant·es en théâtre, qui porte le nom du dramaturge chilien Juan Radrigán. J’ai rejoint son équipe de production pour la deuxième édition. Nouvelle équipe, nous avons fait appel à des professionnel·les expérimenté·es, relevé les prix, cherché davantage de financements et créé des collaborations entre écoles. Les candidatures sont passées de 10 textes à la première édition à 70 lors de ma dernière, et le soutien de l’école a augmenté chaque année\u00A0: lectures mises en espace, artistes invité·es, cérémonie de remise des prix. Le festival fête aujourd’hui ses douze ans, toujours sur la voie que nous avions tracée.",
+      "credits": "",
+      "alt": {
+        "logo": "Logo du festival\u00A0: une paire de lunettes sous le nom «\u00A0Festival de Dramaturgia Interescuelas Juan Radrigán\u00A0».",
+        "toast": "Quatre membres de l’équipe de la troisième édition trinquent au vin rouge sous des fanions rouges et blancs.",
+        "team": "L’équipe de la quatrième édition pose ensemble, avec un tote bag au logo du festival."
+      }
+    },
+    "on-stage": {
+      "title": "Sur scène",
+      "translatedTitle": "",
+      "role": "Comédien",
+      "place": "Santiago du Chili",
+      "hover": "Avant la mise en scène\u00A0: quatre spectacles sur scène.",
+      "popup": "<strong>La Petite Fille</strong> dans <cite>Six personnages en quête d’auteur</cite> (Pirandello), adaptation contemporaine du collectif La Ratonera (2015) · <strong>Glagoliev</strong> dans <cite>Platonov</cite> (Tchekhov), mise en scène de Francisca Márquez (2016) · <strong>Chœur</strong> dans <cite>Locutorio</cite> (Jorge Díaz), mise en scène de Cristián Plana, avec Alejandro Sieveking et Millaray Lobos, production du GAM (2017) · <strong>Rôle d’ensemble</strong> dans <cite>Signorina Giulia</cite>, production chilo-italienne mise en scène par Cristián Plana (2017)",
+      "credits": "Photo de <cite>Locutorio</cite>\u00A0: GAM",
+      "alt": {
+        "six-characters": "Six personnages en quête d’auteur, avec Gabriel dans le rôle de la Petite Fille\u00A0: sous une lumière bleue, une personne pousse la tête d’une autre vers une piscine gonflable jaune posée sur une table.",
+        "platonov": "Gabriel en Glagoliev dans Platonov, défilant sur scène pour montrer son costume\u00A0: cheveux blancs, grandes lunettes, tenue bordeaux, un drap tenu au-dessus de la tête.",
+        "locutorio": "Locutorio\u00A0: deux interprètes dans une boîte de verre éclairée, sur une scène sombre, leurs reflets multipliés.",
+        "signorina-giulia": "Signorina Giulia\u00A0: un ensemble en perruques blondes et costumes folkloriques entoure une personne cambrée en arrière."
       }
     }
   },
