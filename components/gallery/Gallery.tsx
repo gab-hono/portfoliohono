@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Dialog from "@/components/ui/Dialog";
+import ExternalLink from "@/components/ui/ExternalLink";
 import type { GalleryProject, GalleryProjectId } from "@/data/projects";
 
 type GalleryItem = GalleryProject & { id: GalleryProjectId };
@@ -14,6 +15,8 @@ type Props = {
     learnMore: string;
     credits: string;
     close: string;
+    /** Texto del link a la obra publicada. Opcional: THEATER no tiene links. */
+    watch?: string;
   };
 };
 
@@ -30,6 +33,8 @@ type Props = {
  * Los alts se leen en el pop-up, donde están todas las fotos.
  *
  * translatedTitle y credits valen "" cuando no aplican: esa línea no se muestra.
+ * El link a la obra (YouTube, etc.) aparece en el pop-up solo si el proyecto
+ * tiene `link` y la página pasa `labels.watch`.
  */
 
 /** Ancho y desplazamiento de cada tarjeta desde lg (se repite si hay más de 6). */
@@ -62,7 +67,7 @@ export default function Gallery({ projects, labels }: Props) {
 
       <ul className="grid gap-12 lg:grid-cols-12 lg:items-start lg:gap-x-8 lg:gap-y-16">
         {projects.map((project, index) => {
-          const { id, year, images } = project;
+          const { id, year, images, link } = project;
           const cover = images[0];
           const dialogTitleId = `dialog-${id}`;
 
@@ -129,6 +134,12 @@ export default function Gallery({ projects, labels }: Props) {
                     cite: (chunks) => <cite>{chunks}</cite>,
                   })}
                 </p>
+
+                {link && labels.watch && (
+                  <p className="text-body">
+                    <ExternalLink href={link}>{labels.watch}</ExternalLink>
+                  </p>
+                )}
 
                 {hasCredits && (
                   <p className="max-w-prose text-small">
