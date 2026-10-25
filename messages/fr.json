@@ -33,6 +33,14 @@
         "hover": "Technicien son pour le cinéma, les concerts et les installations artistiques."
       }
     },
+    "featured": {
+      "title": "projets phares",
+      "categories": {
+        "webApp": "Application web",
+        "performance": "Performance"
+      },
+      "portraitAlt": "Portrait de Gabriel en trame de points, rouge et bleu nuit, le regard tourné de côté."
+    },
     "about": {
       "title": "à propos",
       "p1": "J’ai grandi au <strong>Chili</strong> et je me suis installé en <strong>France</strong> à 27 ans, sans grande raison\u00A0: j’avais simplement envie de commencer une nouvelle vie.",

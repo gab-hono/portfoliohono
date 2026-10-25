@@ -33,6 +33,14 @@
         "hover": "Sound technician for film, concerts and art installations."
       }
     },
+    "featured": {
+      "title": "featured projects",
+      "categories": {
+        "webApp": "Web application",
+        "performance": "Performance"
+      },
+      "portraitAlt": "Halftone portrait of Gabriel in red and dark blue, looking to the side."
+    },
     "about": {
       "title": "about me",
       "p1": "I grew up in <strong>Chile</strong> and moved to <strong>France</strong> at 27, without any big reason: I just wanted to start a new life.",
