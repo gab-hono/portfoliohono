@@ -26,6 +26,22 @@ import onStage02 from "@/assets/images/theater/on-stage-02.jpg";
 import onStage03 from "@/assets/images/theater/on-stage-03.jpg";
 import onStage04 from "@/assets/images/theater/on-stage-04.jpg";
 
+import laMethode01 from "@/assets/images/sound/la-methode-01.png";
+import laMethode02 from "@/assets/images/sound/la-methode-02.png";
+import laMethode03 from "@/assets/images/sound/la-methode-03.jpg";
+import laMethode04 from "@/assets/images/sound/la-methode-04.jpg";
+import andi01 from "@/assets/images/sound/andi-01.jpg";
+import andi02 from "@/assets/images/sound/andi-02.jpg";
+import arenes01 from "@/assets/images/sound/les-arenes-lyriques-01.jpg";
+import arenes02 from "@/assets/images/sound/les-arenes-lyriques-02.jpg";
+import tuning01 from "@/assets/images/sound/tuning-of-the-afterworld-01.jpg";
+import tuning02 from "@/assets/images/sound/tuning-of-the-afterworld-02.jpg";
+import tuning03 from "@/assets/images/sound/tuning-of-the-afterworld-03.jpg";
+import tuning04 from "@/assets/images/sound/tuning-of-the-afterworld-04.jpg";
+import tuning05 from "@/assets/images/sound/tuning-of-the-afterworld-05.jpg";
+import contreRecits01 from "@/assets/images/sound/contre-recits-01.jpg";
+import contreRecits02 from "@/assets/images/sound/contre-recits-02.jpg";
+
 /*
  * Proyectos del portafolio.
  * Regla: aquí va la estructura (imágenes, links, año, stack).
@@ -186,5 +202,64 @@ export const theaterProjects = [
 
 export type TheaterProjectId = (typeof theaterProjects)[number]["id"];
 
-/** Ids de todos los proyectos de galería (SOUND se suma en su paso). */
-export type GalleryProjectId = TheaterProjectId;
+/** Orden de la galería SOUND (Ficha 2). Portada = archivo -01; fotos en el orden de su numeración. */
+export const soundProjects = [
+  {
+    id: "la-methode",
+    discipline: "sound",
+    year: "2025",
+    images: [
+      { src: laMethode01, alt: "title-card" },
+      { src: laMethode02, alt: "still" },
+      { src: laMethode03, alt: "boom" },
+      { src: laMethode04, alt: "score" },
+    ],
+  },
+  {
+    id: "andi",
+    discipline: "sound",
+    year: "2025",
+    images: [
+      { src: andi01, alt: "title-card" },
+      { src: andi02, alt: "clapperboard" },
+    ],
+    link: "https://www.youtube.com/watch?v=v0ziOqbi8f4",
+  },
+  {
+    id: "les-arenes-lyriques",
+    discipline: "sound",
+    year: "2024",
+    images: [
+      { src: arenes01, alt: "night" },
+      { src: arenes02, alt: "sound-desk" },
+    ],
+  },
+  {
+    id: "tuning-of-the-afterworld",
+    discipline: "sound",
+    year: "2025",
+    images: [
+      { src: tuning01, alt: "poster" },
+      { src: tuning02, alt: "kinetic" },
+      { src: tuning03, alt: "circuit" },
+      { src: tuning04, alt: "floor" },
+      { src: tuning05, alt: "overview" },
+    ],
+  },
+  {
+    id: "contre-recits",
+    discipline: "sound",
+    year: "2025",
+    images: [
+      { src: contreRecits01, alt: "set" },
+      { src: contreRecits02, alt: "recording" },
+    ],
+    // "é" codificada (%C3%A9): la URL funciona igual y no depende de cómo la trate cada navegador.
+    link: "https://www.youtube.com/@Contre-r%C3%A9cits",
+  },
+] as const satisfies readonly GalleryProject[];
+
+export type SoundProjectId = (typeof soundProjects)[number]["id"];
+
+/** Ids de todos los proyectos de galería. */
+export type GalleryProjectId = TheaterProjectId | SoundProjectId;

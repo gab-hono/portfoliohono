@@ -92,6 +92,30 @@
       "close": "Close"
     }
   },
+  "SoundPage": {
+    "metadata": {
+      "title": "Sound · Gabriel Hono",
+      "description": "Gabriel Hono’s sound work in France: location recording and mixing for film, live sound for concerts and sound art installations."
+    },
+    "sectionsNav": "On this page",
+    "journey": {
+      "title": "my journey",
+      "p1": "Sound came to me through performance: during the pandemic, with no bodies allowed on stage, it was the only way I found to reach an audience.",
+      "p2": "In France I trained as a sound technician at CIFACOM (BTS Audiovisuel, 2023–2025): choosing microphones, location recording, mixing. Along the way, I’ve recorded and mixed short films, assisted on live sound for an open-air opera festival, installed sound artworks in a gallery, and I now work concerts with Orchestre Hélios in Paris churches.",
+      "listen": {
+        "caption": "<cite>Caminamos mirando al cielo</cite> (2020–2022): the full audio of the sound walk, in Spanish.",
+        "playerTitle": "SoundCloud player: Caminamos mirando al cielo",
+        "link": "Listen on SoundCloud"
+      }
+    },
+    "projects": {
+      "title": "my projects",
+      "learnMore": "Learn more",
+      "credits": "Credits",
+      "close": "Close",
+      "watch": "Watch on YouTube"
+    }
+  },
   "Projects": {
     "labels": {
       "prototype": "Prototype"
@@ -233,6 +257,76 @@
         "platonov": "Gabriel as Glagolyev in Platonov, parading across the stage to show off the costume: white hair, large glasses, burgundy outfit, a sheet held overhead.",
         "locutorio": "Locutorio: two performers inside a lit glass box on a dark stage, their reflections multiplied in the glass.",
         "signorina-giulia": "Signorina Giulia: an ensemble in blond wigs and folk costumes surrounds a performer bending backwards."
+      }
+    },
+    "la-methode": {
+      "title": "La Méthode",
+      "translatedTitle": "",
+      "role": "Production sound mixer and re-recording mixer; music recording",
+      "place": "Short fiction, BTS final project, CIFACOM, Paris",
+      "hover": "A drama student, a monologue, and a blurred line between fiction and reality.",
+      "popup": "A short fiction about a drama student struggling with a monologue, playing with the line between reality and fiction. I recorded sound over three shooting days (an apartment, a park, a studio), then edited and mixed the film to broadcast delivery standards. I also art-directed and recorded the original score for viola da gamba, composed and played by Lukas Carrillo, combining a close and a distant microphone to capture both detail and depth.",
+      "credits": "Direction: Matthieu Misiraca · Sound: Gabriel Hono · Original music: Lukas Carrillo · Stills: Milo Scholtz",
+      "alt": {
+        "title-card": "Title card: La Méthode in red capitals on black.",
+        "still": "Film still: two performers face each other in front of a black curtain.",
+        "boom": "Shooting in a park: a boom operator holds the microphone over the actors, next to Gabriel, wearing headphones.",
+        "score": "Recording the score in a studio: a close and a distant microphone around a viola da gamba."
+      }
+    },
+    "andi": {
+      "title": "ANDI",
+      "translatedTitle": "",
+      "role": "Writer, director, sound recordist and mixer",
+      "place": "Short documentary portrait, CIFACOM, Paris",
+      "hover": "A documentary portrait built on one intimate interview.",
+      "popup": "A short documentary exploring Andi’s experience and identity through an intimate interview. I wrote and directed it, recorded the sound and mixed it. The challenge was an 11 m² room with heavy reverb: a boom and a lavalier mic on set, room tone recorded for post, then noise cleanup, phase alignment, EQ and a light reverb in Pro Tools. No music, no added ambiences: just Andi’s voice.",
+      "credits": "Writing, direction and sound: Gabriel Hono · Camera: Camille Konnert, Marco Tafolla · Editing: Zoé Perrier · Production: Lola Brisset, Abel Lukoki · Photos: Camille Konnert",
+      "alt": {
+        "title-card": "Title card of ANDI: the letters cut out over a shot of Andi in a knitted sweater.",
+        "clapperboard": "Andi smiles on set, holding a clapperboard marked “Portrait Andi – Interview”."
+      }
+    },
+    "les-arenes-lyriques": {
+      "title": "Les Arènes Lyriques",
+      "translatedTitle": "",
+      "role": "Sound assistant (internship)",
+      "place": "Open-air classical and opera festival, Arènes de Montmartre, Paris",
+      "hover": "Four weeks of open-air opera sound in Montmartre.",
+      "popup": "An open-air classical and opera festival in the Arènes de Montmartre. As assistant to sound engineer Zéphir Torres, I helped position and angle the PA, set the delay for the rear speakers, install the digital console, stage rack, amplifiers and wireless systems, then cable and line-check before every concert. Being outdoors, we often had to cover or strip everything down when rain came: four weeks that taught me how fast live sound has to adapt.",
+      "credits": "Festival director: Pierre Mollaret · Sound engineer: Zéphir Torres · Night photo: Les Arènes Lyriques",
+      "alt": {
+        "night": "Night concert in the Arènes de Montmartre: a performer in white at the microphone, and the audience packed on the steps under string lights.",
+        "sound-desk": "View from the sound desk under a tent: the digital console in the foreground, the audience on the stone steps and the orchestra in white on the round stage."
+      }
+    },
+    "tuning-of-the-afterworld": {
+      "title": "The Tuning of the Afterworld",
+      "translatedTitle": "",
+      "role": "Installation assistant",
+      "place": "Sound art exhibition, La Box gallery, ENSA Bourges",
+      "hover": "Helping sound artworks find their voice in a gallery.",
+      "popup": "A sound art exhibition at La Box, the gallery of the Bourges national art school. I assisted with the installation of the works: wiring the motors, programmable boards and MIDI control of Roxane Marquant’s kinetic objects, placing the pieces of Sonia Saroya and Édouard Sufrin’s <cite>Derniers Souffles</cite>, and watching Basile Richon assemble <cite>Réminiscence d’une mer</cite>, which turns tides engraved on aluminum discs into sound. It showed me sound as a sculptural material, far from film and concerts.",
+      "credits": "Curator: Fanny Testas · Artists: Roxane Marquant, Basile Richon, Sonia Saroya, Édouard Sufrin",
+      "alt": {
+        "poster": "Exhibition poster for The Tuning of the Afterworld: calligraphic title and line drawings over a marbled gray background.",
+        "kinetic": "Detail of a kinetic sculpture: an aluminum mast with a pulley wheel and stones hanging from threads, its shadow on the wall.",
+        "circuit": "Close-up of a red wall box: through its window, brass wires link resistors, a capacitor and a transistor.",
+        "floor": "An installation on the gallery floor: cinder blocks, rubble, branches and two glass bottles on a pool of crushed glass.",
+        "overview": "Wide view of the exhibition: aluminum masts held by white cords anchored to stones, a spotlit pile of rubble, a red wall box and a horn loudspeaker on the floor."
+      }
+    },
+    "contre-recits": {
+      "title": "Contre-récits",
+      "translatedTitle": "",
+      "role": "Sound recordist",
+      "place": "Video podcast created by Lucie Hage",
+      "hover": "A video podcast that sets official history against the memories of those who lived it.",
+      "popup": "A video podcast created by Lucie Hage that sets official history against personal memories. I was the sound recordist on both episodes, from preparing the equipment to recording on set.",
+      "credits": "Created by Lucie Hage · Sound: Gabriel Hono · Photos: Contre-récits",
+      "alt": {
+        "set": "The Contre-récits set: two armchairs draped in white sheets, softbox lights and microphones on stands, with the title in red.",
+        "recording": "Recording an episode in a loft with tall windows: guests on sofas and armchairs speak into microphones while Gabriel adjusts a mic stand, in front of a camera."
       }
     }
   },

@@ -92,6 +92,30 @@
       "close": "Fermer"
     }
   },
+  "SoundPage": {
+    "metadata": {
+      "title": "Son · Gabriel Hono",
+      "description": "Le travail son de Gabriel Hono en France\u00A0: prise de son et mixage pour le cinéma, sonorisation de concerts et installations d’art sonore."
+    },
+    "sectionsNav": "Sur cette page",
+    "journey": {
+      "title": "mon parcours",
+      "p1": "Le son est arrivé par la performance\u00A0: pendant la pandémie, sans corps autorisés sur scène, c’était le seul moyen que j’avais trouvé pour atteindre le public.",
+      "p2": "En France, je me suis formé comme technicien son à CIFACOM (BTS Audiovisuel, 2023–2025)\u00A0: choix des micros, prise de son, mixage. En chemin, j’ai enregistré et mixé des courts-métrages, assisté la sonorisation d’un festival lyrique en plein air, installé des œuvres sonores dans une galerie, et je travaille aujourd’hui sur les concerts de l’Orchestre Hélios dans des églises parisiennes.",
+      "listen": {
+        "caption": "<cite>Caminamos mirando al cielo</cite> (2020–2022)\u00A0: l’audio intégral de la déambulation sonore, en espagnol.",
+        "playerTitle": "Lecteur SoundCloud\u00A0: Caminamos mirando al cielo",
+        "link": "Écouter sur SoundCloud"
+      }
+    },
+    "projects": {
+      "title": "mes projets",
+      "learnMore": "En savoir plus",
+      "credits": "Crédits",
+      "close": "Fermer",
+      "watch": "Voir sur YouTube"
+    }
+  },
   "Projects": {
     "labels": {
       "prototype": "Prototype"
@@ -233,6 +257,76 @@
         "platonov": "Gabriel en Glagoliev dans Platonov, défilant sur scène pour montrer son costume\u00A0: cheveux blancs, grandes lunettes, tenue bordeaux, un drap tenu au-dessus de la tête.",
         "locutorio": "Locutorio\u00A0: deux interprètes dans une boîte de verre éclairée, sur une scène sombre, leurs reflets multipliés.",
         "signorina-giulia": "Signorina Giulia\u00A0: un ensemble en perruques blondes et costumes folkloriques entoure une personne cambrée en arrière."
+      }
+    },
+    "la-methode": {
+      "title": "La Méthode",
+      "translatedTitle": "",
+      "role": "Chef opérateur son et mixeur\u00A0; enregistrement de la musique",
+      "place": "Court-métrage de fiction, projet de fin de BTS, CIFACOM, Paris",
+      "hover": "Une étudiante en théâtre, un monologue, et une frontière floue entre fiction et réalité.",
+      "popup": "Un court-métrage de fiction sur une étudiante en théâtre aux prises avec un monologue, qui joue avec la frontière entre réalité et fiction. J’ai assuré la prise de son sur trois jours de tournage (un appartement, un parc, un plateau), puis le montage son et le mixage du film aux normes de diffusion. J’ai aussi assuré la direction artistique et l’enregistrement de la musique originale pour viole de gambe, composée et jouée par Lukas Carrillo, en combinant un micro proche et un micro éloigné pour capter à la fois le détail et la profondeur.",
+      "credits": "Réalisation\u00A0: Matthieu Misiraca · Son\u00A0: Gabriel Hono · Musique originale\u00A0: Lukas Carrillo · Photogrammes\u00A0: Milo Scholtz",
+      "alt": {
+        "title-card": "Carton-titre\u00A0: La Méthode en capitales rouges sur fond noir.",
+        "still": "Photogramme\u00A0: deux interprètes face à face devant un rideau noir.",
+        "boom": "Tournage dans un parc\u00A0: la perche est tenue au-dessus des interprètes, à côté de Gabriel, casque sur les oreilles.",
+        "score": "Enregistrement de la musique en studio\u00A0: un micro proche et un micro éloigné autour d’une viole de gambe."
+      }
+    },
+    "andi": {
+      "title": "ANDI",
+      "translatedTitle": "",
+      "role": "Écriture, réalisation, prise de son et mixage",
+      "place": "Portrait documentaire, CIFACOM, Paris",
+      "hover": "Un portrait documentaire construit autour d’un seul entretien intime.",
+      "popup": "Un court documentaire qui explore l’expérience et l’identité d’Andi à travers un entretien intime. Je l’ai écrit et réalisé, j’ai fait la prise de son et le mixage. Le défi\u00A0: une pièce de 11\u00A0m² très réverbérante. Une perche et un micro-cravate au tournage, des silences plateau pour la postproduction, puis nettoyage, alignement de phase, égalisation et une légère réverbération sous Pro Tools. Ni musique, ni ambiances ajoutées\u00A0: seulement la voix d’Andi.",
+      "credits": "Écriture, réalisation et son\u00A0: Gabriel Hono · Image\u00A0: Camille Konnert, Marco Tafolla · Montage\u00A0: Zoé Perrier · Production\u00A0: Lola Brisset, Abel Lukoki · Photos\u00A0: Camille Konnert",
+      "alt": {
+        "title-card": "Carton-titre d’ANDI\u00A0: les lettres découpées sur un plan d’Andi en pull en maille.",
+        "clapperboard": "Andi sourit sur le tournage, un clap à la main marqué «\u00A0Portrait Andi – Interview\u00A0»."
+      }
+    },
+    "les-arenes-lyriques": {
+      "title": "Les Arènes Lyriques",
+      "translatedTitle": "",
+      "role": "Assistant son (stage)",
+      "place": "Festival de musique classique et lyrique en plein air, Arènes de Montmartre, Paris",
+      "hover": "Quatre semaines de son lyrique en plein air à Montmartre.",
+      "popup": "Un festival de musique classique et lyrique en plein air, dans les Arènes de Montmartre. Assistant de l’ingénieur du son Zéphir Torres, j’ai participé au placement et à l’orientation de la diffusion, au réglage du délai des rappels, à l’installation de la console numérique, du rack de scène, des amplificateurs et des systèmes HF, puis au câblage et au line check avant chaque concert. En plein air, il fallait souvent tout bâcher ou tout démonter à l’arrivée de la pluie\u00A0: quatre semaines qui m’ont appris à quel point le son live doit savoir s’adapter.",
+      "credits": "Direction du festival\u00A0: Pierre Mollaret · Ingénieur du son\u00A0: Zéphir Torres · Photo de nuit\u00A0: Les Arènes Lyriques",
+      "alt": {
+        "night": "Concert de nuit aux Arènes de Montmartre\u00A0: une personne en blanc au micro, et le public serré sur les gradins sous des guirlandes lumineuses.",
+        "sound-desk": "Vue depuis la régie, sous une tente\u00A0: la console numérique au premier plan, le public sur les gradins de pierre et l’orchestre en blanc sur la scène ronde."
+      }
+    },
+    "tuning-of-the-afterworld": {
+      "title": "The Tuning of the Afterworld",
+      "translatedTitle": "",
+      "role": "Assistant d’installation",
+      "place": "Exposition d’art sonore, galerie La Box, ENSA Bourges",
+      "hover": "Aider des œuvres sonores à trouver leur voix dans une galerie.",
+      "popup": "Une exposition d’art sonore à La Box, la galerie de l’École nationale supérieure d’art de Bourges. J’ai assisté l’installation des œuvres\u00A0: câblage des moteurs, des cartes programmables et du contrôle MIDI des objets cinétiques de Roxane Marquant, placement des éléments de <cite>Derniers Souffles</cite> de Sonia Saroya et Édouard Sufrin, et observation du montage de <cite>Réminiscence d’une mer</cite> de Basile Richon, qui transforme en son des marées gravées sur des disques d’aluminium. Elle m’a montré le son comme une matière sculpturale, loin du cinéma et des concerts.",
+      "credits": "Commissariat\u00A0: Fanny Testas · Artistes\u00A0: Roxane Marquant, Basile Richon, Sonia Saroya, Édouard Sufrin",
+      "alt": {
+        "poster": "Affiche de l’exposition The Tuning of the Afterworld\u00A0: titre calligraphié et dessins au trait sur un fond gris marbré.",
+        "kinetic": "Détail d’une sculpture cinétique\u00A0: un mât en aluminium avec une poulie et des pierres suspendues à des fils, son ombre sur le mur.",
+        "circuit": "Gros plan sur un boîtier mural rouge\u00A0: par sa fenêtre, des fils de laiton relient résistances, condensateur et transistor.",
+        "floor": "Une installation au sol de la galerie\u00A0: parpaings, gravats, branches et deux bouteilles en verre sur une flaque de verre pilé.",
+        "overview": "Vue d’ensemble de l’exposition\u00A0: des mâts en aluminium tenus par des cordes blanches lestées de pierres, des gravats sous un projecteur, un boîtier mural rouge et un haut-parleur à pavillon au sol."
+      }
+    },
+    "contre-recits": {
+      "title": "Contre-récits",
+      "translatedTitle": "",
+      "role": "Chef opérateur son",
+      "place": "Podcast vidéo créé par Lucie Hage",
+      "hover": "Un podcast vidéo qui oppose à l’histoire officielle les souvenirs de celles et ceux qui l’ont vécue.",
+      "popup": "Un podcast vidéo créé par Lucie Hage, qui oppose à l’histoire officielle les mémoires individuelles. J’ai assuré la prise de son des deux épisodes, de la préparation du matériel à l’enregistrement pendant le tournage.",
+      "credits": "Création\u00A0: Lucie Hage · Son\u00A0: Gabriel Hono · Photos\u00A0: Contre-récits",
+      "alt": {
+        "set": "Le plateau de Contre-récits\u00A0: deux fauteuils drapés de blanc, des softbox et des micros sur pied, avec le titre en rouge.",
+        "recording": "Enregistrement d’un épisode dans un loft aux grandes fenêtres\u00A0: les invité·es parlent dans des micros pendant que Gabriel ajuste un pied de micro, devant une caméra."
       }
     }
   },
