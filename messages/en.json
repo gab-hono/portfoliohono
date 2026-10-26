@@ -50,7 +50,33 @@
     },
     "contact": {
       "title": "let’s talk!",
-      "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)"
+      "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)",
+      "requiredNote": "Fields marked * are required.",
+      "fields": {
+        "name": "name",
+        "pronouns": "pronouns",
+        "email": "e-mail",
+        "type": "type of collaboration",
+        "message": "message"
+      },
+      "typeOptions": {
+        "placeholder": "Choose an option",
+        "job": "Job / alternance / CDI",
+        "portfolio": "Web portfolio",
+        "webProject": "Web project",
+        "artistic": "Artistic collaboration",
+        "other": "Other"
+      },
+      "submit": "Send",
+      "sending": "Sending…",
+      "success": "Thanks! Your message has been sent. I’ll get back to you soon.",
+      "error": "Something went wrong and your message wasn’t sent. Please try again in a few minutes.",
+      "errors": {
+        "required": "This field is required.",
+        "invalidEmail": "Enter a valid e-mail address, e.g. name@example.com.",
+        "tooLong": "Your message is too long (5,000 characters max)."
+      },
+      "privacy": "Your details are only used to reply to your message."
     }
   },
   "DevPage": {

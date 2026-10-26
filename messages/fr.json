@@ -50,7 +50,33 @@
     },
     "contact": {
       "title": "parlons-en\u00A0!",
-      "text": "Vous avez un projet où je pourrais vous être utile\u00A0? Remplissez le formulaire et parlons-en :)"
+      "text": "Vous avez un projet où je pourrais vous être utile\u00A0? Remplissez le formulaire et parlons-en :)",
+      "requiredNote": "Les champs marqués * sont obligatoires.",
+      "fields": {
+        "name": "nom",
+        "pronouns": "pronoms",
+        "email": "e-mail",
+        "type": "type de collaboration",
+        "message": "message"
+      },
+      "typeOptions": {
+        "placeholder": "Choisissez une option",
+        "job": "Job / alternance / CDI",
+        "portfolio": "Portfolio web",
+        "webProject": "Projet web",
+        "artistic": "Collaboration artistique",
+        "other": "Autre"
+      },
+      "submit": "Envoyer",
+      "sending": "Envoi en cours…",
+      "success": "Merci\u00A0! Votre message a bien été envoyé. Je vous réponds très vite.",
+      "error": "Une erreur est survenue et votre message n’a pas été envoyé. Réessayez dans quelques minutes.",
+      "errors": {
+        "required": "Ce champ est obligatoire.",
+        "invalidEmail": "Saisissez une adresse e-mail valide, par exemple nom@exemple.com.",
+        "tooLong": "Votre message est trop long (5\u00A0000 caractères maximum)."
+      },
+      "privacy": "Vos données servent uniquement à répondre à votre message."
     }
   },
   "DevPage": {
