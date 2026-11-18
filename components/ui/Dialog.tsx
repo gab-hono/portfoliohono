@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type MouseEvent, type ReactNode } from "react";
+import { useEffect, useRef, type MouseEvent, type ReactNode } from "react";
 
 type Props = {
   /** Contenido del botón que abre el pop-up (texto o imagen). */
@@ -10,8 +10,13 @@ type Props = {
   closeLabel: string;
   /** id del título dentro del contenido: da nombre al pop-up. */
   titleId: string;
+  /** id del proyecto: con ?project=<deepLinkId> en la URL, el pop-up se abre al cargar. */
+  deepLinkId: string;
   children: ReactNode;
 };
+
+/** Parámetro de la URL que abre un pop-up al cargar (links de la home). */
+const DEEP_LINK_PARAM = "project";
 
 /*
  * Pop-up con <dialog> nativo + showModal():
@@ -23,10 +28,44 @@ type Props = {
  * y un clic dentro del contenido nunca tiene como destino el <dialog>.
  * Componente de cliente solo por showModal(); el contenido (children)
  * se arma en el servidor.
- * Lo usan los proyectos DEV y, después, las galerías THEATER y SOUND.
+ * Lo usan los proyectos DEV y las galerías THEATER y SOUND.
+ *
+ * Deep link (?project=<id>):
+ * - Se lee window.location en un efecto, no useSearchParams(): así las
+ *   páginas siguen siendo estáticas (useSearchParams obligaría a un
+ *   <Suspense> y a renderizar esa parte en el cliente).
+ * - Antes de abrir se enfoca el botón: la página baja hasta el proyecto,
+ *   y al cerrar el foco vuelve ahí (sin esto volvería a <body>, arriba).
+ * - Al cerrar se quita el parámetro de la URL (replaceState: no crea una
+ *   entrada en el historial). Recargar ya no reabre el pop-up.
+ * - Un id que no existe no abre nada: la página se ve normal.
  */
-export default function Dialog({ trigger, triggerClassName = "", closeLabel, titleId, children }: Props) {
+export default function Dialog({ trigger, triggerClassName = "", closeLabel, titleId, deepLinkId, children }: Props) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get(DEEP_LINK_PARAM) !== deepLinkId) return;
+
+    function removeParam() {
+      const url = new URL(window.location.href);
+      url.searchParams.delete(DEEP_LINK_PARAM);
+      window.history.replaceState(window.history.state, "", url);
+    }
+
+    dialog.addEventListener("close", removeParam, { once: true });
+    // open: en desarrollo, React ejecuta el efecto dos veces (Strict Mode).
+    if (!dialog.open) {
+      triggerRef.current?.focus();
+      dialog.showModal();
+    }
+
+    return () => dialog.removeEventListener("close", removeParam);
+  }, [deepLinkId]);
 
   function handleDialogClick(event: MouseEvent<HTMLDialogElement>) {
     if (event.target === event.currentTarget) event.currentTarget.close();
@@ -35,6 +74,7 @@ export default function Dialog({ trigger, triggerClassName = "", closeLabel, tit
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => dialogRef.current?.showModal()}
         className={`cursor-pointer ${triggerClassName}`}

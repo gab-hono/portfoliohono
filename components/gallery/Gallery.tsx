@@ -27,6 +27,7 @@ type Props = {
  * lectura es claro (lección de la constelación). Móvil: una columna.
  *
  * Cada tarjeta es el botón que abre el pop-up (Dialog).
+ * /theater?project=<id> (o /sound) abre ese pop-up al cargar (deep link desde la home).
  * Preview: con hover (o foco de teclado), el texto aparece sobre la imagen.
  * En pantallas táctiles (hover: none) va siempre visible, debajo.
  * La imagen de la tarjeta lleva alt="": el nombre del botón lo da el texto.
@@ -104,6 +105,7 @@ export default function Gallery({ projects, labels }: Props) {
                 triggerClassName="group relative block w-full text-left"
                 closeLabel={labels.close}
                 titleId={dialogTitleId}
+                deepLinkId={id}
               >
                 <div className="flex flex-col gap-1">
                   <SectionTitle id={dialogTitleId}>{t(`${id}.title`)}</SectionTitle>

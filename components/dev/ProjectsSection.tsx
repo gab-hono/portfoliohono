@@ -12,6 +12,7 @@ import { devProjects } from "@/data/projects";
  * Imagen de borde a borde, en su proporción real (sin recorte).
  * Cada proyecto es un <article> nombrado por su <h3> (aria-labelledby).
  * "Learn more" abre un pop-up (Dialog) con las imágenes y las 4 secciones.
+ * /dev?project=<id> abre ese pop-up al cargar (deep link desde la home).
  * Título visible en móvil; desde lg solo para lectores de pantalla.
  */
 
@@ -94,6 +95,7 @@ export default function ProjectsSection() {
                     triggerClassName={linkLikeClasses}
                     closeLabel={tPage("close")}
                     titleId={dialogTitleId}
+                    deepLinkId={id}
                   >
                     <SectionTitle id={dialogTitleId}>{t(`${id}.title`)}</SectionTitle>
 

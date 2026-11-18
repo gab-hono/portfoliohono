@@ -7,7 +7,8 @@ import { devProjects, theaterProjects, soundProjects } from "./projects";
  *
  * Dos tipos de fila:
  * - project: un proyecto que existe en projects.ts. Año y disciplina salen de ahí;
- *   un id que no existe rompe el build.
+ *   un id que no existe rompe el build. El link abre su pop-up en la página
+ *   de la disciplina (/dev?project=mapiscine).
  * - external: un trabajo sin página en el sitio (enlaza afuera). Año, disciplina
  *   y URL van aquí.
  *
@@ -60,7 +61,7 @@ export type SelectionEntry = {
   discipline: Discipline;
   /** "2026" o un rango: "2017–2019" */
   year: string;
-  /** Página de la disciplina (interno) o URL completa (externo). */
+  /** Página de la disciplina con ?project=<id> (interno) o URL completa (externo). */
   href: string;
   external: boolean;
 };
@@ -72,12 +73,12 @@ export const selection: readonly SelectionEntry[] = entries.map((entry) => {
   const project = allProjects.find((p) => p.id === entry.id);
   // No puede pasar (los ids están tipados), pero find() devuelve "| undefined".
   if (!project) throw new Error(`Selection project not found: ${entry.id}`);
-  // Etapa 2 (deep links): aquí se añade ?project=<id> para abrir el diálogo.
   return {
     id: entry.id,
     discipline: project.discipline,
     year: project.year,
-    href: `/${project.discipline}`,
+    // ?project=<id> abre el pop-up del proyecto al cargar la página (ver Dialog.tsx).
+    href: `/${project.discipline}?project=${entry.id}`,
     external: false,
   };
 });
