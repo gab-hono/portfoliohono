@@ -41,6 +41,80 @@
       },
       "portraitAlt": "Halftone portrait of Gabriel in red and dark blue, looking to the side."
     },
+    "selection": {
+      "eyebrow": "2015 – today",
+      "title": "Selected work",
+      "filtersLabel": "Filter by discipline",
+      "disciplines": {
+        "all": "All",
+        "dev": "Code",
+        "theater": "Theater",
+        "sound": "Sound"
+      },
+      "offList": "Also, off this list: <film>Allow to See</film>, a self-taught animated short (2021), and <fanzine>a fanzine on dismantling patriarchy in artistic practice</fanzine>, co-created with Valentina Inostroza, which I illustrated (2021).",
+      "rows": {
+        "nicola": {
+          "title": "Nícola Vilander-Gajardo",
+          "role": "One-page portfolio: design, development, deployment",
+          "context": "Client project"
+        },
+        "unvrs": {
+          "title": "UNVRS Agency platform",
+          "role": "Database design and onboarding archetype engine, first phase",
+          "context": "Internship"
+        },
+        "mapiscine": {
+          "title": "MaPiscine",
+          "role": "Full-stack web app, solo",
+          "context": "Ada Tech School certification project"
+        },
+        "cityson": {
+          "title": "CitySon",
+          "role": "Participatory sound map, prototype",
+          "context": "Personal project"
+        },
+        "contre-recits": {
+          "title": "Contre-récits",
+          "role": "Sound recordist",
+          "context": "Video podcast, Paris"
+        },
+        "la-methode": {
+          "title": "La Méthode",
+          "role": "Location sound and mix",
+          "context": "Short film, Paris"
+        },
+        "andi": {
+          "title": "ANDI",
+          "role": "Writer, director, sound",
+          "context": "Short film, Paris"
+        },
+        "les-arenes-lyriques": {
+          "title": "Les Arènes Lyriques",
+          "role": "Live sound assistant, internship",
+          "context": "Open-air opera festival, Montmartre"
+        },
+        "caminamos": {
+          "title": "Caminamos mirando al cielo",
+          "role": "Creation, direction, production",
+          "context": "Sound walk, Santiago"
+        },
+        "todo-bajo-control": {
+          "title": "Todo bajo control",
+          "role": "Assistant director",
+          "context": "Play on tour, Santiago"
+        },
+        "animales-binarios": {
+          "title": "Animales binarios",
+          "role": "Director and producer",
+          "context": "Play, Santiago"
+        },
+        "festival-juan-radrigan": {
+          "title": "Festival Juan Radrigán",
+          "role": "Production team, 3 editions",
+          "context": "Playwriting festival, Santiago"
+        }
+      }
+    },
     "about": {
       "title": "about me",
       "p1": "I grew up in <strong>Chile</strong> and moved to <strong>France</strong> at 27, without any big reason: I just wanted to start a new life.",

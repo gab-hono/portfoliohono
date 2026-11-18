@@ -41,6 +41,80 @@
       },
       "portraitAlt": "Portrait de Gabriel en trame de points, rouge et bleu nuit, le regard tourné de côté."
     },
+    "selection": {
+      "eyebrow": "2015 – aujourd’hui",
+      "title": "Projets choisis",
+      "filtersLabel": "Filtrer par discipline",
+      "disciplines": {
+        "all": "Tout",
+        "dev": "Code",
+        "theater": "Théâtre",
+        "sound": "Son"
+      },
+      "offList": "Hors liste : <film>Allow to See</film>, un court-métrage d’animation réalisé en autodidacte (2021), et <fanzine>un fanzine pour dépatriarcaliser la pratique artistique</fanzine>, co-créé avec Valentina Inostroza, dont j’ai dessiné les illustrations (2021).",
+      "rows": {
+        "nicola": {
+          "title": "Nícola Vilander-Gajardo",
+          "role": "Portfolio d’une page : conception, développement, déploiement",
+          "context": "Projet client"
+        },
+        "unvrs": {
+          "title": "Plateforme UNVRS Agency",
+          "role": "Conception de la base de données et moteur d’archétypes de l’onboarding, première phase",
+          "context": "Stage"
+        },
+        "mapiscine": {
+          "title": "MaPiscine",
+          "role": "Application web full stack, en solo",
+          "context": "Projet de certification, Ada Tech School"
+        },
+        "cityson": {
+          "title": "CitySon",
+          "role": "Carte sonore participative, prototype",
+          "context": "Projet personnel"
+        },
+        "contre-recits": {
+          "title": "Contre-récits",
+          "role": "Chef opérateur son",
+          "context": "Podcast vidéo, Paris"
+        },
+        "la-methode": {
+          "title": "La Méthode",
+          "role": "Prise de son et mixage",
+          "context": "Court-métrage, Paris"
+        },
+        "andi": {
+          "title": "ANDI",
+          "role": "Écriture, réalisation, son",
+          "context": "Court-métrage, Paris"
+        },
+        "les-arenes-lyriques": {
+          "title": "Les Arènes Lyriques",
+          "role": "Assistant son, stage",
+          "context": "Festival lyrique en plein air, Montmartre"
+        },
+        "caminamos": {
+          "title": "Caminamos mirando al cielo",
+          "role": "Création, mise en scène, production",
+          "context": "Déambulation sonore, Santiago"
+        },
+        "todo-bajo-control": {
+          "title": "Todo bajo control",
+          "role": "Assistant à la mise en scène",
+          "context": "Pièce en tournée, Santiago"
+        },
+        "animales-binarios": {
+          "title": "Animales binarios",
+          "role": "Mise en scène et production",
+          "context": "Pièce, Santiago"
+        },
+        "festival-juan-radrigan": {
+          "title": "Festival Juan Radrigán",
+          "role": "Équipe de production, 3 éditions",
+          "context": "Festival de dramaturgie, Santiago"
+        }
+      }
+    },
     "about": {
       "title": "à propos",
       "p1": "J’ai grandi au <strong>Chili</strong> et je me suis installé en <strong>France</strong> à 27 ans, sans grande raison\u00A0: j’avais simplement envie de commencer une nouvelle vie.",
