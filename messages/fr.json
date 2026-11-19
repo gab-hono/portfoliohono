@@ -14,18 +14,17 @@
     "switchDiscipline": "{current}, changer de discipline"
   },
   "Home": {
-    "intro": "Salut\u00A0! Je suis Gabriel, je vis et travaille à Paris, et voici mes disciplines\u00A0:",
-    "mainProjects": "Projets principaux\u00A0:",
+    "intro": "Artiste interdisciplinaire et développeur, basé à Paris",
     "disciplines": {
       "dev": {
         "label": "développement web",
         "srLabel": "Développement web",
-        "hover": "Développeur web full stack\u00A0: TypeScript, React, Next.js, Express."
+        "hover": "Développeur web full stack\u00A0: TypeScript, React, Next.js, Node.js."
       },
       "theater": {
         "label": "théâtre / performance",
         "srLabel": "Théâtre et performance",
-        "hover": "Acteur, metteur en scène et producteur. Le théâtre et les arts sont ma manière de comprendre l’expérience humaine."
+        "hover": "Acteur, metteur en scène et producteur, formé au Chili."
       },
       "sound": {
         "label": "son",

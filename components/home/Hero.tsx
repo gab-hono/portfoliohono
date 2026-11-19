@@ -23,15 +23,16 @@ export default function Hero() {
       className="relative mt-[calc(var(--header-height)*-1)] grid min-h-dvh grid-rows-[1fr_auto] gap-8 bg-theme px-4 pt-(--header-height) pb-8 text-foreground sm:gap-12 sm:px-8 sm:pb-16"
     >
       {/* Frase y textos del hover en la misma celda: uno reemplaza al otro.
-          En pantallas táctiles los textos del hover no existen en el layout (ver globals.css).
-          La frase es más ancha que los textos del hover: 2 líneas en desktop, como la maqueta;
-          los textos del hover, más chicos, se leen mejor en líneas más cortas. */}
+          En pantallas táctiles los textos del hover no existen en el layout (ver globals.css):
+          un toque en una disciplina navega directo a su página.
+          Sin link dentro del texto del hover: solo existe mientras el mouse está sobre
+          el óvalo, así que sería inalcanzable. El óvalo ya es el link. */}
       <div className="grid items-center">
         <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-6xl text-display ${fade}`}>
           {t("intro")}
         </h1>
 
-        {disciplines.map(({ slug, projects }) => (
+        {disciplines.map(({ slug }) => (
           <p
             key={slug}
             id={`hover-${slug}`}
@@ -39,9 +40,6 @@ export default function Hero() {
             className="col-start-1 row-start-1 max-w-4xl text-title"
           >
             {t(`disciplines.${slug}.hover`)}
-            <span className="mt-4 block">
-              {t("mainProjects")} {projects.join(", ")}
-            </span>
           </p>
         ))}
       </div>

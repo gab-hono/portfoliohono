@@ -14,18 +14,17 @@
     "switchDiscipline": "{current}, switch discipline"
   },
   "Home": {
-    "intro": "Hi! I’m Gabriel, I live and work in Paris, and these are my main disciplines:",
-    "mainProjects": "Main projects:",
+    "intro": "Interdisciplinary artist and coder, based in Paris",
     "disciplines": {
       "dev": {
         "label": "web development",
         "srLabel": "Web development",
-        "hover": "Full-stack web developer: TypeScript, React, Next.js, Express."
+        "hover": "Full-stack web developer: TypeScript, React, Next.js, Node.js."
       },
       "theater": {
         "label": "theater / performance",
         "srLabel": "Theater and performance",
-        "hover": "Actor, director and producer. Theater and the arts are my way of understanding human experience."
+        "hover": "Actor, director and producer, trained in Chile."
       },
       "sound": {
         "label": "sound",
