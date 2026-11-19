@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Oval from "@/components/ui/Oval";
 import { disciplines } from "@/data/disciplines";
+import portrait from "@/assets/images/home/portrait-bw.jpg";
 
 const fade = "motion-safe:transition-opacity motion-safe:duration-400";
 
@@ -13,6 +15,12 @@ const fade = "motion-safe:transition-opacity motion-safe:duration-400";
  * data-hero: globals.css le da el tema lima, y el de la disciplina en hover o
  * focus (el header sobre el hero lo copia). bg-theme y no bg-(--background):
  * trae el fundido de color y el gradiente rojo de THEATER, recortado al hero.
+ *
+ * Retrato (como la maqueta): en móvil, franja de 150 px dentro de los márgenes;
+ * desde sm, banner de ancho completo (-mx-8 anula el padding lateral del hero)
+ * de 20rem, pero nunca más del 30 % de la altura de la pantalla (laptops bajas).
+ * Se desvanece con el hover de una disciplina (globals.css, [data-hero-banner]).
+ * preload: está arriba de la página, es probablemente lo primero grande que se ve.
  */
 export default function Hero() {
   const t = useTranslations("Home");
@@ -20,8 +28,23 @@ export default function Hero() {
   return (
     <section
       data-hero
-      className="relative mt-[calc(var(--header-height)*-1)] grid min-h-dvh grid-rows-[1fr_auto] gap-8 bg-theme px-4 pt-(--header-height) pb-8 text-foreground sm:gap-12 sm:px-8 sm:pb-16"
+      className="relative mt-[calc(var(--header-height)*-1)] grid min-h-dvh grid-rows-[auto_1fr_auto] gap-8 bg-theme px-4 pt-(--header-height) pb-8 text-foreground sm:gap-12 sm:px-8 sm:pb-16"
     >
+      <div
+        data-hero-banner
+        className={`relative h-[150px] overflow-hidden rounded-sm sm:-mx-8 sm:h-[min(20rem,30svh)] sm:rounded-none ${fade}`}
+      >
+        <Image
+          src={portrait}
+          alt={t("portraitBannerAlt")}
+          fill
+          preload
+          placeholder="blur"
+          sizes="100vw"
+          className="object-cover object-[40%_45%]"
+        />
+      </div>
+
       {/* Frase y textos del hover en la misma celda: uno reemplaza al otro.
           En pantallas táctiles los textos del hover no existen en el layout (ver globals.css):
           un toque en una disciplina navega directo a su página.

@@ -162,9 +162,11 @@ body {
 /* Switcher de la home.
    En hover o focus de una disciplina: la frase y las otras disciplinas se desvanecen,
    y aparece el texto de la disciplina activa en el lugar de la frase.
+   El retrato del hero también se desvanece: el color de la disciplina ocupa el hero.
    Solo cambia la opacidad: nada se mueve, así el hover no se pierde. */
 [data-theme="home"]:has([data-discipline]:is(:hover, :focus-visible)) {
   [data-hero-intro],
+  [data-hero-banner],
   [data-discipline]:not(:hover, :focus-visible) {
     opacity: 0;
   }

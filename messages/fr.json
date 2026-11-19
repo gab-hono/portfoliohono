@@ -15,6 +15,7 @@
   },
   "Home": {
     "intro": "Artiste interdisciplinaire et développeur, basé à Paris",
+    "portraitBannerAlt": "Portrait en noir et blanc de Gabriel, de profil, les yeux fermés.",
     "disciplines": {
       "dev": {
         "label": "développement web",
