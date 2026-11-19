@@ -11,7 +11,10 @@ const fade = "motion-safe:transition-opacity motion-safe:duration-400";
  * El hero sube bajo el header (margen negativo de una altura de header) y
  * compensa con el mismo padding arriba: así el header transparente de la home
  * deja ver el fondo del hero, sea cual sea (ver StickyHeader.tsx).
- * min-h-dvh: con el header incluido, el hero sigue ocupando una pantalla.
+ * Altura: en móvil y tablet, la de su contenido (gap regular): una pantalla
+ * completa con poco contenido dejaba huecos y un "falso final" (no se asomaba
+ * nada de lo que sigue). Desde lg, min-h-dvh: con el header incluido, el hero
+ * ocupa una pantalla y la fila central (1fr) reparte el espacio.
  * data-hero: globals.css le da el tema lima, y el de la disciplina en hover o
  * focus (el header sobre el hero lo copia). bg-theme y no bg-(--background):
  * trae el fundido de color y el gradiente rojo de THEATER, recortado al hero.
@@ -28,7 +31,7 @@ export default function Hero() {
   return (
     <section
       data-hero
-      className="relative mt-[calc(var(--header-height)*-1)] grid min-h-dvh grid-rows-[auto_1fr_auto] gap-8 bg-theme px-4 pt-(--header-height) pb-8 text-foreground sm:gap-12 sm:px-8 sm:pb-16"
+      className="relative mt-[calc(var(--header-height)*-1)] grid gap-8 lg:min-h-dvh lg:grid-rows-[auto_1fr_auto] bg-theme px-4 pt-(--header-height) pb-8 text-foreground sm:gap-12 sm:px-8 sm:pb-16"
     >
       <div
         data-hero-banner
@@ -67,7 +70,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <ul className="flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:justify-around sm:gap-10">
+      <ul className="flex flex-col items-center gap-2 sm:flex-row sm:flex-wrap sm:justify-around sm:gap-10">
         {disciplines.map(({ slug, href }) => (
           <li key={slug}>
             <Link
