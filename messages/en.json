@@ -16,6 +16,13 @@
   "Home": {
     "intro": "Interdisciplinary artist and coder, based in Paris",
     "portraitBannerAlt": "Black and white portrait of Gabriel in profile, eyes closed.",
+    "listen": {
+      "label": "Listen",
+      "subtitle": "Site-specific sound walk · Santiago, 2020–2022 · full audio, in Spanish",
+      "play": "Play Caminamos mirando al cielo",
+      "note": "Loads the SoundCloud player",
+      "link": "Listen on SoundCloud"
+    },
     "disciplines": {
       "dev": {
         "label": "web development",

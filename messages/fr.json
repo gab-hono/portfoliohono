@@ -16,6 +16,13 @@
   "Home": {
     "intro": "Artiste interdisciplinaire et développeur, basé à Paris",
     "portraitBannerAlt": "Portrait en noir et blanc de Gabriel, de profil, les yeux fermés.",
+    "listen": {
+      "label": "Écouter",
+      "subtitle": "Déambulation sonore in situ · Santiago, 2020–2022 · audio intégral, en espagnol",
+      "play": "Écouter Caminamos mirando al cielo",
+      "note": "Charge le lecteur SoundCloud",
+      "link": "Écouter sur SoundCloud"
+    },
     "disciplines": {
       "dev": {
         "label": "développement web",
