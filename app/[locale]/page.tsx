@@ -8,7 +8,7 @@ import ContactSection from "@/components/home/ContactSection";
 export default function HomePage() {
   return (
     <div data-theme="home" className="bg-theme text-foreground min-h-dvh">
-      <Header />
+      <Header followHero />
       <main>
         <Hero />
         <FeaturedSection />

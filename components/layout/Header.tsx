@@ -4,11 +4,14 @@ import { HashLink } from "@/components/ui/HashLink";
 import { pillClasses } from "@/components/ui/PillLink";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import DisciplineMenu from "@/components/layout/DisciplineMenu";
+import StickyHeader from "@/components/layout/StickyHeader";
 import type { Discipline } from "@/data/disciplines";
 
 type Props = {
   /** Solo en las páginas de disciplina: muestra el óvalo con el menú en el centro. */
   discipline?: Discipline;
+  /** Solo en la home: transparente sobre el hero, blanco al bajar (ver StickyHeader.tsx). */
+  followHero?: boolean;
 };
 
 /*
@@ -22,16 +25,20 @@ type Props = {
  * caerían en la columna central.
  * data-has-discipline: globals.css lo usa para corregir --header-height
  * cuando hay segunda fila.
+ * data-over-hero (lo pone StickyHeader): fondo transparente sobre el hero, y los
+ * colores del hero (globals.css). text-foreground: el color del texto se calcula
+ * en el header con sus propias variables; heredado, sería el de la página.
  * Pantallas de menos de 30rem (480 px) de alto (teléfono en horizontal):
  * el header deja de ser fijo; si no, ocupaba ~70 % de la pantalla.
  */
-export default function Header({ discipline }: Props) {
+export default function Header({ discipline, followHero = false }: Props) {
   const t = useTranslations("Header");
 
   return (
-    <header
-      data-has-discipline={discipline ? "" : undefined}
-      className="sticky top-0 z-10 grid grid-cols-[1fr_auto] items-start gap-4 bg-(--background) p-4 motion-safe:transition-colors motion-safe:duration-400 sm:p-8 lg:grid-cols-[1fr_auto_1fr] [@media(height<30rem)]:static"
+    <StickyHeader
+      followHero={followHero}
+      hasDiscipline={Boolean(discipline)}
+      className="sticky top-0 z-10 grid grid-cols-[1fr_auto] items-start gap-4 bg-(--background) p-4 text-foreground motion-safe:transition-colors motion-safe:duration-400 data-over-hero:bg-transparent sm:p-8 lg:grid-cols-[1fr_auto_1fr] [@media(height<30rem)]:static"
     >
       {/* justify-self-start: sin esto, la celda estira el logo y queda centrado en su columna. */}
       <div className="justify-self-start">
@@ -50,6 +57,6 @@ export default function Header({ discipline }: Props) {
         </HashLink>
         <LanguageSwitcher />
       </div>
-    </header>
+    </StickyHeader>
   );
 }

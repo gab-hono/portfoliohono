@@ -19,9 +19,11 @@
    - lime: hero de la home y panel de /contact.
    - listen: franja de audio de la home.
    - dev / theater / sound: sus páginas, y los estados del hero de la home.
-   Cada tema de disciplina tiene 2 selectores: su propia página,
-   y la home cuando una de sus disciplinas está en hover o focus (switcher actual,
-   se reemplaza en la etapa 3).
+   Hero de la home ([data-hero]) y header mientras está sobre el hero
+   ([data-over-hero], ver StickyHeader.tsx): lima por defecto; con una disciplina
+   en hover o focus, toman el tema de esa disciplina. El resto de la home sigue
+   blanco. El header copia al hero para que sus textos (logo, Contact, idioma)
+   tengan el color correcto sobre su fondo.
    --gradient-opacity: 1 = se ve el gradiente rojo (solo THEATER). */
 :root,
 [data-theme="home"] {
@@ -31,7 +33,9 @@
   --gradient-opacity: 0;
 }
 
-[data-theme="lime"] {
+[data-theme="lime"],
+[data-hero],
+[data-over-hero] {
   --background: var(--lime);
   --foreground: var(--blue);
   --line: var(--blue);
@@ -46,7 +50,7 @@
 }
 
 [data-theme="dev"],
-[data-theme="home"]:has([data-discipline="dev"]:is(:hover, :focus-visible)) {
+[data-theme="home"]:has([data-discipline="dev"]:is(:hover, :focus-visible)) :is([data-hero], [data-over-hero]) {
   --background: var(--blue);
   --foreground: var(--cream);
   --line: var(--cream);
@@ -54,7 +58,7 @@
 }
 
 [data-theme="theater"],
-[data-theme="home"]:has([data-discipline="theater"]:is(:hover, :focus-visible)) {
+[data-theme="home"]:has([data-discipline="theater"]:is(:hover, :focus-visible)) :is([data-hero], [data-over-hero]) {
   --background: var(--red-dark);
   --foreground: var(--cream);
   --line: var(--cream);
@@ -62,7 +66,7 @@
 }
 
 [data-theme="sound"],
-[data-theme="home"]:has([data-discipline="sound"]:is(:hover, :focus-visible)) {
+[data-theme="home"]:has([data-discipline="sound"]:is(:hover, :focus-visible)) :is([data-hero], [data-over-hero]) {
   --background: var(--white);
   --foreground: var(--black);
   --line: var(--black);
