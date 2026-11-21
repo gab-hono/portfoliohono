@@ -82,3 +82,13 @@ export const selection: readonly SelectionEntry[] = entries.map((entry) => {
     external: false,
   };
 });
+
+/*
+ * Links de la nota "off this list" (debajo de la lista): trabajos que no
+ * tienen fila. Las etiquetas <film> y <fanzine> de Home.selection.offList
+ * se convierten en estos links (ver SelectedWork.tsx).
+ */
+export const offListLinks = {
+  film: "https://www.youtube.com/watch?v=l5YedIIIeaE",
+  fanzine: "https://vbinostroza.myportfolio.com/fanzine-para-despatriarcalizar-la-practica-artistica",
+} as const;

@@ -40,18 +40,11 @@
         "hover": "Sound technician for film, concerts and art installations."
       }
     },
-    "featured": {
-      "title": "featured projects",
-      "categories": {
-        "webApp": "Web application",
-        "performance": "Performance"
-      },
-      "portraitAlt": "Halftone portrait of Gabriel in red and dark blue, looking to the side."
-    },
     "selection": {
       "eyebrow": "2015 – today",
       "title": "Selected work",
       "filtersLabel": "Filter by discipline",
+      "results": "{count, plural, one {# project} other {# projects}}",
       "disciplines": {
         "all": "All",
         "dev": "Code",

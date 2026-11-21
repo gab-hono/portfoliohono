@@ -40,18 +40,11 @@
         "hover": "Technicien son pour le cinéma, les concerts et les installations artistiques."
       }
     },
-    "featured": {
-      "title": "projets phares",
-      "categories": {
-        "webApp": "Application web",
-        "performance": "Performance"
-      },
-      "portraitAlt": "Portrait de Gabriel en trame de points, rouge et bleu nuit, le regard tourné de côté."
-    },
     "selection": {
       "eyebrow": "2015 – aujourd’hui",
       "title": "Projets choisis",
       "filtersLabel": "Filtrer par discipline",
+      "results": "{count, plural, one {# projet} other {# projets}}",
       "disciplines": {
         "all": "Tout",
         "dev": "Code",
