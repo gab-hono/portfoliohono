@@ -4,7 +4,7 @@ import ListenPlayer from "@/components/ui/ListenPlayer";
 import { caminamosAudio } from "@/data/audio";
 
 /*
- * Franja Listen de la home (entre el Hero y Selected work), tema "listen":
+ * Franja Listen de la home (entre Selected work y About), tema "listen":
  * negro + crema (globals.css).
  * Una fila: botón de play + antetítulo LISTEN (sans, mayúsculas por CSS) +
  * título de la obra (<cite>, el protagonista) + subtítulo; a la derecha, el

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import SectionTitle from "@/components/ui/SectionTitle";
 import portrait from "@/assets/images/home/portrait-halftone.jpg";
 
 // Orden de los párrafos. `as const` hace que TypeScript los vea como
@@ -20,6 +19,8 @@ const paragraphs = ["p1", "p2", "p3"] as const;
  * puntos agrandada se ve borrosa; reducida, puede dar moiré: revisar a
  * distintos anchos.
  * id="about": destino del link "About" de la nav de la home.
+ * Título en sans extrabold, como Selected work y Contact (decidido 22 nov):
+ * la manuscrita (SectionTitle) queda para las páginas de disciplina.
  */
 export default function AboutSection() {
   const t = useTranslations("Home.about");
@@ -39,9 +40,9 @@ export default function AboutSection() {
       />
 
       <div>
-        <SectionTitle id="about-title" className="uppercase">
+        <h2 id="about-title" className="text-display font-extrabold tracking-tight">
           {t("title")}
-        </SectionTitle>
+        </h2>
         <div className="mt-8 flex max-w-prose flex-col gap-6 text-body">
           {paragraphs.map((key) => (
             // t.rich convierte las etiquetas <strong> del JSON en elementos React.
