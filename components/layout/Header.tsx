@@ -15,6 +15,11 @@ type Props = {
   currentPage?: "contact";
 };
 
+/** Secciones de la home, en el orden de la página. Los ids están en cada sección.
+ * Sin Listen (decidido 22 nov): es una franja corta y, en la nav, haría pensar
+ * que el sitio es de un artista musical. */
+const homeSections = ["work", "about"] as const;
+
 /*
  * Grid y no flex con justify-between: con 3 elementos, justify-between deja el
  * óvalo a medio camino entre el logo y Contact; 1fr / auto / 1fr lo centra en
@@ -33,10 +38,19 @@ type Props = {
  * el header deja de ser fijo; si no, ocupaba ~70 % de la pantalla.
  * Contact lleva a la página /contact. En /contact: aria-current="page" y
  * píldora rellena (el estado visible de "estás aquí").
+ * Nav de la home (solo con followHero, solo desde lg): links normales a #id,
+ * mismo patrón que SectionNav. Sin JavaScript: el scroll suave y el
+ * scroll-padding-top (el header no tapa el título) vienen de globals.css, y
+ * el navegador mueve el punto de partida del Tab a la sección. Va junto a
+ * Contact, a la derecha, como en la maqueta. Por debajo de lg no hay nav:
+ * no cabe sin menú, y en móvil se navega haciendo scroll (decidido 22 nov).
+ * py-1.5 + borde transparente: mismo alto que la píldora Contact, así el texto
+ * queda alineado con el suyo.
  */
 export default function Header({ discipline, followHero = false, currentPage }: Props) {
   const t = useTranslations("Header");
   const onContact = currentPage === "contact";
+  const tNav = useTranslations("Header.homeNav");
 
   return (
     <StickyHeader
@@ -56,6 +70,22 @@ export default function Header({ discipline, followHero = false, currentPage }: 
       )}
 
       <div className="col-start-2 row-start-1 flex items-center gap-4 justify-self-end sm:gap-6 lg:col-start-3">
+        {followHero && (
+          <nav aria-label={tNav("label")} className="hidden lg:block">
+            <ul className="flex gap-6">
+              {homeSections.map((id) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    className="inline-block border border-transparent py-1.5 text-body font-bold decoration-1 underline-offset-4 hover:underline"
+                  >
+                    {tNav(id)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
         <PillLink
           href="/contact"
           aria-current={onContact ? "page" : undefined}

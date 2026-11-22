@@ -11,7 +11,12 @@
     "contact": "Contact",
     "language": "Langue",
     "disciplinesMenu": "Disciplines",
-    "switchDiscipline": "{current}, changer de discipline"
+    "switchDiscipline": "{current}, changer de discipline",
+    "homeNav": {
+      "label": "Sur cette page",
+      "work": "Projets",
+      "about": "À propos"
+    }
   },
   "Home": {
     "intro": "Artiste interdisciplinaire et développeur, basé à Paris",
