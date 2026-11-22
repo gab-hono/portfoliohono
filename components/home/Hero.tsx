@@ -1,9 +1,10 @@
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Oval from "@/components/ui/Oval";
 import { disciplines } from "@/data/disciplines";
-import portrait from "@/assets/images/home/portrait-bw.jpg";
+import collage from "@/assets/images/home/banner-collage.jpg";
+import portrait from "@/assets/images/home/banner-portrait.jpg";
 
 const fade = "motion-safe:transition-opacity motion-safe:duration-400";
 
@@ -19,17 +20,33 @@ const fade = "motion-safe:transition-opacity motion-safe:duration-400";
  * focus (el header sobre el hero lo copia). bg-theme y no bg-(--background):
  * trae el fundido de color y el gradiente rojo de THEATER, recortado al hero.
  *
- * Retrato (como la maqueta): en móvil, franja de 150 px dentro de los márgenes;
- * desde sm, banner de ancho completo (-mx-8 anula el padding lateral del hero)
- * de 20rem, pero nunca más del 30 % de la altura de la pantalla (laptops bajas).
+ * Banner (art direction con <picture>, etapa 7.7):
+ * - Móvil (< sm): retrato en duotono azul/blanco, franja de 150 px dentro de
+ *   los márgenes, encuadre object-[40%_45%] (el mismo que el retrato B/N anterior).
+ * - Desde sm: collage en duotono (retrato, escena y capturas de MaPiscine y
+ *   CitySon), ancho completo (-mx-8 anula el padding lateral del hero), alto
+ *   20rem pero nunca más del 30 % de la pantalla (laptops bajas). object-center:
+ *   en tablet el collage se recorta por los lados y queda el centro.
+ * getImageProps y no <Image>: <Image> no permite dos fuentes según el ancho.
+ * Sin placeholder blur (getImageProps no lo admite): el fondo azul del
+ * contenedor hace de placeholder y coincide con el tono oscuro del duotono.
+ * loading="eager" + fetchPriority="high": es el LCP de la home.
+ * El navegador solo descarga la fuente que corresponde a su ancho.
  * Se desvanece con el hover de una disciplina (globals.css, [data-hero-banner]).
- * preload: está arriba de la página, es probablemente lo primero grande que se ve.
  *
  * Disciplinas: en columna hasta lg. En tablet (768 px) las tres no caben en
  * una fila y "Web development" quedaba sola arriba (revisado el 22 nov).
  */
 export default function Hero() {
   const t = useTranslations("Home");
+
+  const common = { alt: t("bannerAlt"), sizes: "100vw", fill: true } as const;
+  const {
+    props: { srcSet: desktopSrcSet },
+  } = getImageProps({ ...common, src: collage });
+  const {
+    props: { srcSet: mobileSrcSet, ...img },
+  } = getImageProps({ ...common, src: portrait, loading: "eager", fetchPriority: "high" });
 
   return (
     <section
@@ -38,17 +55,17 @@ export default function Hero() {
     >
       <div
         data-hero-banner
-        className={`relative h-[150px] overflow-hidden rounded-sm sm:-mx-8 sm:h-[min(20rem,30svh)] sm:rounded-none ${fade}`}
+        className={`relative h-[150px] overflow-hidden rounded-sm bg-(--blue) sm:-mx-8 sm:h-[min(20rem,30svh)] sm:rounded-none ${fade}`}
       >
-        <Image
-          src={portrait}
-          alt={t("portraitBannerAlt")}
-          fill
-          preload
-          placeholder="blur"
-          sizes="100vw"
-          className="object-cover object-[40%_45%]"
-        />
+        <picture>
+          <source media="(min-width: 40rem)" srcSet={desktopSrcSet} sizes="100vw" />
+          <img
+            {...img}
+            alt={common.alt}
+            srcSet={mobileSrcSet}
+            className="object-cover object-[40%_45%] sm:object-center"
+          />
+        </picture>
       </div>
 
       {/* Frase y textos del hover en la misma celda: uno reemplaza al otro.
