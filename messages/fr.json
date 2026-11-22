@@ -153,7 +153,7 @@
       },
       "typeOptions": {
         "placeholder": "Choisissez une option",
-        "job": "Job / alternance / CDI",
+        "job": "Emploi / alternance / CDI",
         "portfolio": "Portfolio web",
         "webProject": "Projet web",
         "artistic": "Collaboration artistique",
@@ -211,7 +211,7 @@
     "journey": {
       "title": "mon parcours",
       "p1": "J’ai étudié le théâtre à l’Universidad Mayor de Santiago, de 2013 à 2016. J’ai été formé comme acteur, mais je ne me suis jamais vraiment senti acteur\u00A0: j’ai donc commencé à explorer la mise en scène. Après l’école, j’ai mis en scène <cite>Animales binarios</cite> et <cite>Pero, ¿y mi madre?</cite>, et j’ai été assistant à la mise en scène sur <cite>Todo bajo control</cite>.",
-      "p2": "De 2020 à 2022, j’ai suivi un master en études et pratiques théâtrales à l’Universidad Católica de Chile, sur la relation éthique entre l’artiste et le public. Ce que je cherche sur scène, c’est la vérité\u00A0: ne pas faire semblant, seulement ce qui se passe vraiment au présent. C’est ce qui m’a mené du théâtre vers la performance, en partant de l’intime pour que cela résonne avec l’histoire de chaque spectateur·ice.",
+      "p2": "De 2020 à 2022, j’ai suivi un master en études et pratiques théâtrales à l’Universidad Católica de Chile, sur la relation éthique entre l’artiste et le public. Ce que je cherche sur scène, c’est la vérité\u00A0: ne pas faire semblant, seulement ce qui se passe vraiment au présent. C’est ce qui m’a mené du théâtre vers la performance, en partant de l’intime pour que cela résonne avec l’histoire de chaque spectateur·rice.",
       "p3": "J’ai aussi appris à mener des projets\u00A0: j’ai produit le festival interécoles de dramaturgie <cite>Juan Radrigán</cite> de 2015 à 2018 et, pour <cite>Caminamos mirando al cielo</cite>, une déambulation sonore créée pendant la pandémie, j’ai rédigé ma première demande au Fondart, le fonds national chilien pour les arts, et obtenu le financement. J’ai aussi enseigné, comme assistant en mise en scène à l’Universidad Mayor et en théâtre appliqué à l’UC. En arrivant en France, je me suis éloigné de la scène, mais pas de la création."
     },
     "projects": {
@@ -230,7 +230,7 @@
     "journey": {
       "title": "mon parcours",
       "p1": "Le son est arrivé par la performance\u00A0: pendant la pandémie, sans corps autorisés sur scène, c’était le seul moyen que j’avais trouvé pour atteindre le public.",
-      "p2": "En France, je me suis formé comme technicien son à CIFACOM (BTS Audiovisuel, 2023–2025)\u00A0: choix des micros, prise de son, mixage. En chemin, j’ai enregistré et mixé des courts-métrages, assisté la sonorisation d’un festival lyrique en plein air, installé des œuvres sonores dans une galerie, et je travaille aujourd’hui sur les concerts de l’Orchestre Hélios dans des églises parisiennes.",
+      "p2": "En France, je me suis formé comme technicien son à CIFACOM (BTS Audiovisuel, 2023–2025)\u00A0: choix des micros, prise de son, mixage. En chemin, j’ai enregistré et mixé des courts-métrages, participé à la sonorisation d’un festival lyrique en plein air, installé des œuvres sonores dans une galerie, et j’ai assuré la régie de certains concerts de l’Orchestre Hélios dans des églises parisiennes.",
       "listen": {
         "caption": "<cite>Caminamos mirando al cielo</cite> (2020–2022)\u00A0: l’audio intégral de la déambulation sonore, en espagnol.",
         "playerTitle": "Lecteur SoundCloud\u00A0: Caminamos mirando al cielo",
@@ -264,7 +264,7 @@
         },
         "s3": {
           "title": "Un défi technique.",
-          "body": "Next.js exécute le proxy dans l’Edge Runtime, où Prisma ne fonctionne pas. J’ai déplacé la vérification de session vers une route API interne exécutée sous Node\u00A0: le proxy l’appelle, puis transmet l’identifiant et le rôle de l’utilisateur·ice aux route handlers."
+          "body": "Next.js exécute le proxy dans l’Edge Runtime, où Prisma ne fonctionne pas. J’ai déplacé la vérification de session vers une route API interne exécutée sous Node\u00A0: le proxy l’appelle, puis transmet l’identifiant et le rôle de l’utilisateur·rice aux route handlers."
         },
         "s4": {
           "title": "Et après.",
@@ -394,7 +394,7 @@
       "role": "Chef opérateur son et mixeur\u00A0; enregistrement de la musique",
       "place": "Court-métrage de fiction, projet de fin de BTS, CIFACOM, Paris",
       "hover": "Une étudiante en théâtre, un monologue, et une frontière floue entre fiction et réalité.",
-      "popup": "Un court-métrage de fiction sur une étudiante en théâtre aux prises avec un monologue, qui joue avec la frontière entre réalité et fiction. J’ai assuré la prise de son sur trois jours de tournage (un appartement, un parc, un plateau), puis le montage son et le mixage du film aux normes de diffusion. J’ai aussi assuré la direction artistique et l’enregistrement de la musique originale pour viole de gambe, composée et jouée par Lukas Carrillo, en combinant un micro proche et un micro éloigné pour capter à la fois le détail et la profondeur.",
+      "popup": "Un court-métrage de fiction sur une étudiante en théâtre aux prises avec un monologue, qui joue avec la frontière entre réalité et fiction. J’ai assuré la prise de son sur trois jours de tournage (un appartement, un parc, un plateau), puis le montage son et le mixage du film aux normes de diffusion. J’ai aussi dirigé et enregistré la musique originale pour viole de gambe, composée et jouée par Lukas Carrillo, en combinant un micro proche et un micro éloigné pour capter à la fois le détail et la profondeur.",
       "credits": "Réalisation\u00A0: Matthieu Misiraca · Son\u00A0: Gabriel Hono · Musique originale\u00A0: Lukas Carrillo · Photogrammes\u00A0: Milo Scholtz",
       "alt": {
         "title-card": "Carton-titre\u00A0: La Méthode en capitales rouges sur fond noir.",
@@ -435,7 +435,7 @@
       "role": "Assistant d’installation",
       "place": "Exposition d’art sonore, galerie La Box, ENSA Bourges",
       "hover": "Aider des œuvres sonores à trouver leur voix dans une galerie.",
-      "popup": "Une exposition d’art sonore à La Box, la galerie de l’École nationale supérieure d’art de Bourges. J’ai assisté l’installation des œuvres\u00A0: câblage des moteurs, des cartes programmables et du contrôle MIDI des objets cinétiques de Roxane Marquant, placement des éléments de <cite>Derniers Souffles</cite> de Sonia Saroya et Édouard Sufrin, et observation du montage de <cite>Réminiscence d’une mer</cite> de Basile Richon, qui transforme en son des marées gravées sur des disques d’aluminium. Elle m’a montré le son comme une matière sculpturale, loin du cinéma et des concerts.",
+      "popup": "Une exposition d’art sonore à La Box, la galerie de l’École nationale supérieure d’art de Bourges. J’ai participé à l’installation des œuvres\u00A0: câblage des moteurs, des cartes programmables et du contrôle MIDI des objets cinétiques de Roxane Marquant, placement des éléments de <cite>Derniers Souffles</cite> de Sonia Saroya et Édouard Sufrin, et observation du montage de <cite>Réminiscence d’une mer</cite> de Basile Richon, qui transforme en son des marées gravées sur des disques d’aluminium. Cette expérience m’a montré le son comme une matière sculpturale, loin du cinéma et des concerts.",
       "credits": "Commissariat\u00A0: Fanny Testas · Artistes\u00A0: Roxane Marquant, Basile Richon, Sonia Saroya, Édouard Sufrin",
       "alt": {
         "poster": "Affiche de l’exposition The Tuning of the Afterworld\u00A0: titre calligraphié et dessins au trait sur un fond gris marbré.",
