@@ -24,6 +24,9 @@ const fade = "motion-safe:transition-opacity motion-safe:duration-400";
  * de 20rem, pero nunca más del 30 % de la altura de la pantalla (laptops bajas).
  * Se desvanece con el hover de una disciplina (globals.css, [data-hero-banner]).
  * preload: está arriba de la página, es probablemente lo primero grande que se ve.
+ *
+ * Disciplinas: en columna hasta lg. En tablet (768 px) las tres no caben en
+ * una fila y "Web development" quedaba sola arriba (revisado el 22 nov).
  */
 export default function Hero() {
   const t = useTranslations("Home");
@@ -70,7 +73,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <ul className="flex flex-col items-center gap-2 sm:flex-row sm:flex-wrap sm:justify-around sm:gap-10">
+      <ul className="flex flex-col items-center gap-2 sm:gap-4 lg:flex-row lg:flex-wrap lg:justify-around lg:gap-10">
         {disciplines.map(({ slug, href }) => (
           <li key={slug}>
             <Link

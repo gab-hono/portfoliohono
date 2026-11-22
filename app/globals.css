@@ -147,10 +147,17 @@ body {
   font-stretch: 125%;
 }
 
-/* Focus visible con teclado, del color del texto de cada tema. */
-:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 3px;
+/* Focus visible con teclado, del color de tinta del tema donde está el
+   elemento. No currentColor: en un botón relleno (filtro activo, Contact en
+   /contact, play de Listen) el texto tiene el color del fondo que lo rodea, y
+   el contorno desaparecía.
+   En @layer base: así las utilidades focus-visible:outline-* de Tailwind
+   pueden ajustarlo (sin capa, esta regla les ganaba siempre). */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--foreground);
+    outline-offset: 3px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
