@@ -123,8 +123,21 @@
       "portraitAlt": "Gabriel in profile, in a dark sweater, behind a texture of gray and violet scan lines."
     },
     "contact": {
-      "title": "let’s talk!",
-      "text": "Have a project in mind where I could help? Fill in the form and let’s talk :)",
+      "title": "Contact",
+      "text": "For collaborations in web development, theater or sound, and job opportunities.",
+      "cta": "Get in touch"
+    }
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Contact · Gabriel Hono",
+      "description": "Get in touch with Gabriel Hono for web development, theater or sound projects, and job opportunities."
+    },
+    "title": "Contact",
+    "text": "For collaborations in web development, theater or sound, and job opportunities.",
+    "disciplinesLabel": "Disciplines",
+    "alsoOn": "Also on",
+    "form": {
       "requiredNote": "Fields marked * are required.",
       "fields": {
         "name": "name",
@@ -135,7 +148,7 @@
       },
       "typeOptions": {
         "placeholder": "Choose an option",
-        "job": "Job / alternance / CDI",
+        "job": "Job / work-study / permanent contract",
         "portfolio": "Web portfolio",
         "webProject": "Web project",
         "artistic": "Artistic collaboration",
@@ -143,7 +156,9 @@
       },
       "submit": "Send",
       "sending": "Sending…",
-      "success": "Thanks! Your message has been sent. I’ll get back to you soon.",
+      "successTitle": "Thanks!",
+      "success": "Your message has been sent. I’ll get back to you soon.",
+      "another": "Send another message",
       "error": "Something went wrong and your message wasn’t sent. Please try again in a few minutes.",
       "errors": {
         "required": "This field is required.",

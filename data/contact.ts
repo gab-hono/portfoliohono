@@ -5,7 +5,7 @@
  */
 
 /** Opciones de "type of collaboration": value de cada <option>, lista que valida Zod
- * y claves de Home.contact.typeOptions en messages. "job" va primero (Ficha 2). */
+ * y claves de ContactPage.form.typeOptions en messages. "job" va primero (Ficha 2). */
 export const COLLAB_TYPES = ["job", "portfolio", "webProject", "artistic", "other"] as const;
 export type CollabType = (typeof COLLAB_TYPES)[number];
 
@@ -19,7 +19,7 @@ export const LIMITS = {
 
 export type ContactField = "name" | "pronouns" | "email" | "type" | "message";
 
-/** Claves de Home.contact.errors: el servidor devuelve la clave, el formulario la traduce. */
+/** Claves de ContactPage.form.errors: el servidor devuelve la clave, el formulario la traduce. */
 export type FieldError = "required" | "invalidEmail" | "tooLong";
 
 /** Lo que el visitante escribió, para volver a llenar el formulario tras un error

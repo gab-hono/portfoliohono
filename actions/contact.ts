@@ -21,7 +21,7 @@ import {
  * 1. Campo trampa con contenido → bot: se responde "success" sin enviar nada
  *    (si le dijéramos que falló, el bot reintentaría).
  * 2. Validación con Zod. Es la que cuenta: la del navegador se puede saltar.
- *    Cada mensaje de error es una clave de Home.contact.errors.
+ *    Cada mensaje de error es una clave de ContactPage.form.errors.
  * 3. Envío con Resend desde onboarding@resend.dev: sin dominio verificado,
  *    solo puede enviar al email de la cuenta, que es justo CONTACT_EMAIL.
  *    replyTo = email del visitante: "Responder" le contesta directamente.
@@ -79,7 +79,7 @@ export async function sendContact(
 
   const data = result.data;
   // El email es para Gabriel: tipo de colaboración siempre en inglés.
-  const t = await getTranslations({ locale: "en", namespace: "Home.contact.typeOptions" });
+  const t = await getTranslations({ locale: "en", namespace: "ContactPage.form.typeOptions" });
   // Sin saltos de línea en el asunto (un bot podría intentar meter cabeceras).
   const subjectName = data.name.replace(/\s+/g, " ");
 

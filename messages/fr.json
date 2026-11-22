@@ -123,8 +123,21 @@
       "portraitAlt": "Gabriel de profil, en pull sombre, derrière une trame de lignes horizontales grises et violettes."
     },
     "contact": {
-      "title": "parlons-en\u00A0!",
-      "text": "Vous avez un projet où je pourrais vous être utile\u00A0? Remplissez le formulaire et parlons-en :)",
+      "title": "Contact",
+      "text": "Pour une collaboration en développement web, en théâtre ou en son, ou une opportunité professionnelle.",
+      "cta": "Me contacter"
+    }
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Contact · Gabriel Hono",
+      "description": "Contactez Gabriel Hono pour un projet en développement web, en théâtre ou en son, ou pour une opportunité professionnelle."
+    },
+    "title": "Contact",
+    "text": "Pour une collaboration en développement web, en théâtre ou en son, ou une opportunité professionnelle.",
+    "disciplinesLabel": "Disciplines",
+    "alsoOn": "Aussi sur",
+    "form": {
       "requiredNote": "Les champs marqués * sont obligatoires.",
       "fields": {
         "name": "nom",
@@ -143,7 +156,9 @@
       },
       "submit": "Envoyer",
       "sending": "Envoi en cours…",
-      "success": "Merci\u00A0! Votre message a bien été envoyé. Je vous réponds très vite.",
+      "successTitle": "Merci\u00A0!",
+      "success": "Votre message a bien été envoyé. Je vous réponds très vite.",
+      "another": "Envoyer un autre message",
       "error": "Une erreur est survenue et votre message n’a pas été envoyé. Réessayez dans quelques minutes.",
       "errors": {
         "required": "Ce champ est obligatoire.",

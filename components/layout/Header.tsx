@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/ui/Logo";
-import { HashLink } from "@/components/ui/HashLink";
-import { pillClasses } from "@/components/ui/PillLink";
+import { PillLink } from "@/components/ui/PillLink";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import DisciplineMenu from "@/components/layout/DisciplineMenu";
 import StickyHeader from "@/components/layout/StickyHeader";
@@ -12,6 +11,8 @@ type Props = {
   discipline?: Discipline;
   /** Solo en la home: transparente sobre el hero, blanco al bajar (ver StickyHeader.tsx). */
   followHero?: boolean;
+  /** Solo en /contact: el botón Contact se marca como página actual. */
+  currentPage?: "contact";
 };
 
 /*
@@ -30,9 +31,12 @@ type Props = {
  * en el header con sus propias variables; heredado, sería el de la página.
  * Pantallas de menos de 30rem (480 px) de alto (teléfono en horizontal):
  * el header deja de ser fijo; si no, ocupaba ~70 % de la pantalla.
+ * Contact lleva a la página /contact. En /contact: aria-current="page" y
+ * píldora rellena (el estado visible de "estás aquí").
  */
-export default function Header({ discipline, followHero = false }: Props) {
+export default function Header({ discipline, followHero = false, currentPage }: Props) {
   const t = useTranslations("Header");
+  const onContact = currentPage === "contact";
 
   return (
     <StickyHeader
@@ -52,9 +56,13 @@ export default function Header({ discipline, followHero = false }: Props) {
       )}
 
       <div className="col-start-2 row-start-1 flex items-center gap-4 justify-self-end sm:gap-6 lg:col-start-3">
-        <HashLink hash="contact" className={pillClasses}>
+        <PillLink
+          href="/contact"
+          aria-current={onContact ? "page" : undefined}
+          className={onContact ? "bg-foreground text-background" : ""}
+        >
           {t("contact")}
-        </HashLink>
+        </PillLink>
         <LanguageSwitcher />
       </div>
     </StickyHeader>
