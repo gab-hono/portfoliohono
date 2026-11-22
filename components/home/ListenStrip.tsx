@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import ExternalLink from "@/components/ui/ExternalLink";
-import ListenPlayer from "@/components/home/ListenPlayer";
+import ListenPlayer from "@/components/ui/ListenPlayer";
 import { caminamosAudio } from "@/data/audio";
 
 /*
@@ -26,7 +26,7 @@ export default function ListenStrip() {
     >
       <div className="px-4 py-10 sm:px-8 lg:py-12">
         <ListenPlayer
-          embedSrc={caminamosAudio.embedAutoplaySrc}
+          embedSrc={caminamosAudio.embedSrc}
           playerTitle={tSound("playerTitle")}
           playLabel={t("play")}
           info={

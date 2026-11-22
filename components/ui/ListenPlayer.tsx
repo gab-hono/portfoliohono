@@ -11,7 +11,8 @@ type ListenPlayerProps = {
 };
 
 /*
- * Fachada "clic para cargar" del reproductor SoundCloud (franja Listen).
+ * Fachada "clic para cargar" del reproductor SoundCloud. Se usa en la franja
+ * Listen de la home (ListenStrip) y en My journey de /sound (SoundJourney).
  * Antes del clic: solo un botón de play propio, sin ninguna conexión a
  * SoundCloud (ni cookies de terceros ni scripts: CNIL + rendimiento).
  *
@@ -22,7 +23,9 @@ type ListenPlayerProps = {
  * con autoplay. Recibe el foco para que con teclado se siga dentro.
  * El salto de altura lo provoca el clic: no cuenta como CLS.
  *
- * info y aside los renderiza ListenStrip (componente servidor): así los
+ * El botón usa los colores del tema donde está (foreground/background):
+ * crema sobre negro en Listen, negro sobre blanco en /sound.
+ * info y aside los renderiza el componente servidor que lo usa: así los
  * textos no necesitan los mensajes de next-intl en el cliente.
  */
 export default function ListenPlayer({ embedSrc, playerTitle, playLabel, info, aside }: ListenPlayerProps) {
