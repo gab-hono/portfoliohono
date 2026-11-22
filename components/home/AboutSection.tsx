@@ -1,26 +1,44 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import SectionTitle from "@/components/ui/SectionTitle";
-import portrait from "@/assets/images/home/portrait-scanlines.jpg";
+import portrait from "@/assets/images/home/portrait-halftone.jpg";
 
 // Orden de los párrafos. `as const` hace que TypeScript los vea como
 // los textos exactos "p1" | "p2" | "p3", no como cualquier string.
 const paragraphs = ["p1", "p2", "p3"] as const;
 
 /*
- * About me + retrato scanlines.
- * Desde lg: texto a la izquierda (alineado con el header) y retrato a la
- * derecha, de borde a borde y en su proporción real. Alterna con Featured,
- * que tiene su retrato a la izquierda. Texto centrado en vertical junto a la foto.
- * Móvil: texto y después el retrato a 2/3 del ancho, pegado al borde derecho:
- * así no se encadenan dos fotos a pantalla completa (la de Featured está justo antes).
+ * About me + retrato halftone (maqueta "Mezcla · Home").
+ * Desde lg: retrato a la izquierda (5/12) y texto a la derecha (7/12),
+ * centrados en vertical. El retrato queda dentro de los márgenes, con
+ * esquinas redondeadas (ya no va de borde a borde: sin las fotos de
+ * Featured, no hay nada con qué alternar).
+ * Móvil y tablet: retrato arriba, a 2/3 del ancho (1/2 desde sm), y el texto
+ * debajo.
+ * La foto mide 735 px de ancho: nunca se muestra más grande que eso
+ * (max-w en móvil/tablet, la columna de 5/12 en escritorio). Una trama de
+ * puntos agrandada se ve borrosa; reducida, puede dar moiré: revisar a
+ * distintos anchos.
+ * id="about": destino del link "About" de la nav de la home.
  */
 export default function AboutSection() {
   const t = useTranslations("Home.about");
 
   return (
-    <section aria-labelledby="about-title" className="grid lg:grid-cols-2 lg:items-center">
-      <div className="px-4 py-16 sm:px-8 lg:pr-16">
+    <section
+      id="about"
+      aria-labelledby="about-title"
+      className="grid gap-8 px-4 py-16 sm:px-8 sm:py-24 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:items-center lg:gap-16"
+    >
+      <Image
+        src={portrait}
+        alt={t("portraitAlt")}
+        placeholder="blur"
+        sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 67vw"
+        className="h-auto w-2/3 max-w-[735px] rounded-2xl sm:w-1/2 lg:w-full"
+      />
+
+      <div>
         <SectionTitle id="about-title" className="uppercase">
           {t("title")}
         </SectionTitle>
@@ -36,14 +54,6 @@ export default function AboutSection() {
           ))}
         </div>
       </div>
-
-      <Image
-        src={portrait}
-        alt={t("portraitAlt")}
-        placeholder="blur"
-        sizes="(min-width: 1024px) 50vw, 67vw"
-        className="ml-auto h-auto w-2/3 lg:w-full"
-      />
     </section>
   );
 }
