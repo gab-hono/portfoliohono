@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { Archivo, Fira_Code, Covered_By_Your_Grace } from "next/font/google";
 
@@ -90,6 +91,9 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        {/* Vercel Web Analytics: sin cookies, estadísticas agregadas (ver /privacy).
+            Solo envía datos en Vercel (producción y previews); en local no cuenta. */}
+        <Analytics />
       </body>
     </html>
   );

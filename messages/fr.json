@@ -170,7 +170,7 @@
         "invalidEmail": "Saisissez une adresse e-mail valide, par exemple nom@exemple.com.",
         "tooLong": "Votre message est trop long (5\u00A0000 caractères maximum)."
       },
-      "privacy": "Vos données servent uniquement à répondre à votre message."
+      "privacy": "Vos données servent uniquement à répondre à votre message. <privacy>Politique de confidentialité</privacy>"
     }
   },
   "DevPage": {
@@ -460,6 +460,73 @@
     }
   },
   "Footer": {
-    "copyright": "© {year} Gabriel Hono"
+    "copyright": "© {year} Gabriel Hono",
+    "legalLabel": "Informations légales",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité"
+  },
+  "LegalPage": {
+    "metadata": {
+      "title": "Mentions légales · Gabriel Hono",
+      "description": "Éditeur, hébergeur et propriété intellectuelle de gabrielhono.com."
+    },
+    "title": "Mentions légales",
+    "updated": "Dernière mise à jour\u00A0: 22 novembre 2026",
+    "sections": {
+      "publisher": {
+        "title": "Éditeur",
+        "body": "<p>gabrielhono.com est un site personnel, non commercial, édité par Gabriel Hono.</p><p>Conformément à l’article 1-1 de la loi n°\u00A02004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), applicable aux éditeurs non professionnels, les éléments d’identification complets de l’éditeur ont été communiqués à l’hébergeur.</p><p>Pour contacter l’éditeur, utilisez le <contact>formulaire de contact</contact>.</p>"
+      },
+      "host": {
+        "title": "Hébergement",
+        "body": "<p>Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis. <vercel>vercel.com</vercel></p>"
+      },
+      "intellectualProperty": {
+        "title": "Propriété intellectuelle",
+        "body": "<p>Sauf mention contraire, les textes, photographies, illustrations et contenus audio de ce site appartiennent à Gabriel Hono ou à leurs auteurs respectifs, crédités avec chaque projet. Toute reproduction nécessite une autorisation préalable.</p>"
+      },
+      "personalData": {
+        "title": "Données personnelles",
+        "body": "<p>Pour savoir comment vos données sont traitées, consultez la <privacy>politique de confidentialité</privacy>.</p>"
+      }
+    }
+  },
+  "PrivacyPage": {
+    "metadata": {
+      "title": "Confidentialité · Gabriel Hono",
+      "description": "Quelles données gabrielhono.com collecte, pourquoi, et combien de temps elles sont conservées."
+    },
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour\u00A0: 22 novembre 2026",
+    "sections": {
+      "controller": {
+        "title": "Responsable du traitement",
+        "body": "<p>Le responsable du traitement est Gabriel Hono, éditeur de ce site (voir les <legal>mentions légales</legal>). Vous pouvez le joindre via le <contact>formulaire de contact</contact>.</p>"
+      },
+      "contactForm": {
+        "title": "Formulaire de contact",
+        "body": "<p>Lorsque vous envoyez un message, les données suivantes sont collectées\u00A0:</p><ul><li>votre nom\u00A0;</li><li>vos pronoms (facultatif)\u00A0;</li><li>votre adresse e-mail\u00A0;</li><li>le type de demande\u00A0;</li><li>votre message.</li></ul><p>Elles servent uniquement à vous répondre. Elles ne sont jamais utilisées à des fins publicitaires ni transmises à des tiers. La base légale est l’intérêt légitime à répondre à une demande que vous avez envoyée.</p><p>Les messages transitent par Resend (Resend, Inc., États-Unis) et arrivent dans une boîte Gmail (Google). Ils sont supprimés un an après le dernier échange.</p>"
+      },
+      "analytics": {
+        "title": "Mesure d’audience",
+        "body": "<p>Ce site utilise Vercel Web Analytics pour compter les visites. Cet outil n’utilise pas de cookies et ne vous identifie pas\u00A0: il produit uniquement des statistiques anonymes et agrégées (pages consultées, site de provenance, pays, type d’appareil et de navigateur).</p><p>Pour ne pas compter deux fois la même visite, un identifiant temporaire est calculé à partir de la requête. Il n’est pas stocké sur votre appareil et il est réinitialisé chaque jour.</p>"
+      },
+      "hosting": {
+        "title": "Hébergement",
+        "body": "<p>Comme tout hébergeur, Vercel traite des données techniques (adresse IP, navigateur, par exemple) dans ses journaux serveur pour faire fonctionner et sécuriser le site.</p>"
+      },
+      "cookies": {
+        "title": "Cookies",
+        "body": "<p>Ce site dépose un seul cookie, NEXT_LOCALE, qui mémorise la langue choisie. C’est un cookie technique, exempté de consentement, supprimé à la fermeture du navigateur.</p><p>Le lecteur SoundCloud ne se charge que lorsque vous appuyez sur lecture. À partir de ce moment, SoundCloud peut déposer ses propres cookies, selon sa propre politique de confidentialité. Il en va de même pour les sites externes liés depuis celui-ci (YouTube, LinkedIn, GitHub, SoundCloud).</p>"
+      },
+      "transfers": {
+        "title": "Transferts hors de l’UE",
+        "body": "<p>Vercel, Resend et Google sont établis aux États-Unis. Ces transferts reposent sur les garanties proposées par ces prestataires, comme le Data Privacy Framework UE–États-Unis ou les clauses contractuelles types de la Commission européenne.</p>"
+      },
+      "rights": {
+        "title": "Vos droits",
+        "body": "<p>Vous disposez d’un droit d’accès, de rectification et d’effacement de vos données, ainsi que d’un droit d’opposition et de limitation du traitement. Pour les exercer, utilisez le <contact>formulaire de contact</contact>.</p><p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la <cnil>CNIL</cnil>.</p>"
+      }
+    }
   }
 }

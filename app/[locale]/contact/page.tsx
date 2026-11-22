@@ -4,6 +4,7 @@ import { hasLocale, useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Fragment } from "react";
 import { routing } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ExternalLink from "@/components/ui/ExternalLink";
@@ -60,7 +61,13 @@ export default function ContactPage() {
     another: t("form.another"),
     error: t("form.error"),
     errors: Object.fromEntries(ERRORS.map((e) => [e, t(`form.errors.${e}`)])) as Record<FieldError, string>,
-    privacy: t("form.privacy"),
+    privacy: t.rich("form.privacy", {
+      privacy: (chunks) => (
+        <Link href="/privacy" className="underline decoration-1 underline-offset-4 hover:decoration-2">
+          {chunks}
+        </Link>
+      ),
+    }),
   };
 
   return (

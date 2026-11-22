@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useEffect, useRef, useState } from "react";
+import { useActionState, useEffect, useRef, useState, type ReactNode } from "react";
 import { sendContact } from "@/actions/contact";
 import { pillClasses } from "@/components/ui/PillLink";
 import {
@@ -26,7 +26,8 @@ export type ContactFormLabels = {
   another: string;
   error: string;
   errors: Record<FieldError, string>;
-  privacy: string;
+  /** Nodo y no string: lleva el link a /privacy (lo arma la página con t.rich). */
+  privacy: ReactNode;
 };
 
 type Props = { labels: ContactFormLabels };
