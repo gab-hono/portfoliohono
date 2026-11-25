@@ -15,7 +15,7 @@ export default function SectionTitle({
   id,
 }: SectionTitleProps) {
   return (
-    <Heading id={id} className={`inline-block font-hand text-title ${className}`}>
+    <Heading id={id} className={`inline-block font-display text-title ${className}`}>
       {children}
       <UnderlineSvg className="block h-[0.35em] w-full" />
     </Heading>

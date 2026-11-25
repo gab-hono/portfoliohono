@@ -463,7 +463,8 @@
     "copyright": "© {year} Gabriel Hono",
     "legalLabel": "Legal information",
     "legal": "Legal notice",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "fontCredit": "Typeface: <link>Garabosse</link>, designed at EESAB Rennes and distributed by the Bye Bye Binary typothèque."
   },
   "LegalPage": {
     "metadata": {
@@ -471,7 +472,7 @@
       "description": "Publisher, hosting provider and intellectual property of gabrielhono.com."
     },
     "title": "Legal notice",
-    "updated": "Last updated: 22 November 2026",
+    "updated": "Last updated: 26 November 2026",
     "sections": {
       "publisher": {
         "title": "Publisher",
@@ -483,7 +484,7 @@
       },
       "intellectualProperty": {
         "title": "Intellectual property",
-        "body": "<p>Unless otherwise stated, the texts, photographs, illustrations and audio on this site belong to Gabriel Hono or to their respective authors, credited with each project. Any reproduction requires prior permission.</p>"
+        "body": "<p>Unless otherwise stated, the texts, photographs, illustrations and audio on this site belong to Gabriel Hono or to their respective authors, credited with each project. Any reproduction requires prior permission.</p><p>The Garabosse typeface was designed during the 2024–2025 type design workshop at EESAB Rennes by Lucie Bouchet, Margaux Clerc, Titouan Collet, Clara Coutanceau, Noémie Doussaud, Paul Fleury, Jan Fournier, Justine Grandpierre, Garance Hebrard, Alice Laurichesse, Lolita Moreau, Pauline Mousain, Zoé Raude, Pome Saint-Bonnet, supervised by Benjamin Gomez. It is distributed by the Bye Bye Binary typothèque under the CUTE licence (conditions d’utilisation typographiques engageantes). Its vertical metrics were adjusted for this site.</p>"
       },
       "personalData": {
         "title": "Personal data",

@@ -112,7 +112,7 @@ function ContactRound({ labels, isFirstRound, onReset }: RoundProps) {
     return (
       <div className={`flex flex-col items-start gap-4 ${boxClasses}`}>
         {/* tabIndex={-1}: recibe el foco por código, sin ser parada de Tab. */}
-        <h2 ref={successTitleRef} tabIndex={-1} className="font-hand text-display outline-none">
+        <h2 ref={successTitleRef} tabIndex={-1} className="font-display text-display outline-none">
           {labels.successTitle}
         </h2>
         <p className="max-w-[36ch] text-lead">{labels.success}</p>
@@ -132,7 +132,7 @@ function ContactRound({ labels, isFirstRound, onReset }: RoundProps) {
   });
 
   const label = (field: ContactField, required: boolean) => (
-    <label htmlFor={`contact-${field}`} className="font-hand text-label uppercase">
+    <label htmlFor={`contact-${field}`} className="font-display text-label uppercase">
       {labels.fields[field]}
       {required && <span aria-hidden="true">*</span>}
     </label>

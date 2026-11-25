@@ -80,9 +80,13 @@
   --color-line: var(--line);
   --color-error: var(--error-red);
 
-  --font-sans: var(--font-archivo);
+  /* Cuerpo: Garabosse Mignonne (bold = Perle). Archivo queda disponible
+     como font-grotesk mientras probamos; si no se usa, se elimina. */
+  --font-sans: var(--font-garabosse-text);
+  --font-grotesk: var(--font-archivo);
   --font-mono: var(--font-fira-code);
-  --font-hand: var(--font-covered);
+  /* Títulos: Garabosse Parangonne. */
+  --font-display: var(--font-garabosse);
 }
 
 /* Escala de texto: fluida entre 375 px y 1440 px de ancho de pantalla. */
@@ -96,13 +100,15 @@
   --text-lead: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
   --text-lead--line-height: 1.4;
 
-  --text-body: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  /* Garabosse se ve más pequeña que Archivo al mismo tamaño (minúsculas bajas):
+     cuerpo de 18 px a 21 px. */
+  --text-body: clamp(1.125rem, 1.0587rem + 0.2817vw, 1.3125rem);
   --text-body--line-height: 1.6;
 
   --text-label: 1.5rem;
   --text-label--line-height: 1.2;
 
-  --text-small: 0.875rem;
+  --text-small: 1rem;
   --text-small--line-height: 1.4;
 
   /* Fluido con el ancho, pero nunca más del 15 % de la altura de la pantalla
@@ -143,8 +149,6 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  /* Archivo expandido: el carácter ancho de la maqueta (Cy Grotesk). */
-  font-stretch: 125%;
 }
 
 /* Focus visible con teclado, del color de tinta del tema donde está el

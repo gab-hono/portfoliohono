@@ -74,7 +74,7 @@ export default function Hero() {
           Sin link dentro del texto del hover: solo existe mientras el mouse está sobre
           el óvalo, así que sería inalcanzable. El óvalo ya es el link. */}
       <div className="grid items-center">
-        <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-6xl text-display ${fade}`}>
+        <h1 data-hero-intro className={`col-start-1 row-start-1 max-w-6xl font-display text-display ${fade}`}>
           {t("intro")}
         </h1>
 
@@ -100,7 +100,7 @@ export default function Hero() {
               className={`group inline-block ${fade}`}
             >
               <Oval discipline={slug} className="px-10 py-4 text-center sm:py-6">
-                <span aria-hidden="true" className="font-hand text-title uppercase">
+                <span aria-hidden="true" className="font-bold text-title uppercase">
                   {t(`disciplines.${slug}.label`)}
                 </span>
                 <span className="sr-only">{t(`disciplines.${slug}.srLabel`)}</span>

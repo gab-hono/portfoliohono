@@ -58,8 +58,11 @@ export default function Header({ discipline, followHero = false, currentPage }: 
       hasDiscipline={Boolean(discipline)}
       className="sticky top-0 z-10 grid grid-cols-[1fr_auto] items-start gap-4 bg-(--background) p-4 text-foreground motion-safe:transition-colors motion-safe:duration-400 data-over-hero:bg-transparent sm:p-8 lg:grid-cols-[1fr_auto_1fr] [@media(height<30rem)]:static"
     >
-      {/* justify-self-start: sin esto, la celda estira el logo y queda centrado en su columna. */}
-      <div className="justify-self-start">
+      {/* justify-self-start: sin esto, la celda estira el logo y queda centrado en su columna.
+          flex: el logo es inline-flex; dentro de un bloque normal deja un espacio de
+          línea debajo, el header queda más alto que --header-height y aparece una
+          franja del fondo blanco arriba del hero. */}
+      <div className="flex justify-self-start">
         <Logo />
       </div>
 

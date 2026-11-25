@@ -4,7 +4,7 @@
   },
   "Metadata": {
     "title": "Gabriel Hono · Portfolio",
-    "description": "Développeur web, artiste de théâtre et technicien son. Découvrez le travail et l’univers de Gabriel Hono."
+    "description": "Développeur·euse web, artiste de théâtre et technicien·\u200Cne son. Découvrez le travail et l’univers de Gabriel Hono."
   },
   "Header": {
     "logoLabel": "Gabriel Hono, page d’accueil",
@@ -19,7 +19,7 @@
     }
   },
   "Home": {
-    "intro": "Artiste interdisciplinaire et développeur, basé à Paris",
+    "intro": "Artiste interdisciplinaire et développeur·euse, basé·\u200Ce à Paris",
     "bannerAlt": "Collage en bleu et blanc : portrait de Gabriel, photos de scène et écrans de ses applications web MaPiscine et CitySon.",
     "listen": {
       "label": "Écouter",
@@ -32,17 +32,17 @@
       "dev": {
         "label": "développement web",
         "srLabel": "Développement web",
-        "hover": "Développeur web full stack\u00A0: TypeScript, React, Next.js, Node.js."
+        "hover": "Développeur·euse web full stack\u00A0: TypeScript, React, Next.js, Node.js."
       },
       "theater": {
         "label": "théâtre / performance",
         "srLabel": "Théâtre et performance",
-        "hover": "Acteur, metteur en scène et producteur, formé au Chili."
+        "hover": "Acteur·ice, metteur·euse en scène et producteur·ice, formé·\u200Ce au Chili."
       },
       "sound": {
         "label": "son",
         "srLabel": "Son",
-        "hover": "Technicien son pour le cinéma, les concerts et les installations artistiques."
+        "hover": "Technicien·\u200Cne son pour le cinéma, les concerts et les installations artistiques."
       }
     },
     "selection": {
@@ -80,7 +80,7 @@
         },
         "contre-recits": {
           "title": "Contre-récits",
-          "role": "Chef opérateur son",
+          "role": "Chef·\u200Cfe opérateur·ice son",
           "context": "Podcast vidéo, Paris"
         },
         "la-methode": {
@@ -122,9 +122,9 @@
     },
     "about": {
       "title": "À propos",
-      "p1": "J’ai grandi au <strong>Chili</strong> et je me suis installé en <strong>France</strong> à 27 ans, sans grande raison\u00A0: j’avais simplement envie de commencer une nouvelle vie.",
-      "p2": "Je ne crois pas aux identités figées, ce qui explique sans doute mon <strong>parcours pluridisciplinaire</strong>. Je suis <strong>transmasculin et non-binaire</strong>, j’utilise les pronoms il/iel, avec accords au masculin. J’ai étudié le <strong>théâtre</strong>\u00A0; les engagements réguliers étaient rares, mais je n’ai jamais arrêté de créer.",
-      "p3": "En France, je suis devenu <strong>technicien son</strong> pour des concerts, des films et des expositions. Puis je me suis formé au <strong>développement full stack</strong> à Ada Tech School. Et me voilà, à construire ma vie avec tout ça :)",
+      "p1": "J’ai grandi au <strong>Chili</strong> et je me suis installé·\u200Ce en <strong>France</strong> à 27 ans, sans grande raison\u00A0: j’avais simplement envie de commencer une nouvelle vie.",
+      "p2": "Je ne crois pas aux identités figées, ce qui explique sans doute mon <strong>parcours pluridisciplinaire</strong>. Je suis <strong>transmasculin et non-binaire</strong>, j’utilise les pronoms il/iel et une écriture inclusive, avec une préférence pour le masculin s’il faut choisir. J’ai étudié le <strong>théâtre</strong>\u00A0; les engagements réguliers étaient rares, mais je n’ai jamais arrêté de créer.",
+      "p3": "En France, je suis devenu·\u200Ce <strong>technicien·\u200Cne son</strong> pour des concerts, des films et des expositions. Puis je me suis formé au <strong>développement full stack</strong> à Ada Tech School. Et me voilà, à construire ma vie avec tout ça :)",
       "portraitAlt": "Portrait de Gabriel en trame de points, rouge et bleu nuit, le regard tourné de côté."
     },
     "contact": {
@@ -189,7 +189,7 @@
     },
     "journey": {
       "title": "mon parcours",
-      "text": "Je suis arrivé au code de façon assez curieuse. En France, je rencontrais sans cesse des personnes qui travaillaient dans la tech, sans jamais comprendre ce qu’elles faisaient. Elles m’expliquaient, je hochais la tête, et je n’avais aucune idée de ce qu’elles voulaient dire quand elles parlaient de «\u00A0HTML\u00A0». Quand j’ai décidé de me reconvertir, j’ai découvert à quel point le code est fascinant, et combien il est proche du travail créatif que j’aime\u00A0: on construit quelque chose, on le teste, on le retravaille jusqu’à ce que ça tienne, comme en répétition. C’est de la création, de la technique et un défi intellectuel constant, et je suis quelqu’un qui adore apprendre quelque chose de nouveau chaque jour.",
+      "text": "Je suis arrivé·\u200Ce au code de façon assez curieuse. En France, je rencontrais sans cesse des personnes qui travaillaient dans la tech, sans jamais comprendre ce qu’elles faisaient. Elles m’expliquaient, je hochais la tête, et je n’avais aucune idée de ce qu’elles voulaient dire quand elles parlaient de «\u00A0HTML\u00A0». Quand j’ai décidé de me reconvertir, j’ai découvert à quel point le code est fascinant, et combien il est proche du travail créatif que j’aime\u00A0: on construit quelque chose, on le teste, on le retravaille jusqu’à ce que ça tienne, comme en répétition. C’est de la création, de la technique et un défi intellectuel constant, et je suis quelqu’un qui adore apprendre quelque chose de nouveau chaque jour.",
       "portraitAlt": "Photo en noir et blanc de Gabriel souriant, la tête appuyée sur une main, à côté d’un ordinateur portable."
     },
     "projects": {
@@ -210,9 +210,9 @@
     "sectionsNav": "Sur cette page",
     "journey": {
       "title": "mon parcours",
-      "p1": "J’ai étudié le théâtre à l’Universidad Mayor de Santiago, de 2013 à 2016. J’ai été formé comme acteur, mais je ne me suis jamais vraiment senti acteur\u00A0: j’ai donc commencé à explorer la mise en scène. Après l’école, j’ai mis en scène <cite>Animales binarios</cite> et <cite>Pero, ¿y mi madre?</cite>, et j’ai été assistant à la mise en scène sur <cite>Todo bajo control</cite>.",
-      "p2": "De 2020 à 2022, j’ai suivi un master en études et pratiques théâtrales à l’Universidad Católica de Chile, sur la relation éthique entre l’artiste et le public. Ce que je cherche sur scène, c’est la vérité\u00A0: ne pas faire semblant, seulement ce qui se passe vraiment au présent. C’est ce qui m’a mené du théâtre vers la performance, en partant de l’intime pour que cela résonne avec l’histoire de chaque spectateur·rice.",
-      "p3": "J’ai aussi appris à mener des projets\u00A0: j’ai produit le festival interécoles de dramaturgie <cite>Juan Radrigán</cite> de 2015 à 2018 et, pour <cite>Caminamos mirando al cielo</cite>, une déambulation sonore créée pendant la pandémie, j’ai rédigé ma première demande au Fondart, le fonds national chilien pour les arts, et obtenu le financement. J’ai aussi enseigné, comme assistant en mise en scène à l’Universidad Mayor et en théâtre appliqué à l’UC. En arrivant en France, je me suis éloigné de la scène, mais pas de la création."
+      "p1": "J’ai étudié le théâtre à l’Universidad Mayor de Santiago, de 2013 à 2016. J’ai été formé·\u200Ce comme acteur·ice, mais je ne me suis jamais vraiment senti·\u200Ce acteur·ice\u00A0: j’ai donc commencé à explorer la mise en scène. Après l’école, j’ai mis en scène <cite>Animales binarios</cite> et <cite>Pero, ¿y mi madre?</cite>, et j’ai été assistant·\u200Ce à la mise en scène sur <cite>Todo bajo control</cite>.",
+      "p2": "De 2020 à 2022, j’ai suivi un master en études et pratiques théâtrales à l’Universidad Católica de Chile, sur la relation éthique entre l’artiste et le public. Ce que je cherche sur scène, c’est la vérité\u00A0: ne pas faire semblant, seulement ce qui se passe vraiment au présent. C’est ce qui m’a mené·\u200Ce du théâtre vers la performance, en partant de l’intime pour que cela résonne avec l’histoire de chaque spectateur·ice.",
+      "p3": "J’ai aussi appris à mener des projets\u00A0: j’ai produit le festival interécoles de dramaturgie <cite>Juan Radrigán</cite> de 2015 à 2018 et, pour <cite>Caminamos mirando al cielo</cite>, une déambulation sonore créée pendant la pandémie, j’ai rédigé ma première demande au Fondart, le fonds national chilien pour les arts, et obtenu le financement. J’ai aussi enseigné, comme assistant·\u200Ce en mise en scène à l’Universidad Mayor et en théâtre appliqué à l’UC. En arrivant en France, je me suis éloigné·\u200Ce de la scène, mais pas de la création."
     },
     "projects": {
       "title": "mes projets",
@@ -230,7 +230,7 @@
     "journey": {
       "title": "mon parcours",
       "p1": "Le son est arrivé par la performance\u00A0: pendant la pandémie, sans corps autorisés sur scène, c’était le seul moyen que j’avais trouvé pour atteindre le public.",
-      "p2": "En France, je me suis formé comme technicien son à CIFACOM (BTS Audiovisuel, 2023–2025)\u00A0: choix des micros, prise de son, mixage. En chemin, j’ai enregistré et mixé des courts-métrages, participé à la sonorisation d’un festival lyrique en plein air, installé des œuvres sonores dans une galerie, et j’ai assuré la régie de certains concerts de l’Orchestre Hélios dans des églises parisiennes.",
+      "p2": "En France, je me suis formé·\u200Ce comme technicien·\u200Cne son à CIFACOM (BTS Audiovisuel, 2023–2025)\u00A0: choix des micros, prise de son, mixage. En chemin, j’ai enregistré et mixé des courts-métrages, participé à la sonorisation d’un festival lyrique en plein air, installé des œuvres sonores dans une galerie, et j’ai assuré la régie de certains concerts de l’Orchestre Hélios dans des églises parisiennes.",
       "listen": {
         "caption": "<cite>Caminamos mirando al cielo</cite> (2020–2022)\u00A0: l’audio intégral de la déambulation sonore, en espagnol.",
         "playerTitle": "Lecteur SoundCloud\u00A0: Caminamos mirando al cielo",
@@ -264,7 +264,7 @@
         },
         "s3": {
           "title": "Un défi technique.",
-          "body": "Next.js exécute le proxy dans l’Edge Runtime, où Prisma ne fonctionne pas. J’ai déplacé la vérification de session vers une route API interne exécutée sous Node\u00A0: le proxy l’appelle, puis transmet l’identifiant et le rôle de l’utilisateur·rice aux route handlers."
+          "body": "Next.js exécute le proxy dans l’Edge Runtime, où Prisma ne fonctionne pas. J’ai déplacé la vérification de session vers une route API interne exécutée sous Node\u00A0: le proxy l’appelle, puis transmet l’identifiant et le rôle de l’utilisateur·ice aux route handlers."
         },
         "s4": {
           "title": "Et après.",
@@ -289,7 +289,7 @@
         },
         "s2": {
           "title": "Ce que ça fait.",
-          "body": "Chacun·e, à commencer par les artistes, peut épingler un son à un lieu sur la carte. Pour l’écouter comme prévu, il faut s’y rendre\u00A0: l’écoute devient située."
+          "body": "Chacun·\u200Ce, à commencer par les artistes, peut épingler un son à un lieu sur la carte. Pour l’écouter comme prévu, il faut s’y rendre\u00A0: l’écoute devient située."
         },
         "s3": {
           "title": "Comment c’est construit.",
@@ -339,7 +339,7 @@
       "role": "Assistant à la mise en scène",
       "place": "Santiago du Chili, dans plusieurs théâtres, sur trois ans de tournée",
       "hover": "Un réveillon de Noël, une grève, et cinq caissières qui tentent de sauver leurs fêtes.",
-      "popup": "Cinq caissières d’un supermarché d’un quartier aisé de Santiago affrontent en même temps le réveillon de Noël et une grève. Jusqu’où iriez-vous pour sauver Noël\u00A0? Travailler pour vivre, ou vivre pour travailler\u00A0? Écrite par Javiera Mendoza et mise en scène par Juan Gálvez, la pièce a remporté le fonds de création interne de l’école de théâtre, puis a tourné dans les théâtres de Santiago jusqu’en 2019. J’étais assistant à la mise en scène.",
+      "popup": "Cinq caissières d’un supermarché d’un quartier aisé de Santiago affrontent en même temps le réveillon de Noël et une grève. Jusqu’où iriez-vous pour sauver Noël\u00A0? Travailler pour vivre, ou vivre pour travailler\u00A0? Écrite par Javiera Mendoza et mise en scène par Juan Gálvez, la pièce a remporté le fonds de création interne de l’école de théâtre, puis a tourné dans les théâtres de Santiago jusqu’en 2019. J’étais assistant·\u200Ce à la mise en scène.",
       "credits": "Texte et production\u00A0: Javiera Mendoza · Mise en scène\u00A0: Juan Gálvez · Assistanat à la mise en scène\u00A0: Gabriel Hono · Conception visuelle\u00A0: Catalina Devia, assistée de Catalina Álvarez · Distribution\u00A0: Fernanda Águila, Juan Gálvez, Katherine Maureira, Javiera Mendoza, María José Mundt, Beatriz Sánchez",
       "alt": {
         "legs": "Une rangée de jambes en jupes beiges et escarpins sur un sol de scène bleu, un pied sorti de sa chaussure.",
@@ -365,7 +365,7 @@
       "role": "Équipe de production",
       "place": "École de théâtre de l’Universidad Mayor, Santiago du Chili",
       "hover": "Un festival de dramaturgie étudiante passé de 10 à 70 textes reçus.",
-      "popup": "Un festival interécoles de dramaturgie pour les étudiant·es en théâtre, qui porte le nom du dramaturge chilien Juan Radrigán. J’ai rejoint son équipe de production pour la deuxième édition. Nouvelle équipe, nous avons fait appel à des professionnel·les expérimenté·es, relevé les prix, cherché davantage de financements et créé des collaborations entre écoles. Les candidatures sont passées de 10 textes à la première édition à 70 lors de ma dernière, et le soutien de l’école a augmenté chaque année\u00A0: lectures mises en espace, artistes invité·es, cérémonie de remise des prix. Le festival fête aujourd’hui ses douze ans, toujours sur la voie que nous avions tracée.",
+      "popup": "Un festival interécoles de dramaturgie pour les étudiant·\u200Ces en théâtre, qui porte le nom du dramaturge chilien Juan Radrigán. J’ai rejoint son équipe de production pour la deuxième édition. Nouvelle équipe, nous avons fait appel à des professionnel·\u200Cles expérimenté·\u200Ces, relevé les prix, cherché davantage de financements et créé des collaborations entre écoles. Les candidatures sont passées de 10 textes à la première édition à 70 lors de ma dernière, et le soutien de l’école a augmenté chaque année\u00A0: lectures mises en espace, artistes invité·\u200Ces, cérémonie de remise des prix. Le festival fête aujourd’hui ses douze ans, toujours sur la voie que nous avions tracée.",
       "credits": "",
       "alt": {
         "logo": "Logo du festival\u00A0: une paire de lunettes sous le nom «\u00A0Festival de Dramaturgia Interescuelas Juan Radrigán\u00A0».",
@@ -376,7 +376,7 @@
     "on-stage": {
       "title": "Sur scène",
       "translatedTitle": "",
-      "role": "Comédien",
+      "role": "Comédien·\u200Cne",
       "place": "Santiago du Chili",
       "hover": "Avant la mise en scène\u00A0: quatre spectacles sur scène.",
       "popup": "<strong>La Petite Fille</strong> dans <cite>Six personnages en quête d’auteur</cite> (Pirandello), adaptation contemporaine du collectif La Ratonera (2015) · <strong>Glagoliev</strong> dans <cite>Platonov</cite> (Tchekhov), mise en scène de Francisca Márquez (2016) · <strong>Chœur</strong> dans <cite>Locutorio</cite> (Jorge Díaz), mise en scène de Cristián Plana, avec Alejandro Sieveking et Millaray Lobos, production du GAM (2017) · <strong>Rôle d’ensemble</strong> dans <cite>Signorina Giulia</cite>, production chilo-italienne mise en scène par Cristián Plana (2017)",
@@ -391,7 +391,7 @@
     "la-methode": {
       "title": "La Méthode",
       "translatedTitle": "",
-      "role": "Chef opérateur son et mixeur\u00A0; enregistrement de la musique",
+      "role": "Chef·\u200Cfe opérateur·ice son et mixeur·euse\u00A0; enregistrement de la musique",
       "place": "Court-métrage de fiction, projet de fin de BTS, CIFACOM, Paris",
       "hover": "Une étudiante en théâtre, un monologue, et une frontière floue entre fiction et réalité.",
       "popup": "Un court-métrage de fiction sur une étudiante en théâtre aux prises avec un monologue, qui joue avec la frontière entre réalité et fiction. J’ai assuré la prise de son sur trois jours de tournage (un appartement, un parc, un plateau), puis le montage son et le mixage du film aux normes de diffusion. J’ai aussi dirigé et enregistré la musique originale pour viole de gambe, composée et jouée par Lukas Carrillo, en combinant un micro proche et un micro éloigné pour capter à la fois le détail et la profondeur.",
@@ -422,7 +422,7 @@
       "role": "Assistant son (stage)",
       "place": "Festival de musique classique et lyrique en plein air, Arènes de Montmartre, Paris",
       "hover": "Quatre semaines de son lyrique en plein air à Montmartre.",
-      "popup": "Un festival de musique classique et lyrique en plein air, dans les Arènes de Montmartre. Assistant de l’ingénieur du son Zéphir Torres, j’ai participé au placement et à l’orientation de la diffusion, au réglage du délai des rappels, à l’installation de la console numérique, du rack de scène, des amplificateurs et des systèmes HF, puis au câblage et au line check avant chaque concert. En plein air, il fallait souvent tout bâcher ou tout démonter à l’arrivée de la pluie\u00A0: quatre semaines qui m’ont appris à quel point le son live doit savoir s’adapter.",
+      "popup": "Un festival de musique classique et lyrique en plein air, dans les Arènes de Montmartre. Assistant·\u200Ce de l’ingénieur du son Zéphir Torres, j’ai participé au placement et à l’orientation de la diffusion, au réglage du délai des rappels, à l’installation de la console numérique, du rack de scène, des amplificateurs et des systèmes HF, puis au câblage et au line check avant chaque concert. En plein air, il fallait souvent tout bâcher ou tout démonter à l’arrivée de la pluie\u00A0: quatre semaines qui m’ont appris à quel point le son live doit savoir s’adapter.",
       "credits": "Direction du festival\u00A0: Pierre Mollaret · Ingénieur du son\u00A0: Zéphir Torres · Photo de nuit\u00A0: Les Arènes Lyriques",
       "alt": {
         "night": "Concert de nuit aux Arènes de Montmartre\u00A0: une personne en blanc au micro, et le public serré sur les gradins sous des guirlandes lumineuses.",
@@ -448,14 +448,14 @@
     "contre-recits": {
       "title": "Contre-récits",
       "translatedTitle": "",
-      "role": "Chef opérateur son",
+      "role": "Chef·\u200Cfe opérateur·ice son",
       "place": "Podcast vidéo créé par Lucie Hage",
       "hover": "Un podcast vidéo qui oppose à l’histoire officielle les souvenirs de celles et ceux qui l’ont vécue.",
       "popup": "Un podcast vidéo créé par Lucie Hage, qui oppose à l’histoire officielle les mémoires individuelles. J’ai assuré la prise de son des deux épisodes, de la préparation du matériel à l’enregistrement pendant le tournage.",
       "credits": "Création\u00A0: Lucie Hage · Son\u00A0: Gabriel Hono · Photos\u00A0: Contre-récits",
       "alt": {
         "set": "Le plateau de Contre-récits\u00A0: deux fauteuils drapés de blanc, des softbox et des micros sur pied, avec le titre en rouge.",
-        "recording": "Enregistrement d’un épisode dans un loft aux grandes fenêtres\u00A0: les invité·es parlent dans des micros pendant que Gabriel ajuste un pied de micro, devant une caméra."
+        "recording": "Enregistrement d’un épisode dans un loft aux grandes fenêtres\u00A0: les invité·\u200Ces parlent dans des micros pendant que Gabriel ajuste un pied de micro, devant une caméra."
       }
     }
   },
@@ -463,7 +463,8 @@
     "copyright": "© {year} Gabriel Hono",
     "legalLabel": "Informations légales",
     "legal": "Mentions légales",
-    "privacy": "Confidentialité"
+    "privacy": "Confidentialité",
+    "fontCredit": "Typographie\u00A0: <link>Garabosse</link>, dessinée à l’EESAB Rennes et diffusée par la typothèque Bye Bye Binary."
   },
   "LegalPage": {
     "metadata": {
@@ -471,7 +472,7 @@
       "description": "Éditeur, hébergeur et propriété intellectuelle de gabrielhono.com."
     },
     "title": "Mentions légales",
-    "updated": "Dernière mise à jour\u00A0: 22 novembre 2026",
+    "updated": "Dernière mise à jour\u00A0: 26 novembre 2026",
     "sections": {
       "publisher": {
         "title": "Éditeur",
@@ -483,7 +484,7 @@
       },
       "intellectualProperty": {
         "title": "Propriété intellectuelle",
-        "body": "<p>Sauf mention contraire, les textes, photographies, illustrations et contenus audio de ce site appartiennent à Gabriel Hono ou à leurs auteurs respectifs, crédités avec chaque projet. Toute reproduction nécessite une autorisation préalable.</p>"
+        "body": "<p>Sauf mention contraire, les textes, photographies, illustrations et contenus audio de ce site appartiennent à Gabriel Hono ou à leurs auteurs respectifs, crédités avec chaque projet. Toute reproduction nécessite une autorisation préalable.</p><p>Le caractère typographique Garabosse a été dessiné dans le cadre de l’atelier typographique 2024–2025 de l’EESAB Rennes par Lucie Bouchet, Margaux Clerc, Titouan Collet, Clara Coutanceau, Noémie Doussaud, Paul Fleury, Jan Fournier, Justine Grandpierre, Garance Hebrard, Alice Laurichesse, Lolita Moreau, Pauline Mousain, Zoé Raude, Pome Saint-Bonnet, sous la direction de Benjamin Gomez. Il est diffusé par la typothèque Bye Bye Binary sous licence CUTE (conditions d’utilisation typographiques engageantes). Ses métriques verticales ont été ajustées pour ce site.</p>"
       },
       "personalData": {
         "title": "Données personnelles",

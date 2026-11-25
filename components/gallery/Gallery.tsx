@@ -91,7 +91,7 @@ export default function Gallery({ projects, labels }: Props) {
                       className="h-auto w-full"
                     />
                     <span className={previewClasses}>
-                      <span className="font-hand text-title">{t(`${id}.title`)}</span>
+                      <span className="font-display text-title">{t(`${id}.title`)}</span>
                       <span className="text-small">
                         {t(`${id}.role`)} · {year}
                       </span>

@@ -22,7 +22,7 @@ export default function ContactSection() {
     >
       <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-4">
-          <h2 id="contact-title" className="text-display font-extrabold">
+          <h2 id="contact-title" className="font-display text-display">
             {t("title")}
           </h2>
           <p className="max-w-[40ch] text-lead">{t("text")}</p>

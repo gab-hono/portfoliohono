@@ -40,7 +40,7 @@ export default function AboutSection() {
       />
 
       <div>
-        <h2 id="about-title" className="text-display font-extrabold tracking-tight">
+        <h2 id="about-title" className="font-display text-display">
           {t("title")}
         </h2>
         <div className="mt-8 flex max-w-prose flex-col gap-6 text-body">

@@ -22,7 +22,7 @@ export default function StackSection() {
       <div className="grid max-w-5xl gap-8 lg:grid-cols-3 lg:gap-12">
         {stack.map(({ id, items }) => (
           <div key={id}>
-            <h3 className="font-hand text-title">{t(`categories.${id}`)}</h3>
+            <h3 className="font-display text-title">{t(`categories.${id}`)}</h3>
 
             <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-small lg:mt-4 lg:flex-col lg:gap-y-2 lg:text-body">
               {items.map((item) => (

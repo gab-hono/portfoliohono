@@ -38,7 +38,7 @@ export default function DisciplineMenu({ current }: Props) {
     <nav aria-label={t("disciplinesMenu")}>
       <button type="button" popoverTarget={MENU_ID} className="flex cursor-pointer">
         <Oval discipline={current} animated={false} className="px-8 py-3 text-center sm:px-10">
-          <span aria-hidden="true" className="font-hand text-title uppercase">
+          <span aria-hidden="true" className="font-bold text-title uppercase">
             {tDiscipline(`${current}.label`)}
           </span>
           <span className="sr-only">
@@ -57,7 +57,7 @@ export default function DisciplineMenu({ current }: Props) {
             <Link
               href={href}
               aria-current={slug === current ? "page" : undefined}
-              className="block whitespace-nowrap px-6 py-3 text-center font-hand text-lead uppercase decoration-2 underline-offset-4 hover:underline aria-[current=page]:underline"
+              className="block whitespace-nowrap px-6 py-3 text-center font-bold text-lead uppercase decoration-2 underline-offset-4 hover:underline aria-[current=page]:underline"
             >
               <span aria-hidden="true">{tDiscipline(`${slug}.label`)}</span>
               <span className="sr-only">{tDiscipline(`${slug}.srLabel`)}</span>

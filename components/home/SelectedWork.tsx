@@ -67,7 +67,7 @@ export default function SelectedWork() {
         heading={
           <div className="flex flex-col gap-2">
             <p className="text-small font-bold tracking-[0.12em] uppercase">{t("eyebrow")}</p>
-            <h2 id="work-title" className="text-display font-extrabold tracking-tight">
+            <h2 id="work-title" className="font-display text-display">
               {t("title")}
             </h2>
           </div>
@@ -108,7 +108,7 @@ function Row({ entry }: { entry: SelectionEntry }) {
     <>
       <span className="col-start-1 row-start-1 text-small font-bold tabular-nums">{year}</span>
       <span
-        className={`col-start-2 row-start-1 justify-self-start rounded-full px-2.5 py-1 text-[0.6875rem] leading-none font-bold tracking-[0.08em] uppercase sm:w-full sm:text-center ${tagColors[discipline]}`}
+        className={`col-start-2 row-start-1 justify-self-start rounded-full px-2.5 py-1 text-[0.8125rem] leading-none font-bold tracking-[0.08em] uppercase sm:w-full sm:text-center ${tagColors[discipline]}`}
       >
         {t(`disciplines.${discipline}`)}
       </span>

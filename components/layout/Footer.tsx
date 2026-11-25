@@ -3,6 +3,9 @@ import ExternalLink from "@/components/ui/ExternalLink";
 import { Link } from "@/i18n/navigation";
 import { socialLinks } from "@/data/social";
 
+/** Página de la fuente en la typothèque Bye Bye Binary (crédito exigido por la licencia CUTE). */
+const fontUrl = "https://typotheque.genderfluid.space/fr/fontes/garabosse";
+
 /** Páginas legales, en el orden del footer. */
 const legalPages = [
   { href: "/legal", key: "legal" },
@@ -11,6 +14,8 @@ const legalPages = [
 
 /*
  * Izquierda: redes. Derecha: links legales + copyright.
+ * Debajo, a todo el ancho: crédito tipográfico (licencia CUTE: nombre de la fuente
+ * + link). Los nombres de quienes la dibujaron están en Mentions légales.
  * En móvil todo en columna; desde sm, dos bloques en una fila.
  */
 export default function Footer() {
@@ -19,7 +24,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col gap-4 border-t border-line px-4 py-8 text-small sm:flex-row sm:items-center sm:justify-between sm:px-8">
+    <footer className="flex flex-col gap-4 border-t border-line px-4 py-8 text-small sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:px-8">
       <ul className="flex gap-6">
         {socialLinks.map(({ name, href }) => (
           <li key={name}>
@@ -44,6 +49,11 @@ export default function Footer() {
         </nav>
         <p>{t("copyright", { year })}</p>
       </div>
+      <p className="sm:w-full">
+        {t.rich("fontCredit", {
+          link: (chunks) => <ExternalLink href={fontUrl}>{chunks}</ExternalLink>,
+        })}
+      </p>
     </footer>
   );
 }

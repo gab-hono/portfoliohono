@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
-import { Archivo, Fira_Code, Covered_By_Your_Grace } from "next/font/google";
+import { Archivo, Fira_Code } from "next/font/google";
+import localFont from "next/font/local";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -20,11 +21,40 @@ const firaCode = Fira_Code({
   display: "swap",
 });
 
-const coveredByYourGrace = Covered_By_Your_Grace({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-covered",
+/*
+ * Fuentes de la typothèque Bye Bye Binary (licencia CUTE: créditos en el footer).
+ * Archivos en app/fonts/, rutas relativas a este archivo.
+ * adjustFontFallback: ajusta la fuente de respaldo del sistema a las medidas
+ * de la fuente real, para que el texto no salte cuando termina de cargar.
+ *
+ * Métricas verticales de Garabosse: los .woff2 de app/fonts/ están modificados.
+ * Los originales reparten la altura de línea en 85 % arriba y 35 % abajo de la
+ * línea base, con mayúsculas de 80 %: el texto quedaba alto en óvalos y botones.
+ * Se reescribieron a 100 % / 20 % (misma altura total) con fontTools, así el
+ * centro de las mayúsculas coincide con el centro de la caja en todos los
+ * navegadores (no todos aplican ascent-override en CSS). Si se actualizan las
+ * fuentes desde la typothèque, hay que repetir el ajuste.
+ */
+
+// Títulos. Parangonne: el estilo de la familia pensado para tamaños grandes.
+const garabosse = localFont({
+  src: "../fonts/Garabosse-Parangonne.woff2",
+  variable: "--font-garabosse",
   display: "swap",
+  adjustFontFallback: "Times New Roman",
+});
+
+// Cuerpo de texto. Mignonne: estilo de la familia pensado para tamaños pequeños.
+// Garabosse tiene un solo peso por estilo: para font-bold usamos Perle, el estilo
+// más grueso, así el navegador no inventa una negrita falsa.
+const garabosseText = localFont({
+  src: [
+    { path: "../fonts/Garabosse-Mignonne.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/Garabosse-Perle.woff2", weight: "700", style: "normal" },
+  ],
+  variable: "--font-garabosse-text",
+  display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
 type Props = {
@@ -87,7 +117,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${archivo.variable} ${firaCode.variable} ${coveredByYourGrace.variable}`}
+      className={`${archivo.variable} ${firaCode.variable} ${garabosse.variable} ${garabosseText.variable}`}
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
