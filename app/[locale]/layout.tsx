@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { siteUrl } from "@/data/site";
 import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { Fira_Code } from "next/font/google";
@@ -56,15 +57,6 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-/*
- * URL base absoluta: Open Graph exige URLs completas para la imagen.
- * En Vercel, VERCEL_PROJECT_PRODUCTION_URL es el dominio de producción
- * (gabrielhono.com desde que el dominio propio está conectado). En local: localhost.
- */
-const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
-
 // Título de pestaña y descripción para Google, en el idioma de la página.
 // El locale se pasa explícito: generateMetadata se ejecuta aparte del render.
 //
@@ -82,6 +74,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
+    // URL base absoluta (data/site.ts): Open Graph exige URLs completas para la imagen.
     metadataBase: new URL(siteUrl),
     title: t("title"),
     description: t("description"),
