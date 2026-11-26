@@ -19,8 +19,8 @@ const paragraphs = ["p1", "p2", "p3"] as const;
  * puntos agrandada se ve borrosa; reducida, puede dar moiré: revisar a
  * distintos anchos.
  * id="about": destino del link "About" de la nav de la home.
- * Título en sans extrabold, como Selected work y Contact (decidido 22 nov):
- * la manuscrita (SectionTitle) queda para las páginas de disciplina.
+ * Título h2 en Garabosse Parangonne (font-display), como Selected work y
+ * Contact.
  */
 export default function AboutSection() {
   const t = useTranslations("Home.about");

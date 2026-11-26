@@ -5,16 +5,10 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
-import { Archivo, Fira_Code } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import localFont from "next/font/local";
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  axes: ["wdth"],
-  variable: "--font-archivo",
-  display: "swap",
-});
-
+// Código: solo en /dev (font-mono en su <main>).
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-fira-code",
@@ -65,8 +59,7 @@ type Props = {
 /*
  * URL base absoluta: Open Graph exige URLs completas para la imagen.
  * En Vercel, VERCEL_PROJECT_PRODUCTION_URL es el dominio de producción
- * (hoy portfoliohono.vercel.app; con el dominio propio pasará a ser ese,
- * sin tocar código). En local: localhost.
+ * (gabrielhono.com desde que el dominio propio está conectado). En local: localhost.
  */
 const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
@@ -117,7 +110,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${archivo.variable} ${firaCode.variable} ${garabosse.variable} ${garabosseText.variable}`}
+      className={`${firaCode.variable} ${garabosse.variable} ${garabosseText.variable}`}
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

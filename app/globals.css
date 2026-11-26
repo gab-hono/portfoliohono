@@ -80,10 +80,8 @@
   --color-line: var(--line);
   --color-error: var(--error-red);
 
-  /* Cuerpo: Garabosse Mignonne (bold = Perle). Archivo queda disponible
-     como font-grotesk mientras probamos; si no se usa, se elimina. */
+  /* Cuerpo: Garabosse Mignonne (bold = Perle). */
   --font-sans: var(--font-garabosse-text);
-  --font-grotesk: var(--font-archivo);
   --font-mono: var(--font-fira-code);
   /* Títulos: Garabosse Parangonne. */
   --font-display: var(--font-garabosse);
