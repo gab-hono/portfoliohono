@@ -10,10 +10,14 @@ import { Fira_Code } from "next/font/google";
 import localFont from "next/font/local";
 
 // Código: solo en /dev (font-mono en su <main>).
+// preload: false: sin esto, Next precarga la fuente en todas las páginas
+// (36 KB que compiten con el banner de la home). Así el navegador la descarga
+// solo cuando una página la usa de verdad.
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-fira-code",
   display: "swap",
+  preload: false,
 });
 
 /*
