@@ -122,9 +122,9 @@
     },
     "about": {
       "title": "About",
-      "p1": "I grew up in <strong>Chile</strong> and moved to <strong>France</strong> at 27, without any big reason: I just wanted to start a new life.",
-      "p2": "I don’t believe in fixed identities, which may explain my <strong>multidisciplinary path</strong>. I’m a <strong>non-binary transmasc</strong> person and I use he/him pronouns. I studied <strong>theater</strong>; steady gigs were rare, but I never stopped creating.",
-      "p3": "In France I became a <strong>sound technician</strong> for concerts, film and exhibitions. Then I trained as a <strong>full-stack developer</strong> at Ada Tech School. And here I am, making a life out of all of them :)",
+      "p1": "I grew up in <strong>Chile</strong> and moved to <strong>France</strong> at 27, without any big reason, simply because I wanted to start a new life.",
+      "p2": "I don’t believe in fixed identities, which probably explains my <strong>multidisciplinary path</strong>. I’m <strong>transmasculine and non-binary</strong>. I use he/they pronouns, with a preference for he if I have to choose. In Chile, I studied <strong>theater</strong>, with a bachelor’s and then a master’s in theater studies and practices. When I moved to France, I decided to step away from the theater world, but I never stopped creating, and I keep doing my research mostly in private (for now).",
+      "p3": "Here, I became a <strong>sound technician</strong> for concerts, films and exhibitions. Then I trained as a <strong>full-stack developer</strong> at Ada Tech School. And here I am, building my life with all of it :)",
       "portraitAlt": "Halftone portrait of Gabriel in red and dark blue, looking to the side."
     },
     "contact": {
@@ -210,9 +210,9 @@
     "sectionsNav": "On this page",
     "journey": {
       "title": "my journey",
-      "p1": "I studied theater at Universidad Mayor in Santiago, from 2013 to 2016. I was trained as an actor, but I never really felt like one, so I started exploring directing. After drama school I directed <cite>Animales binarios</cite> and <cite>Pero, ¿y mi madre?</cite>, and was assistant director on <cite>Todo bajo control</cite>.",
-      "p2": "From 2020 to 2022, I did a master’s in theater studies and practices at the Universidad Católica de Chile, researching the ethical relationship between artist and audience. What I look for on stage is truth: no pretending, only what is really happening in the present. That took me from plays to performance, starting from the most intimate place so it can resonate with each spectator’s own story.",
-      "p3": "I also learned to run projects: I produced the <cite>Juan Radrigán</cite> inter-school playwriting festival from 2015 to 2018, and for <cite>Caminamos mirando al cielo</cite>, a sound walk made during the pandemic, I wrote my first application to Fondart, Chile’s national arts fund, and won it. And I taught, as a teaching assistant in directing at Universidad Mayor and in applied theater at the UC. When I moved to France, I stepped away from the stage, but not from creating."
+      "p1": "I studied theater at <strong>Universidad Mayor in Santiago</strong>, from 2013 to 2016. I was trained as an actor, but I never really felt like one, so I started exploring <strong>directing</strong>. After drama school, I directed <cite>Animales binarios</cite> and <cite>Pero, ¿y mi madre?</cite>, and was assistant director on <cite>Todo bajo control</cite>.",
+      "p2": "From 2020 to 2022, I did <strong>a master’s in theater studies and practices at the Universidad Católica de Chile</strong>, with a thesis on the ethical relationship between artist and audience. What I look for on stage is <strong>truth</strong>, meaning not pretending, but searching rigorously and attentively for what is really happening, in the present. That is what took me from theater to <strong>performance</strong>, starting from the intimate, even from autofiction, so it can resonate with each spectator’s own story.",
+      "p3": "I also learned to <strong>run projects</strong>. I produced <strong>the <cite>Juan Radrigán</cite> inter-school playwriting festival</strong> from 2015 to 2018, and for <cite>Caminamos mirando al cielo</cite>, a sound walk made during the pandemic, I wrote my first application to <strong>Fondart</strong>, Chile’s national arts fund, and won it. I also <strong>taught</strong>, as a teaching assistant in directing at Universidad Mayor and in applied theater at the UC. When I moved to France, I stepped away from the stage, but not from creating."
     },
     "projects": {
       "title": "my projects",
